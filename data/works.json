@@ -1,0 +1,87 @@
+{
+  "projects": [{
+    "id": 1,
+    "projectName": "LetsVenture",
+    "mainImg": "1-LV.png",
+    "header": "LETSVENTURE",
+    "headerTag": "Angel Investing made smart and easy",
+    "project": "WITH LETSVENTURE, INVESTORS CONNECT TO MAKE INFORMED INVESTMENT DECISIONS IN INDIAN STARTUPS ",
+    "projectDetails": "We worked with LetsVenture to solve key painpoints of early stage funding of Startups.Angel funding is tedious process. It is hard for investors to view high value Startups and  also for Startups to ﬁnd Investors who believe in their idea. Process is slow, difﬁcult to track, not smart with paperwork, hard to schedule interactions and get the best value of the time you spend.",
+    "para": [{
+      "header": "SMART PLATFORM FOR INVESTORS",
+      "content": "We studied the existing process by talking to stakeholders of the system. We learnt a great deal about investing styles, startup needs, constraints of transactions and problems of scaling of the business. We mapped and organised a connected system design to accomodate these needs. We focused on making it simple, easy and interesting to participate meaningfully in a funding process. We hoped to design as little as possible but to ignite the right relationships with users."
+    }, {
+      "header": "DESIGNING BEHAVIOURS",
+      "content": "We designed mobile and web applications. Investors found it new, easy to ﬁnd great information about startups and investment opportunities on their ﬁngertips. They responded by liking, commiting, sharing, searching and chatting to founders on the go with a simple tap.  This generated qualitative realtime data that fueled the machine to ﬁne tune better information by learning from behaviour. Funding now happens faster, personalised, connected and with no paperwork."
+    }, {
+      "header": "SHAPING ECOSYSTEM",
+      "content": " Within a year LetsVenture raised over $43M, funding over 110 Startups and enrolling over 2300 active investors. LetsVenture has democratized investing which was earlier in a hands of a few business families. Today, LetsVenture is India's largest Angel investing network."
+    }],
+    "worksImg": "Header-LV.png",
+    "images": ["2-LV.png", "3-LV.png", "4-LV.png", "5-LV.png", "6-LV.png"],
+    "categories": "product  ux strategy",
+    "released": "SEP 2015",
+    "client": "LETSVENTURE",
+    "impact": "\\$43M RAISED TO FUND OVER 100 STARTUPS",
+    "workQuote": {
+      "quote": "\"The design has made things simpler and smarter for investing. With a swipe I can see tailored startups, chat with founders, decide to commit and follow up realtimein a funding process. Design is elegant and works beautifully. Proud to show it to rest of the world\"",
+      "author": " Prime Investor"
+    }
+  }, {
+    "id": 2,
+    "projectName": "Kham",
+    "mainImg": "1-kham.jpg",
+    "header": "KHAM",
+    "headerTag": "Symbol for space",
+    "project": " 'KHAM' MEANING SPACE OR FORMLESS GETS A SYMBOL",
+    "projectDetails": " \"Kham\" is named for the ofﬁce of an Architectural practice. In Sanskrit language it is a \"Beejakshara\" or seed syllable meaning space. We explored multitude of meanings and dimensions that the root syllable could express the formless space into a symbol recognizable for communication of a practice that works with space.",
+    "para": [{
+      "header": "EXPLORATIONS",
+      "content": "We explored meanings and contexts. \" Aperture, the Sky, Earth & Space and the sound. In India we have a strong \"Oral tradition\" to view language in many of its dimesions. Designer's understanding of the sound and meaning of a word is of primal importance to explore \"Akshara Roopa\" or the Letter form\". \"Akshara Roopa\" has the potential to express and connect its past meanings, current purpose and interpretation of future in one go."
+    }, {
+      "header": "SYNTHESIS",
+      "content": "The ﬁnal design for Kham' is a resonating \"Anusvara\" represented by the Circle or the \"Bindu\". It is calligraphically rendered encompassing space. Symbol also expresses the purpose of the profession of an architect whose continious engagement with \"space making\" is a practice as well as dicovery of the mystery."
+    }, {
+      "header": "IMPROVISATIONS",
+      "content": "  Letter form explorations are challenging in Indian contexts where the ancient meanings are dominated by \"Oral traditions\". Calligraphic, Typographic and illustrative mediums fall short to truly express the spirit of the meanings of seed syllables and require continious improvisations of the form challenging oneself internally till you ﬁnd liberation."
+    }],
+    "worksImg": "Header-kham.png",
+    "images": ["1-kham.jpg", "2-kham.jpg", "3-kham.jpg"],
+    "categories": "identity",
+    "released": "SEP 2009",
+    "client": "KHAM ARCHITECTS",
+    "link": "www.khamdesign.in",
+    "workQuote": {
+      "quote": "\"An Agha Khan winner was curious about the symbol design and wished to know more about design and India\"",
+      "author": "Client"
+    }
+  }, {
+    "id": 3,
+    "projectName": "Moonwalkr",
+    "mainImg": "1-mv.png",
+    "header": "MOONWALKR",
+    "headerTag": "Lightest leg guard for Batsmen",
+    "project": "A LIGHTER LEG GUARD HELPED BATSMEN RUN FASTER & AVOID BOWLEGS",
+    "projectDetails": " Moonwalkr attempted to solve a leg gear problem for batsmen. Traditional leg gears are heavy and bulky. On continious use, batsmen tend to develop \"Bow Legs\" which affects running between wickets. We focused on making the gear lighter, stronger using composite plastics to suit modern day Cricket needs.",
+    "para": [{
+      "header": "LIGHT, STRONG & SAFE",
+      "content": "A body wear has to go with the body structure, movement, comfort and also solve a functional problem. Light weight plastics - PE sheild and PEfoam are sandwiched and handstiched to take ball hits upto 150 kms/hour. The composites make the shell lighter by 50%, stronger giving morehappy safefeeling."
+    }, {
+      "header": "TAILORING FOR STARTUP",
+      "content": "We adapted to startup situations. Low cost prototyping, testing and continious improvements to achieve product goals was a norm. Like a design incubator, we faced various complex constraints of production, saftey, shaping, stictching, tooling and scaling. "
+    }, {
+      "header": "SMOOTH CURVES",
+      "content": " The design features smooth curved form, hard from outside and soft and cushoned from inside. Stitch lines are optimised for strength and longivity. The shape is a response to natural body movements and protection. The curves visually make it look smaller and compact, easy to carry and wear them on to play."
+    }],
+    "worksImg": "Header-mv.png",
+    "images": ["2-mv.png", "3-mv.png", "4-mv.png"],
+    "categories": "product design",
+    "released": "FEB 2009",
+    "client": "MOONWALKR",
+    "link": "www.moonwalkr.in",
+    "workQuote": {
+      "quote": "\"Moonwalkr is a cutting edge product, its lighter and gives a happy safe feeling while playing \"",
+      "author": "Customer"
+    }
+  }]
+}

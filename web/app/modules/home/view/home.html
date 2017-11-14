@@ -1,0 +1,96 @@
+<section id="intro">
+    <!-- Hero Slider Section -->
+    <!-- <div class="flexslider fullscreen-carousel hero-slider-1 " > -->
+    <!-- <ul class ="slides"> -->
+    <flex-slider flex-slide="s in slider track by s.index" animation="slide" class="flexslider fullscreen-carousel hero-slider-1" flexslider>
+    
+    <li data-slide="{{s.type}}">
+        <div class="slide-bg-image overlay-light parallax parallax-section1"  data-background-img="{{s.img}}">
+            <div class="js-Slide-fullscreen-height container">
+                <div class="intro-content">
+                    <div class="intro-content-inner">
+                        <h2 class="h2">{{s.header}}</h2>
+                        <p class="lead">{{s.content}}</p>
+                        <div>
+                            <a class="btn btn-md btn-black-line">Read More</a><span class="btn-space-10 xs-hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    </flex-slider>
+    <!-- </div> -->
+    <!-- </ul> -->
+    <!-- </div> -->
+    <!-- End Hero Slider Section -->
+</section>
+<div class="clearfix"></div>
+<!-- About Section -->
+<section id="about" class="pt pt-sm-80">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="col-md-8 offset-md-2"></div>
+                <h2>
+                <span class="color">We are Design Lab.</span> We Love<br />
+                designing all that is indian
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+
+<section class="ptb ptb-sm-80">
+            <div class="container">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li ng-repeat="cat in categories track by $index">
+                             <a ng-show="cat.name == 'all'" class="categories {{cat.active}}"  data-filter="*">{{cat.name}}</a>
+                             <a ng-show="cat.name !== 'all'" class="categories {{cat.active}}"  data-filter=".{{cat.name}}">{{cat.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+                <div  class="row container-grid nf-col-3">
+                    <div  ng-repeat="proj in filteredProj = (projects)" class="nf-item {{proj.categories}} spacing">
+                        <div class="item-box">
+                            <a ui-sref="works.detail({project:proj})">
+                                <img alt="1" ng-src="mazel/img/project/{{proj.projectName}}/{{proj.mainImg}}" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" ng-bind="proj.header"></h5>
+                                        <p class="white">{{proj.headerTag}}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>     
+                    </div>
+                    <div ng-hide="filteredProj.length">No items found</div>
+                </div>
+
+            </div>
+
+        </section>
+<!-- Work Section -->
+
+<!-- End Work Section -->
+<!-- Testimonials -->
+<section id="testimonial" class="pb pb-sm-80">
+    <div class="container">
+        <div class="owl-carousel testimonial-carousel nf-carousel-theme">
+            <div class="item">
+                <div class="testimonial text-center dark-color">
+                    <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                    <p class="lead">"The result is spectacular, it was until i saw Tacit’s process i finally felt like the vision, idea is clearly taking its shape "</p>
+                    <h6 class="quote-author">Major Insurance Technology Specialist</h6>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- End Testimonials -->

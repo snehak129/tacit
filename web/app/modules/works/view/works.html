@@ -1,0 +1,52 @@
+
+        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="mazel/img/full/25.jpg">
+            <div class="container">
+                <div class="row title">
+                    <h2 class="h2">WORKS</h2>
+                   <!--  <div class="page-breadcrumb">
+                        <a>Home</a>/<a>Portfolio</a>/<span>Grid</span>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- End Intro Section -->
+        
+        <!-- Work Detail Section -->
+        <section class="ptb ptb-sm-80"  flexslider>
+            <div class="container">
+                <!-- work Filter -->
+                <div class="row">
+                    <ul class="col container-filter categories-filter">
+                        <li ng-repeat="cat in categories track by $index">
+                             <a ng-show="cat.name == 'all'" class="categories {{cat.active}}"  data-filter="*">{{cat.name}}</a>
+                             <a ng-show="cat.name !== 'all'" class="categories {{cat.active}}"  data-filter=".{{cat.name}}">{{cat.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End work Filter -->
+                <div  class="row container-grid nf-col-3">
+
+                    <div  ng-repeat="proj in filteredProj = (projects)" class="nf-item {{proj.categories}} spacing">
+
+                        <div class="item-box">
+                            <a ui-sref="works.detail({project:proj})" >
+                                <img alt="1" ng-src="mazel/img/project/{{proj.projectName}}/{{proj.mainImg}}" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" ng-bind="proj.header"></h5>
+                                        <p class="white">{{proj.headerTag}}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>     
+                    </div>
+                    <div ng-hide="filteredProj.length">No items found</div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Work Detail Section-->
+
+        <div ui-view></div>
+

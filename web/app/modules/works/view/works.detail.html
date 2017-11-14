@@ -1,0 +1,182 @@
+ <!-- Intro Section -->
+
+        <section class="inner-intro bg-image overlay-light parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.projectName}}/{{project.worksImg}})'}">
+            <div class="container">
+                <div class="row title">
+                    <h2 class="h2">{{project.header}}</h2>
+                    <div class="page-breadcrumb">
+                        {{project.headerTag}}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Intro Section -->
+        
+        <!-- Work Detail Section -->
+        <section class="pt pt-sm-80">
+            <div class="container">
+
+                <div class="row mb-60 mb-xs-30">
+                    <div class="col-md-4 mb-30">
+                        <div class="project-detail-block">
+                            <p ng-if="project.categories">
+                                <strong class="dark-color">Categories:</strong> <span>{{project.categories}}</span>
+                            </p>
+
+                            <p ng-if="project.released">
+                                <strong class="dark-color">Released :</strong>{{project.released}}
+                            </p>
+                            <p ng-if="project.client">
+                                <strong class="dark-color">Client :</strong><a>{{project.client}}</a>
+                            </p>
+                            <p ng-if="project.link">
+                                <strong class="dark-color">Link :</strong>{{project.link}}
+                            </p>
+                            <p ng-if="project.impact">
+                                <strong class="dark-color">Impact :</strong>{{project.impact}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <h4>{{project.project}}</h4>
+                        <p class="">
+                            {{project.projectDetails}}
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="item-container" src="mazel/img/project/{{project.projectName}}/{{project.mainImg}}" alt="1">
+                    </div>
+                </div>
+
+                <div class="row mtb-60 mtb-xs-30">
+                    <div ng-repeat="p in project.para track by $index" class="col-md-4 mb-30">
+                        <h5>{{p.header}}</h5>
+                        <p>{{p.content}}</p>
+                    </div>
+                </div>
+
+              <div class="row mtb-60 mtb-xs-30">
+                    <div class="testimonial text-center dark-color">
+                        <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                        <p class="lead"> {{project.workQuote.quote}}</p>
+                        <h6 class="quote-author">{{project.workQuote.author}}</h6>
+                    </div>
+             </div>
+                           
+<!-- End Testimonials -->
+
+                <div ng-repeat="img in project.images track by $index" class="row mb-60 mb-xs-30">
+                    <div class="col-md-12">
+                        <img class="item-container" src="mazel/img/project/{{project.projectName}}/{{img}}" alt="1">
+                    </div>
+               </div>
+            </div>
+
+            
+
+        </section>
+
+        <hr />
+
+        <!-- <section class="ptb ptb-sm-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h3 class="">architecto beatae vitae</h3>
+                        <p class="mt-15">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                        <br />
+                        <a class="btn btn-lg btn-black">Download now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ -->
+
+            
+
+        <hr />
+
+        <section class="ptb ptb-sm-80">
+            <div class="container text-center">
+                <h4>Related Project</h4>
+                <div class="row">
+
+                    <div class="col-lg-4 spacing-grid">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" src="img/portfolio/1.jpg" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white">Consequat massa quis</h5>
+                                        <p class="white">Branding, Design, Coffee</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 spacing-grid">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" src="img/portfolio/3.jpg" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white">Consequat massa quis</h5>
+                                        <p class="white">Branding, Design, Coffee</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 spacing-grid">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" src="img/portfolio/5.jpg" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white">Consequat massa quis</h5>
+                                        <p class="white">Branding, Design, Coffee</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Work Detail Section -->
+
+        <!-- Work Next Prev Bar -->
+        <section class="mb-60">
+            <div class="container">
+                <div class="item-nav">
+                    <a class="item-prev" href="">
+                        <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
+                        <div class="item-prev-text xs-hidden">
+                            <h6>Prev Project</h6>
+                        </div>
+                    </a>
+
+                    <a class="item-all-view">
+                        <h6>All Work</h6>
+                    </a>
+
+                    <a class="item-next" href="">
+                        <div class="next-btn"><i class="fa fa-angle-right"></i></div>
+                        <div class="item-next-text xs-hidden">
+                            <h6>Next Project</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Next Prev Bar -->
+
+        <!-- End CONTENT ------------------------------------------------------------------------------>
