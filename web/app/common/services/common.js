@@ -29,9 +29,9 @@ angular.module('tacit').factory('Common', function() {
 			getWorks: '../data/works.json',
 			getHeaders: '../data/headers.json',
 			getHomeContent: '../data/home.json',
-			getAboutUs: '/data/aboutus.json',
-			getPractices: '/data/practices.json',
-			getBlog : '/data/blog.json'
+			getAboutUs: '../data/aboutus.json',
+			getPractices: '../data/practices.json',
+			getBlog : '../data/blog.json'
 		}
 	};
 });
