@@ -26,12 +26,14 @@ angular.module('tacit').factory('Common', function() {
 			active: ""
 		}],
 		url: {
-			getWorks: '/data/works.json',
-			getHeaders: '/data/headers.json',
-			getHomeContent: '/data/home.json',
+			getWorks: '../data/works.json',
+			getHeaders: '../data/headers.json',
+			getHomeContent: '../data/home.json',
 			getAboutUs: '/data/aboutus.json',
 			getPractices: '/data/practices.json',
 			getBlog : '/data/blog.json'
 		}
 	};
 });
+
+//https://snehak129.github.io/tacit/data/headers.json
