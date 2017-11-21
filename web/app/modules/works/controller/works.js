@@ -9,22 +9,22 @@
 				$scope.selectedCat.active = "";
 			} 
 				$scope.selectedCat = cat;
-				cat.active = "active";
-			
+				cat.active = "active";		
 		}
 
-		function init() {
-			
+		function init() {	
 			$scope.categories = Common.categories;
 			$scope.selectedCat = $scope.categories[0];
 			getWorks();
 		}
+
 		var getWorks = function() {
 			AjaxService.post(Common.url.getWorks, function(result) {
-				$scope.projects = result.projects;
+				$scope.projects = result.projects;	
+				//$scope.$parent.projects = angular.copy($scope.projects);
 			});
-
 		}
+		
 		init();
 	}])
 })();

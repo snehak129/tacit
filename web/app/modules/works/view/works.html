@@ -25,12 +25,12 @@
                 </div>
                 <!-- End work Filter -->
                 <div  class="row container-grid nf-col-3">
-
-                    <div  ng-repeat="proj in filteredProj = (projects)" class="nf-item {{proj.categories}} spacing">
+                    <div  ng-repeat="proj in filteredProj = (projects) track by proj.index" class="nf-item {{proj.categories}} spacing">
 
                         <div class="item-box">
-                            <a ui-sref="works.detail({project:proj})" >
-                                <img alt="1" ng-src="mazel/img/project/{{proj.projectName}}/{{proj.mainImg}}" class="item-container">
+
+                            <a ui-sref="detail({projects:projects, index: proj.index})" >
+                                <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
                                 <div class="item-mask">
                                     <div class="item-caption">
                                         <h5 class="white" ng-bind="proj.header"></h5>
@@ -48,5 +48,4 @@
         </section>
         <!-- End Work Detail Section-->
 
-        <div ui-view></div>
 

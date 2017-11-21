@@ -1,6 +1,6 @@
  <!-- Intro Section -->
 
-        <section class="inner-intro bg-image overlay-light parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.projectName}}/{{project.worksImg}})'}">
+        <section class="inner-intro bg-image overlay-light parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
             <div class="container">
                 <div class="row title">
                     <h2 class="h2">{{project.header}}</h2>
@@ -19,29 +19,29 @@
                 <div class="row mb-60 mb-xs-30">
                     <div class="col-md-4 mb-30">
                         <div class="project-detail-block">
-                            <p ng-if="project.categories">
-                                <strong class="dark-color">Categories:</strong> <span>{{project.categories}}</span>
+                            <p ng-if="project.details.categories">
+                                <strong class="dark-color">Categories:</strong> <span>{{project.details.categories}}</span>
                             </p>
 
-                            <p ng-if="project.released">
-                                <strong class="dark-color">Released :</strong>{{project.released}}
+                            <p ng-if="project.details.released">
+                                <strong class="dark-color">Released :</strong>{{project.details.released}}
                             </p>
-                            <p ng-if="project.client">
-                                <strong class="dark-color">Client :</strong><a>{{project.client}}</a>
+                            <p ng-if="project.details.client">
+                                <strong class="dark-color">Client :</strong><a>{{project.details.client}}</a>
                             </p>
-                            <p ng-if="project.link">
-                                <strong class="dark-color">Link :</strong>{{project.link}}
+                            <p ng-if="project.details.link">
+                                <strong class="dark-color">Link :</strong>{{project.details.link}}
                             </p>
-                            <p ng-if="project.impact">
-                                <strong class="dark-color">Impact :</strong>{{project.impact}}
+                            <p ng-if="project.details.impact">
+                                <strong class="dark-color">Impact :</strong>{{project.details.impact}}
                             </p>
                         </div>
                     </div>
 
                     <div class="col-md-8">
-                        <h4>{{project.project}}</h4>
+                        <h4>{{project.details.title}}</h4>
                         <p class="">
-                            {{project.projectDetails}}
+                            {{project.details.desc}}
                         </p>
                     </div>
                 </div>
@@ -49,12 +49,12 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <img class="item-container" src="mazel/img/project/{{project.projectName}}/{{project.mainImg}}" alt="1">
+                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{project.image}}" alt="1">
                     </div>
                 </div>
 
                 <div class="row mtb-60 mtb-xs-30">
-                    <div ng-repeat="p in project.para track by $index" class="col-md-4 mb-30">
+                    <div ng-repeat="p in project.details.columns track by $index" class="col-md-4 mb-30">
                         <h5>{{p.header}}</h5>
                         <p>{{p.content}}</p>
                     </div>
@@ -63,25 +63,24 @@
               <div class="row mtb-60 mtb-xs-30">
                     <div class="testimonial text-center dark-color">
                         <div class="container-icon"><i class="fa fa-quote-right"></i></div>
-                        <p class="lead"> {{project.workQuote.quote}}</p>
-                        <h6 class="quote-author">{{project.workQuote.author}}</h6>
+                        <p class="lead"> {{project.details.workQuote[0].quote}}</p>
+                        <h6 class="quote-author">{{project.details.workQuote[0].author}}</h6>
                     </div>
              </div>
                            
 <!-- End Testimonials -->
 
-                <div ng-repeat="img in project.images track by $index" class="row mb-60 mb-xs-30">
+
+
+                <div ng-repeat="img in project.details.images track by $index" class="row mb-60 mb-xs-30">
                     <div class="col-md-12">
-                        <img class="item-container" src="mazel/img/project/{{project.projectName}}/{{img}}" alt="1">
+                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{img}}" alt="1">
                     </div>
                </div>
             </div>
-
-            
-
         </section>
 
-        <hr />
+       
 
         <!-- <section class="ptb ptb-sm-80">
             <div class="container">
@@ -97,6 +96,20 @@
         </section>
  -->
 
+
+    <section ng-if="project.details.roles.length > 0" class="ptb ptb-sm-80">
+            <div class="wow fadeIn container text-center">
+                <h3>Our Role</h3>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div ng-repeat="role in project.details.roles" class="col-md-4">
+                        <div class="page-icon-top"><i class="{{role.image}}"></i></div>
+                        <h5 ng-bind="role.header"></h5>
+                        <p ng-bind="role.desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
             
 
         <hr />
@@ -105,7 +118,6 @@
             <div class="container text-center">
                 <h4>Related Project</h4>
                 <div class="row">
-
                     <div class="col-lg-4 spacing-grid">
                         <div class="item-box">
                             <a>
@@ -157,18 +169,18 @@
         <section class="mb-60">
             <div class="container">
                 <div class="item-nav">
-                    <a class="item-prev" href="">
+                    <a class="item-prev" ui-sref="detail({project:projects, index: prevIndex})">
                         <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
                         <div class="item-prev-text xs-hidden">
                             <h6>Prev Project</h6>
                         </div>
-                    </a>
+                    </a>            
 
                     <a class="item-all-view">
-                        <h6>All Work</h6>
+                        <h6 ui-sref="works">All Work</h6>
                     </a>
 
-                    <a class="item-next" href="">
+                    <a class="item-next" ui-sref="detail({project:projects, index: nextIndex})">
                         <div class="next-btn"><i class="fa fa-angle-right"></i></div>
                         <div class="item-next-text xs-hidden">
                             <h6>Next Project</h6>

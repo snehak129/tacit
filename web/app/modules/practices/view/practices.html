@@ -1,55 +1,30 @@
-<section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="mazel/img/full/18.jpg">
+<section  class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="mazel/img/full/18.jpg">
             <div class="container">
                 <div class="row title">
-                    <h2 class="h2">Service</h2>
-                    <div class="page-breadcrumb">
+                    <h2 class="h2" ng-bind="pageContent.header.title"></h2>
+                    <!-- <div class="page-breadcrumb">
                         <a>Home</a>/<span>Service</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <!-- End Intro Section -->
         
         <!-- Service Section -->
-        <section id="service" class="wow fadeIn pt pb-80">
+        <section  flexslider id="service" class="wow fadeIn pt pb-80">
             <div class="container text-center">
                 <div class="row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <h3 class="h4">Our Service</h3>
+                        <h3 class="h4" ng-bind="pageContent.content.title"></h3>
                         <div class="spacer-15"></div>
-                        <p class="lead">Integer tincidunt Cras dapibus ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac.</p>
+                        <p class="lead" ng-bind="pageContent.content.desc"></p>
                     </div>
                 </div>
                 <div class="row mt-60">
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
-                        <h5>Web Design</h5>
-                        <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem.</p>
-                    </div>
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
-                        <h5>Development</h5>
-                        <p>Donec sodales sagittis magna. hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus, augue velit cursus nunc.</p>
-                    </div>
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
-                        <h5>Branding</h5>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-                    </div>
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-compose-outline"></i></div>
-                        <h5>Photography</h5>
-                        <p>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    </div>
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-ios-gear-outline"></i></div>
-                        <h5>Typography</h5>
-                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
-                    </div>
-                    <div class="col-md-4 mb-45">
-                        <div class="page-icon-top"><i class="ion ion-social-apple-outline"></i></div>
-                        <h5>Ui Design</h5>
-                        <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales.</p>
+                    <div ng-repeat="practice in pageContent.content.practices track by $index" class="col-md-4 mb-45">
+                        <div class="page-icon-top"><i class="{{practice.image}}"></i></div>
+                        <h5 ng-bind="practice.title"></h5>
+                        <p ng-bind="practice.desc"></p>
                     </div>
                 </div>
             </div>
@@ -60,8 +35,7 @@
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <h4 class="mb-15">Pellentesque eu pretium quis adipiscing sem?</h4>
-                        <a class="btn btn-md btn-white">See More</a>
+                        <h4 class="mb-15" ng-bind="pageContent.content.statement"></h4>
                     </div>
                 </div>
             </div>
@@ -78,12 +52,12 @@
                                 <img src="img/moc-1.png" alt="" />
                             </div>
                             <div class="col-md-5 offset-md-1">
-                                <h3>Flexible & Customizable</h3>
+                                <h3 ng-bind="pageContent.content.projects[0].title"></h3>
                                 <div class="spacer-15"></div>
-                                <p>Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet.</p>
+                                <p>{{pageContent.content.projects[0].desc}}</p>
                                 <p>porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet</p>
                                 <div class="spacer-15"></div>
-                                <a class="btn btn-md btn-black">Buy Now</a>
+                                <a class="btn btn-md btn-black">Read More</a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,23 @@
+{
+  "title": {
+    "part1": "We are desgin lab",
+    "part2": "We love",
+    "part3": "designing all that is Indian"
+  },
+  "slider": [
+    {
+      "header": "WELCOME TO TACIT",
+      "content": "We carry a passion for inclusive design",
+      "type": "light-slide",
+      "img": "mazel/img/project/1-LV.png",
+      "index": 0
+    },
+    {
+      "header": "WELCOME TO TACIT2",
+      "content": "We carry a passion for inclusive design2",
+      "type": "light-slide",
+      "img": "mazel/img/project/Header-mv.png",
+      "index": 1
+    }
+  ]
+}

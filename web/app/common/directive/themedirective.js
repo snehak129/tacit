@@ -762,7 +762,7 @@ angular.module('tacit').directive('flexslider', function($timeout) {
                 scroll();
                 pluginElement();
                 sliderHero();
-                sliderAll();
+               
                 containerGridMasonry();
                 scrollCallbackEle();
                 shortcodeElements();
@@ -776,7 +776,13 @@ angular.module('tacit').directive('flexslider', function($timeout) {
                         $(this).css("background-image", "url(" + $(this).data("background-img") + ")");
                     }
                 });
+
+                
             }, 1);
+
+            $timeout(function(){
+                 sliderAll();
+             }, 2)
 
 
         }

@@ -1,12 +1,11 @@
 
  <!-- Intro Section -->
+ <div flexslider>
         <section class="inner-intro bg-image overlay-light parallax parallax-background1" data-background-img="mazel/img/full/02.jpg" >
             <div class="container">
                 <div class="row title">
-                    <h2 class="h2">About Us</h2>
-                    
-                      <p> We immerse, question the status quo, re-define, shape things with elegance and patience</p>
-                    
+                    <h2 class="h2" ng-bind="pageContent.header.title"></h2>  
+                      <p ng-bind="pageContent.header.desc"></p>          
                 </div>
             </div>
         </section>
@@ -272,4 +271,5 @@
                 </div>
             </div>
         </section>
+    </div>
         <!-- End Statement Section -->

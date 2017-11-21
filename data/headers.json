@@ -1,20 +1,37 @@
 {
-  "common" :{
+  "common": {
     "address": "#17, SUMPRABHA,1 Main, 8 Cross,ISRO LAYOUT, Bangalore, 560078",
     "email": "intacit@gmail.com",
     "phone": "+91 974002929"
   },
-  "navMenu": ["About Us", "Works", "Practices", "Blog"],
+  "navMenu": {
+    "aboutus": "About Us",
+    "works": "Works",
+    "practices": "Practices",
+    "blog": "Blog"
+  },
   "pushMenuRight": {
-    "items": ["About Us", "Works", "What we do best", "Blog", "Work with us"]
+    "aboutUs": "About Us",
+    "works": "Works",
+    "whtweDoBest": "What we do best",
+    "blog": "Blog",
+    "workwithus": "Work with us"
   },
   "footer": {
     "quote": "The result is spectacular, it was until i saw Tacit’s process i finally felt like the vision, idea is clearly taking its shape",
-    "links": ["Blog", "Works", "About Us", "Practices", "Careers", "Studio", "Travels"]
+    "links": {
+      "blog": "Blog",
+      "works": "Works",
+      "aboutus": "About Us",
+      "practices": "Practices",
+      "careers": "Careers",
+      "studio": "Studio",
+      "travels": "Travels"
+    }
   },
-  "copyright":{
-    "year" :"2017",
-    "company" :"TACIT",
-    "description" :"All Rights Reserved."
+  "copyright": {
+    "year": "2017",
+    "company": "TACIT",
+    "description": "All Rights Reserved."
   }
 }

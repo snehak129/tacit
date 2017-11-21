@@ -1,37 +1,37 @@
 angular.module('tacit').factory('Common', function() {
 	return {
-
-
 		categories: [{
 			name: "all",
-			active : "active"
+			active: "active"
 		}, {
 			name: "identity",
-			active : ""
+			active: ""
 		}, {
 			name: "product",
-			active : ""
+			active: ""
 		}, {
 			name: "experience",
-			active : ""
+			active: ""
 		}, {
 			name: "social",
-			active : ""
+			active: ""
 		}, {
 			name: "kids",
-			active : ""
+			active: ""
 		}, {
 			name: "strategy",
-			active : ""
+			active: ""
 		}, {
 			name: "place",
-			active : ""
+			active: ""
 		}],
 		url: {
-			getWorks: '/data/works.json'
+			getWorks: '/data/works.json',
+			getHeaders: '/data/headers.json',
+			getHomeContent: '/data/home.json',
+			getAboutUs: '/data/aboutus.json',
+			getPractices: '/data/practices.json',
+			getBlog : '/data/blog.json'
 		}
-
-
-
 	};
 });

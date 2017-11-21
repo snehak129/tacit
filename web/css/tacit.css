@@ -3,3 +3,11 @@
 	padding-right: 5px;
 	padding-left: 5px;
 }
+
+.pagination-nav ul>.disabled >a, .pagination-nav ul>.disabled >a:focus, .pagination-nav ul>.disabled >a:hover, .pagination-nav ul>.disabled>span, .pagination-nav ul>.disabled >span:focus, .pagination-nav ul>.disabled>span:hover{
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+

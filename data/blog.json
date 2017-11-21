@@ -1,0 +1,345 @@
+{
+  "header": {
+    "image": "",
+    "title": "Blog",
+    "desc": ""
+  },
+  "projects": [
+    {
+      "name": "LetsVenture",
+      "images": [
+        "2-LV.png",
+        "3-LV.png",
+        "4-LV.png",
+        "5-LV.png",
+        "6-LV.png"
+      ],
+      "title": "How did we design a steiner school in less than 50 days",
+      "desc": "111111111111111111111111    Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
+      "author": "Kiran",
+      "date": "March 16, 2017",
+      "categories": "Experience, Space"
+    },
+    {
+      "name": "Kham",
+      "images": [
+        "1-kham.jpg",
+        "2-kham.jpg",
+        "3-kham.jpg"
+      ],
+      "title": "",
+      "desc": " 2222222222222222222222     abcbabcabsjbcbcnbnxbcnbxncbxnbc cbxnbcnxbcnx xcbnxbcnxb",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "3",
+      "images": [],
+      "title": "",
+      "desc": "333333333333333333333333333",
+      "author": "Kiran",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "4",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+   
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+  
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "22",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    },
+    {
+      "name": "100000000",
+      "images": [],
+      "title": "",
+      "desc": "4444444444444444444444444",
+      "author": "Sindhu",
+      "date": "",
+      "categories": ""
+    }
+  ]
+}

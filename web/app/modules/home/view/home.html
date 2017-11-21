@@ -2,7 +2,7 @@
     <!-- Hero Slider Section -->
     <!-- <div class="flexslider fullscreen-carousel hero-slider-1 " > -->
     <!-- <ul class ="slides"> -->
-    <flex-slider flex-slide="s in slider track by s.index" animation="slide" class="flexslider fullscreen-carousel hero-slider-1" flexslider>
+    <flex-slider flex-slide="s in content.slider track by s.index" animation="slide" class="flexslider fullscreen-carousel hero-slider-1" flexslider>
     
     <li data-slide="{{s.type}}">
         <div class="slide-bg-image overlay-light parallax parallax-section1"  data-background-img="{{s.img}}">
@@ -33,14 +33,14 @@
             <div class="col">
                 <div class="col-md-8 offset-md-2"></div>
                 <h2>
-                <span class="color">We are Design Lab.</span> We Love<br />
-                designing all that is indian
+                <span class="color">{{:: content.title.part1}}</span> {{:: content.title.part2}}<br />
+               {{:: content.title.part3}}
                 </h2>
             </div>
         </div>
     </div>
 </section>
-<!-- End About Section -->
+
 
 
 <section class="ptb ptb-sm-80">
@@ -58,8 +58,8 @@
                 <div  class="row container-grid nf-col-3">
                     <div  ng-repeat="proj in filteredProj = (projects)" class="nf-item {{proj.categories}} spacing">
                         <div class="item-box">
-                            <a ui-sref="works.detail({project:proj})">
-                                <img alt="1" ng-src="mazel/img/project/{{proj.projectName}}/{{proj.mainImg}}" class="item-container">
+                            <a ui-sref="detail({project:projects, index: proj.index})">
+                                <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
                                 <div class="item-mask">
                                     <div class="item-caption">
                                         <h5 class="white" ng-bind="proj.header"></h5>
@@ -75,22 +75,3 @@
             </div>
 
         </section>
-<!-- Work Section -->
-
-<!-- End Work Section -->
-<!-- Testimonials -->
-<section id="testimonial" class="pb pb-sm-80">
-    <div class="container">
-        <div class="owl-carousel testimonial-carousel nf-carousel-theme">
-            <div class="item">
-                <div class="testimonial text-center dark-color">
-                    <div class="container-icon"><i class="fa fa-quote-right"></i></div>
-                    <p class="lead">"The result is spectacular, it was until i saw Tacit’s process i finally felt like the vision, idea is clearly taking its shape "</p>
-                    <h6 class="quote-author">Major Insurance Technology Specialist</h6>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!-- End Testimonials -->

@@ -1,0 +1,44 @@
+{
+	"header": {
+		"image": "",
+		"title": "Practices",
+		"desc": "We immerse, question the status quo, re-define, shape things with elegance and patience"
+	},
+	"content": {
+		"title": "What we do best",
+		"desc": "Integer tincidunt Cras dapibus ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac.",
+		"practices": [{
+			"image": "ion ion-ios-compose-outline",
+			"title": "Immerse",
+			"desc": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem."
+		}, {
+			"image": "ion ion-ios-gear-outline",
+			"title": "question",
+			"desc": "Donec sodales sagittis magna. hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus, augue velit cursus nunc"
+		}, {
+			"image": "ion ion-social-apple-outline",
+			"title": "map context",
+			"desc": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque."
+		}, {
+			"image": "ion ion-ios-compose-outline",
+			"title": "create delight",
+			"desc": "Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+		}, {
+			"image": "ion ion-ios-gear-outline",
+			"title": "test",
+			"desc": "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil."
+		}, {
+			"image": "ion ion-social-apple-outline",
+			"title": "improvise",
+			"desc": "Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales."
+		}],
+		"statement": "We dont just solve problems creatively, we live it.",
+		"projects": [{
+			"title": "Design thinking workshop at Satyam",
+			"desc": "Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet."
+		}]
+
+
+
+	}
+}
