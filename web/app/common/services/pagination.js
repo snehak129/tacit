@@ -1,12 +1,12 @@
 (function() {
-  angular.module('tacit').factory('PaginationService', [function() {
+  angular.module('tacit').factory('PaginationService', function() {
     return {
       initPagination: function(totalItems, currentPage, pageSize) {
         currentPage = currentPage || 1;
         pageSize = pageSize || 10;   // can be configured
         //totalItems = $scope.blog.projects.length || 0;
         totalPages = Math.ceil(totalItems / pageSize);
-        let startPage, endPage;
+        let startPage =null, endPage = null;
 
         if (totalPages <= 10) {
           startPage = 1;
@@ -51,5 +51,5 @@
 
       }
     }
-  }]);
-})()
+  })
+})();

@@ -5,19 +5,12 @@ $(document).ready(function () {
 $(window).resize(function () {
     int_nav_menu_height();
 });
-
-// ----------------------------------------------------------------
-// Navigation Menu panel
-// ----------------------------------------------------------------
 var mobile_menu_icon = $(".nav-mobile");
 var mobile_menu = $(".nav-menu");
-
-// Mobile menu max height
 function int_nav_menu_height() {
     mobile_menu.css("max-height", $(window).height() - $(".header").height() - 20 + "px"), $(window).width() <= 1024 ? $(".header").addClass("mobile-device") : $(window).width() > 1024 && ($(".header").removeClass("mobile-device"))
 };
 
-// Mobile menu toggle icon
 mobile_menu_icon.click(function () {
     if (!($(this).hasClass('active'))) {
         mobile_menu_icon.addClass('active');
@@ -28,9 +21,6 @@ mobile_menu_icon.click(function () {
         mobile_menu.removeClass('active');
     }
 });
-
-
-// Dropdown Sub menu
 var menu_Sub = $(".menu-has-sub");
 var menu_Sub_Li;
 

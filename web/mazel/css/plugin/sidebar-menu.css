@@ -1,7 +1,4 @@
 
-/*----------------------------------*/
-/* Push Sidebar Menu Css ---*/
-/*----------------------------------*/
 .pushmenu { /*this is the nav*/
     background: #323232;
     font-family: Arial, Helvetics, sans-serif;
@@ -17,11 +14,6 @@
     position: relative;
 }
 
-
-/*==================================*/
-/* Left Sidebar Menu Css --------*/
-/*==================================*/
-
 .pushmenu-right {
     right: -270px;
 }
@@ -36,19 +28,12 @@
 .pushmenu-push-toleft {
     left: -270px;
 }
-
-/*Transition*/
 .pushmenu, .pushmenu-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 }
-
-
-/*==================================*/
-/* Left Sidebar Menu Css --------*/
-/*==================================*/
 .pushmenu-left {
     left: -270px;
 }

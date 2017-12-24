@@ -35,5 +35,3 @@ angular.module('tacit').factory('Common', function() {
 		}
 	};
 });
-
-//https://snehak129.github.io/tacit/data/headers.json

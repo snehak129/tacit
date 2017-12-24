@@ -18,6 +18,10 @@ app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function
 
 	.state('home', {
 		url: '/',
+		params: {
+			projects: null,
+			index: null
+		},
 		templateUrl: 'app/modules/home/view/home.html',
 		controller: 'HomeController'
 	})
@@ -72,7 +76,7 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 
 	//Redirect to works tab on refresh of detail tab
 	$transitions.onStart({to: 'detail'}, function(trans) {
-
+debugger;
 		if(trans.params().index === null){
 				trans.abort();
 		}

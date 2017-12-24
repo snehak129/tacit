@@ -5,8 +5,6 @@ $(function () {
 
 
     $(document).ready(function () {
-
-        // Slider Video
         $('.intro-Rev_Video').revolution({
             sliderType: "hero",
             delay: 9000,
@@ -17,8 +15,6 @@ $(function () {
             minFullScreenHeight: "320",
             touchenabled: "off",
         });
-
-        // Slider Dark Light
         var revslider_two = $('.intro-RevSlider');
         revslider_two.revolution({
             delay: 15000,
@@ -32,8 +28,6 @@ $(function () {
             navigationStyle: "preview4",
             navigationType: "none",
         });
-
-        // Header color "dark" "light  |-------------------------------------------------------"
         revslider_two.bind("revolution.slide.onchange", function (e, data) {
 
             var color = $(this).find('li').eq(data.slideIndex - 1).data('slide');
@@ -51,7 +45,6 @@ $(function () {
                 $('#header').removeClass('header-light');
                 $('#header').addClass('header');
             }
-            // console.log("rev slide color: " + color);
 
         });
 

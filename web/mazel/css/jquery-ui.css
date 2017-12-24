@@ -1,11 +1,3 @@
-/*! jQuery UI - v1.11.3 - 2015-03-05
-* http://jqueryui.com
-* Includes: core.css, draggable.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, button.css, datepicker.css, dialog.css, menu.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
-* Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
-
-/* Layout helpers
-----------------------------------*/
 .ui-helper-hidden {
 	display: none;
 }
@@ -54,31 +46,15 @@
 .ui-front {
 	z-index: 100;
 }
-
-
-/* Interaction Cues
-----------------------------------*/
 .ui-state-disabled {
 	cursor: default !important;
 }
-
-
-/* Icons
-----------------------------------*/
-
-/* states and images */
 .ui-icon {
 	display: block;
 	text-indent: -99999px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
-
-
-/* Misc visuals
-----------------------------------*/
-
-/* Overlays */
 .ui-widget-overlay {
 	position: fixed;
 	top: 0;
@@ -223,11 +199,9 @@
 .ui-button:active {
 	text-decoration: none;
 }
-/* to make room for the icon, a width needs to be set here */
 .ui-button-icon-only {
 	width: 2.2em;
 }
-/* button elements seem to need a little more width */
 button.ui-button-icon-only {
 	width: 2.4em;
 }
@@ -237,8 +211,6 @@ button.ui-button-icon-only {
 button.ui-button-icons-only {
 	width: 3.7em;
 }
-
-/* button text element */
 .ui-button .ui-button-text {
 	display: block;
 	line-height: normal;
@@ -263,12 +235,9 @@ button.ui-button-icons-only {
 	padding-left: 2.1em;
 	padding-right: 2.1em;
 }
-/* no icon support for input elements, provide padding by default */
 input.ui-button {
 	padding: .4em 1em;
 }
-
-/* button icon element(s) */
 .ui-button-icon-only .ui-icon,
 .ui-button-text-icon-primary .ui-icon,
 .ui-button-text-icon-secondary .ui-icon,
@@ -292,8 +261,6 @@ input.ui-button {
 .ui-button-icons-only .ui-button-icon-secondary {
 	right: .5em;
 }
-
-/* button sets */
 .ui-buttonset {
 	margin-right: 7px;
 }
@@ -301,9 +268,6 @@ input.ui-button {
 	margin-left: 0;
 	margin-right: -.3em;
 }
-
-/* workarounds */
-/* reset extra padding in Firefox, see h5bp.com/l */
 input.ui-button::-moz-focus-inner,
 button.ui-button::-moz-focus-inner {
 	border: 0;
@@ -405,8 +369,6 @@ button.ui-button::-moz-focus-inner {
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
 	float: left;
 }
-
-/* with multiple calendars */
 .ui-datepicker.ui-datepicker-multi {
 	width: auto;
 }
@@ -438,8 +400,6 @@ button.ui-button::-moz-focus-inner {
 	width: 100%;
 	font-size: 0;
 }
-
-/* RTL support */
 .ui-datepicker-rtl {
 	direction: rtl;
 }
@@ -550,7 +510,6 @@ button.ui-button::-moz-focus-inner {
 	padding: 3px 1em 3px .4em;
 	cursor: pointer;
 	min-height: 0; /* support: IE7 */
-	/* support: IE10, see #8844 */
 	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
 }
 .ui-menu .ui-menu-divider {
@@ -564,16 +523,12 @@ button.ui-button::-moz-focus-inner {
 .ui-menu .ui-state-active {
 	margin: -1px;
 }
-
-/* icon support */
 .ui-menu-icons {
 	position: relative;
 }
 .ui-menu-icons .ui-menu-item {
 	padding-left: 2em;
 }
-
-/* left-aligned */
 .ui-menu .ui-icon {
 	position: absolute;
 	top: 0;
@@ -581,8 +536,6 @@ button.ui-button::-moz-focus-inner {
 	left: .2em;
 	margin: auto 0;
 }
-
-/* right-aligned */
 .ui-menu .ui-menu-icon {
 	left: auto;
 	right: 0;
@@ -615,7 +568,6 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-selectmenu-menu .ui-menu {
 	overflow: auto;
-	/* Support: IE7 */
 	overflow-x: hidden;
 	padding-bottom: 1px;
 }
@@ -677,8 +629,6 @@ button.ui-button::-moz-focus-inner {
 	border: 0;
 	background-position: 0 0;
 }
-
-/* support: IE8 - See #6727 */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
 	filter: inherit;
@@ -690,7 +640,6 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-slider-horizontal .ui-slider-handle {
 	top: -.3em;
-	/*margin-left: -.6em;*/
 }
 .ui-slider-horizontal .ui-slider-range {
 	top: 0;
@@ -753,13 +702,11 @@ button.ui-button::-moz-focus-inner {
 	overflow: hidden;
 	right: 0;
 }
-/* more specificity required here to override default borders */
 .ui-spinner a.ui-spinner-button {
 	border-top: none;
 	border-bottom: none;
 	border-right: none;
 }
-/* vertically center icon */
 .ui-spinner .ui-icon {
 	position: absolute;
 	margin-top: -8px;
@@ -772,10 +719,7 @@ button.ui-button::-moz-focus-inner {
 .ui-spinner-down {
 	bottom: 0;
 }
-
-/* TR overrides */
 .ui-spinner .ui-icon-triangle-1-s {
-	/* need to fix icons sprite */
 	background-position: -65px -16px;
 }
 .ui-tabs {
@@ -797,8 +741,6 @@ button.ui-button::-moz-focus-inner {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform:uppercase;
-
-    /*background:#f7f7f7;*/
     border:1px solid transparent;
 }
     .ui-tabs .ui-tabs-nav li:last-child {
@@ -848,9 +790,6 @@ button.ui-button::-moz-focus-inner {
 body .ui-tooltip {
 	border-width: 2px;
 }
-
-/* Component containers
-----------------------------------*/
 jui .ui-widget {
 	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
 	font-size: 1.1em;
@@ -882,9 +821,6 @@ jui .ui-widget-header {
 jui .ui-widget-header a {
 	color: #ffffff;
 }
-
-/* Interaction states
-----------------------------------*/
 jui .ui-state-default,
 jui .ui-widget-content .ui-state-default,
 jui .ui-widget-header .ui-state-default {
@@ -935,9 +871,6 @@ jui .ui-state-active a:visited {
 	color: #eb8f00;
 	text-decoration: none;
 }
-
-/* Interaction Cues
-----------------------------------*/
 jui .ui-state-highlight,
 jui .ui-widget-content .ui-state-highlight,
 jui .ui-widget-header .ui-state-highlight {
@@ -989,11 +922,6 @@ jui .ui-widget-header .ui-state-disabled {
 jui .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
 }
-
-/* Icons
-----------------------------------*/
-
-/* states and images */
 jui .ui-icon {
 	width: 16px;
 	height: 16px;
@@ -1022,8 +950,6 @@ jui .ui-state-error .ui-icon,
 jui .ui-state-error-text .ui-icon {
 	background-image: url("images/ui-icons_ffd27a_256x240.png");
 }
-
-/* positioning */
 jui .ui-icon-blank { background-position: 16px 16px; }
 jui .ui-icon-carat-1-n { background-position: 0 0; }
 jui .ui-icon-carat-1-ne { background-position: -16px 0; }
@@ -1161,7 +1087,6 @@ jui .ui-icon-seek-next { background-position: -32px -160px; }
 jui .ui-icon-seek-prev { background-position: -48px -160px; }
 jui .ui-icon-seek-end { background-position: -64px -160px; }
 jui .ui-icon-seek-start { background-position: -80px -160px; }
-/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
 jui .ui-icon-seek-first { background-position: -80px -160px; }
 jui .ui-icon-stop { background-position: -96px -160px; }
 jui .ui-icon-eject { background-position: -112px -160px; }
@@ -1200,12 +1125,6 @@ jui .ui-icon-grip-solid-vertical { background-position: -32px -224px; }
 jui .ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
 jui .ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
 jui .ui-icon-grip-diagonal-se { background-position: -80px -224px; }
-
-
-/* Misc visuals
-----------------------------------*/
-
-/* Corner radius */
 jui .ui-corner-all,
 jui .ui-corner-top,
 jui .ui-corner-left,
@@ -1230,8 +1149,6 @@ jui .ui-corner-right,
 jui .ui-corner-br {
 	border-bottom-right-radius: 4px;
 }
-
-/* Overlays */
 jui .ui-widget-overlay {
 	background: #666666 url("images/ui-bg_diagonals-thick_20_666666_40x40.png") 50% 50% repeat;
 	opacity: .5;

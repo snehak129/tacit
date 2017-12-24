@@ -1,12 +1,3 @@
-/**
- * Single Page Nav Plugin
- * Copyright (c) 2014 Chris Wojcik <hello@chriswojcik.net>
- * Dual licensed under MIT and GPL.
- * @author Chris Wojcik
- * @version 1.2.0
- */
-
-// Utility
 if (typeof Object.create !== 'function') {
     Object.create = function(obj) {
         function F() {}
@@ -50,11 +41,7 @@ if (typeof Object.create !== 'function') {
             e.preventDefault();             
 
             if ($elem.length) { // Make sure the target elem exists
-
-                // Prevent active link from cycling during the scroll
                 self.clearTimer();
-
-                // Before scrolling starts
                 if (typeof self.options.beforeStart === 'function') {
                     self.options.beforeStart();
                 }
@@ -68,8 +55,6 @@ if (typeof Object.create !== 'function') {
                     }
 
                     self.setTimer();
-
-                    // After scrolling ends
                     if (typeof self.options.onComplete === 'function') {
                         self.options.onComplete();
                     }
@@ -117,8 +102,6 @@ if (typeof Object.create !== 'function') {
             this.$window.off('scroll.singlePageNav');
             this.didScroll = false;
         },
-        
-        // Check the scroll position and set the active section
         checkPosition: function() {
             var scrollPos = this.$window.scrollTop();
             var currentSection = this.getCurrentSection(scrollPos);
@@ -156,8 +139,6 @@ if (typeof Object.create !== 'function') {
                     }
                 }
             }
-            
-            // The current section or the first link if it is found
             return section || ((this.$links.length===0) ? (null) : (this.$links[0].hash));
         }
     };

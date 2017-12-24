@@ -1,10 +1,4 @@
-/*!
- * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
 html {
     /*font-family: sans-serif;*/
     line-height: 1.15;
@@ -4752,7 +4746,7 @@ a.badge:focus, a.badge:hover {
 }
 
 @-o-keyframes progress-bar-stripes {
-    from;
+    from
 
 {
     background-position: 1rem 0;
@@ -5580,7 +5574,7 @@ button.close {
 }
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
-    .carousel-item;
+    .carousel-item
 
 {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
@@ -5632,7 +5626,7 @@ button.close {
 }
 
 @supports ((-webkit-transform: translate3d(0, 0, 0)) or (transform: translate3d(0, 0, 0))) {
-    .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right;
+    .carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right
 
 {
     -webkit-transform: translate3d(0, 0, 0);

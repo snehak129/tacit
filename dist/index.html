@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Tacit</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="mazel/img/favicon.ico">
+    <link rel="icon" type="image/png" href="mazel/img/favicon.png">
+    <link rel="apple-touch-icon" href="mazel/img/favicon.png">
+
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900s" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/plugin.css">
+
+
+</head>
+
+<body ng-controller="MainController">
+<div>
+   
+         <!-- Preloader -->
+    <section flexslider id="preloader">
+        <div class="loader" id="loader">
+            <div class="loader-img"></div>
+        </div>
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Adding routing here -->
+
+
+   <!--  <div>
+        <div ng-view></div>
+    </div> -->
+
+    <!-- Search Overlay Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
+        <form role="search" id="searchform" action="/search" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        </form>
+    </div>
+    <!-- End Search Overlay Menu -->
+
+    <!-- Sidemenu -->
+    <section id="pushmenu-right" class="pushmenu pushmenu-right side-menu">
+        <a id="menu-sidebar-close-icon" class="menu-close"><i class="ion ion-android-close"></i></a>
+        
+
+      <!--   <ul>
+        	<li ng-repeat="item in pageContent.pushMenuRight.items track by $index">
+        		<a ui-sref="aboutus" ng-bind="item" ng-click="navigate(item)"></a>
+        	</li>
+        </ul> -->
+
+   
+        <ul>
+            <li><a ui-sref="aboutus" ng-bind="pageContent.pushMenuRight.aboutUs"></a></li>
+            <li><a ui-sref="works" ng-bind="pageContent.pushMenuRight.works"></a></li>
+            <li><a href="" ng-bind="pageContent.pushMenuRight.whtweDoBest"></a></a></li>
+            <li><a ui-sref="blog" ng-bind="pageContent.pushMenuRight.blog"></a></li>
+            <li><a  ng-bind="pageContent.pushMenuRight.workwithus"></a></li>
+        </ul>
+
+         <div class="side-nav-align col-md-12">
+            <p ng-bind="pageContent.common.address"></p>
+            <ul class="link-small">
+                <li><a href="mailto:{{pageContent.common.email}}" ng-bind="pageContent.common.email"><i class="fa fa-envelope-o left"></i></a></li>
+                <li><a><i class="fa fa-phone left" ng-bind="pageContent.common.phone"></i></a></li>
+            </ul>
+          </div>
+    </section>
+    <!--End Sidemenu -->
+
+    <!-- Site Wraper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="header" style="min-height: 40px;">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" style="font-weight: bold;font-size: large;">
+                        {{::pageContent.copyright.company}}
+                       <!--  <img class="logo-light" src="mazel/img/logo-white.png" alt="Mazel" />
+                        <img class="logo-dark" src="mazel/img/logo-black.png" alt="Mazel" /> -->
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Rightside Menu (Search, Cart, Bart icon) -->
+                <div class="side-menu-btn">
+                    <ul>
+                        <!-- Search Icon -->
+                        <li class="">
+                            <a class="search-overlay-menu-btn header-icon"><i class="fa fa-search"></i></a>
+                        </li>
+                        <!-- End Search Icon -->
+
+
+                        <!--Sidebar Menu Icon-->
+                        <li class="">
+                            <a id="menu-sidebar-list-icon" class="nav-bar-icon"><span></span></a>
+                        </li>
+                        <!-- End Sidebar Menu Icon-->
+                    </ul>
+                </div>
+                <!-- End Rightside Menu -->
+
+                <!-- Mobile Navbar Icon -->
+                <div class="nav-mobile nav-bar-icon">
+                    <span></span>
+                </div>
+                <!-- End Mobile Navbar Icon -->
+
+                <!-- Navbar Navigation -->
+                <div class="nav-menu">
+                    <ul class="nav-menu-inner">
+                    
+                        <li>
+                            <a ui-sref="aboutus" class="menu-has-sub" ng-bind="pageContent.navMenu.aboutus"></a>
+                        </li>
+                       
+                        <li>
+                            <a ui-sref="works" class="menu-has-sub" ng-bind="pageContent.navMenu.works"></a>
+                       
+                        <li>
+                            <a ui-sref="practices" class="menu-has-sub" ng-bind="pageContent.navMenu.practices"> </a>
+                           
+                        </li>
+                       
+                        <li>
+                            <a ui-sref="blog" class="menu-has-sub" ng-bind="pageContent.navMenu.blog"> </a>
+                           
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Navbar Navigation -->
+
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- CONTENT -------------------------------------------------------------------------------->
+
+
+        
+
+<div ui-view></div>
+
+
+<!-- End Testimonials -->
+
+ <!-- FOOTER -->
+        <footer class="footer pt-80">
+            <div class="container">
+                <div class="row mb-60">
+                    <!-- Logo -->
+                    <div class="col-md-3 col-sm-3 mb-xs-30">
+                        <a class="footer-logo" href="home.html">
+                            {{::pageContent.copyright.company}}
+                           <!--  <img src="mazel/img/logo-black.png" /> --></a>
+                    </div>
+                    <!-- Logo -->
+
+                    <!-- Newsletter -->
+                    <div class="col-md-4 col-sm-5 mb-xs-30">
+                        <div class="newsletter">
+                            <form>
+                                <input type="email" class="newsletter-input input-md newsletter-input mb-0" placeholder="Enter Your Email">
+                                <button class="newsletter-btn btn btn-xs btn-white" type="submit" value=""><i class="fa fa-angle-right mr-0"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End Newsletter -->
+
+                    <!-- Social -->
+                    <div class="col-md-3 offset-md-2 col-sm-4">
+                        <ul class="social">
+                            <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square"></i></a></li>
+                            <li><a target="_blank" href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Social -->
+                </div>
+                <!--Footer Info -->
+                <div class="row footer-info mb-60">
+                    <div class="col-md-3 col-sm-12 mb-sm-30">
+                        <p class="mb-xs-0" ng-bind="pageContent.footer.quote"></p>
+                        <a class="btn-link-a" href="about-1.html">Read More</a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-sm-30 mb-xs-0">
+                        <ul class="link">
+                            <li><a ui-sref="blog" ng-bind="pageContent.footer.links.blog"></a></li>
+                            <li><a ui-sref="works" ng-bind="pageContent.footer.links.works"></a></li>
+                            <li><a ui-sref="aboutus" ng-bind="pageContent.footer.links.aboutus"></a></li>
+                            <li><a ui-sref="practice" ng-bind="pageContent.footer.links.practice"></a></li>
+                            <li><a ui-sref="" ng-bind="pageContent.footer.links.careers"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-sm-30">
+                        <ul class="link">
+                            <li><a ui-sref="" ng-bind="pageContent.footer.links.studio"></a></li>
+                            <li><a ui-sref="" ng-bind="pageContent.footer.links.travels"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <p ng-bind="pageContent.common.address"></p>
+                        <ul class="link-small">
+                            <li><a href="mailto:{{pageContent.common.email}}" ng-bind="pageContent.common.email"><i class="fa fa-envelope-o left"></i></a></li>
+                            <li><a><i class="fa fa-phone left" ng-bind="pageContent.common.phone"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Footer Info -->
+            </div>
+
+            <hr />
+
+            <!-- Copyright Bar -->
+            <section class="copyright ptb-60">
+                <div class="container">
+                    <p class="">
+                        {{::pageContent.common.year}} <a><b>{{::pageContent.common.company}}</b></a>. {{::pageContent.common.description}}
+                    </p>
+                </div>
+            </section>
+            <!-- End Copyright Bar -->
+
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- Scroll Top -->
+        <a class="scroll-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+        <!-- End Scroll Top -->
+        
+
+       
+   </div> 
+    <!-- Site Wraper End -->
+
+
+    <!-- JS -->
+
+<script src="scripts/libs.893a9c47.js"></script>
+
+    <!-- Application related files -->
+    <script src="scripts/tacit.03718081.js"></script>
+
+
+</body>
+</html>

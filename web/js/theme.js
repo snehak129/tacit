@@ -7,20 +7,11 @@ $(function () {
 
     $(window).load(function () {
 
-        // SITE PRELOADER                     ||----------- 
-
         $('#loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({ 'overflow': 'visible' });
-
-        // Portfolio Grid Masonry
         containerGridMasonry();
     })
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // GENERAL SCRIPTS FOR ALL PAGES    ||----------- 
-    // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
         fullScreenSlider();
@@ -47,17 +38,7 @@ $(function () {
         stickHeader();
     });
 
-
-
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SCROLL FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
     function scroll() {
-
-        // //Click Event to Scroll to Top
         $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
                 $('.scroll-top').fadeIn();
@@ -71,8 +52,6 @@ $(function () {
             $('html, body').animate({ scrollTop: 0 }, 800);
             return false;
         });
-
-        // Scroll Down Elements
         $('.scroll-down[href^="#"], .scroll-to-target[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
@@ -87,11 +66,6 @@ $(function () {
         });
 
     };
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // STICKY HEADER FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
     function stickHeader() {
 
         var scrolled = $(window).scrollTop();
@@ -108,19 +82,10 @@ $(function () {
             $('.header').removeClass('header-fixed');
         }
     };
-
-    // ----------------------------------------------------------------
-    // Intro Height
-    // ----------------------------------------------------------------
     function int_introHeight() {
         var windiwHeight = $(window).height();
-        // Intro Height
         $('.js-fullscreen-height').css('height', windiwHeight);
     };
-
-    // ----------------------------------------------------------------
-    // Backgrounds Image (Slider, Section, etc..)
-    // ----------------------------------------------------------------
     var pageSection = $('.slide-bg-image, .bg-image');
     pageSection.each(function (indx) {
 
@@ -128,48 +93,35 @@ $(function () {
             $(this).css("background-image", "url(" + $(this).data("background-img") + ")");
         }
     });
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // FULLSCREEN SLIDER FUNCTIONS  ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
     function fullScreenSlider() {
         if ($('.fullscreen-carousel').length > 0) {
 
             $('.fullscreen-carousel').flexslider({
                 animation: "slide",
-                //  startAt: 0,
                 animationSpeed: 700,
                 animationLoop: true,
                 slideshow: true,
                 easing: "swing",
                 controlNav: false,
                 before: function (slider) {
-                    //Slide Caption Animate
                     $('.fullscreen-carousel .intro-content-inner').fadeOut().animate({ top: '80px' }, { queue: false, easing: 'easeOutQuad', duration: 700 });
                     slider.slides.eq(slider.currentSlide).delay(400);
                     slider.slides.eq(slider.animatingTo).delay(400);
 
                 },
                 after: function (slider) {
-                    //Slide Caption Animate
                     $('.fullscreen-carousel .flex-active-slide').find('.intro-content-inner').fadeIn(2000).animate({ top: '0' }, { queue: false, easing: 'easeOutQuad', duration: 1200 });
-
-                    // Header Dark Light
                     headerDarkLight_with_flexslider();
                     
                 },
                 start: function (slider) {
                     $('body').removeClass('loading');
-
-                    // Header Dark Light
                     headerDarkLight_with_flexslider();
 
                 },
                 useCSS: true,
             });
         };
-
-        // Header Dark Light
         function headerDarkLight_with_flexslider() {
 
             var color = $('.fullscreen-carousel').find('li.flex-active-slide').attr('data-slide');
@@ -187,8 +139,6 @@ $(function () {
                 $('#header').addClass('header');
             }
         };
-
-        // "fullscreen-carousel" height
         fullScreenCarousel();
         function fullScreenCarousel() {
             var windowWidth = $(window).width();
@@ -210,13 +160,7 @@ console.log(windowWidth);
 
     };
 
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SLIDER FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
     function sliderAll() {
-
-        // fullwidth Slider
         $('.fullwidth-slider').owlCarousel({
             slideSpeed: 400,
             singleItem: true,
@@ -226,8 +170,6 @@ console.log(windowWidth);
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 
         });
-
-        // Image Slider
         $('.image-slider').owlCarousel({
             navigation: true,  // Show next and prev buttons
             pagination: true,  // Show pagination buttons
@@ -239,8 +181,6 @@ console.log(windowWidth);
             autoHeight: true,
             responsive: true
         });
-
-        // Testimonial Slider
         $('.testimonial-carousel').owlCarousel({
             autoPlay: true,
             autoHeight: true,
@@ -250,10 +190,7 @@ console.log(windowWidth);
             pagination: true,  // Show pagination buttons
             navigation: false,  // Hide next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            //  responsive: true
         });
-
-        // Team Carousel
         $('.team-carousel').owlCarousel({
             autoPlay: false,
             stopOnHover: true,
@@ -266,8 +203,6 @@ console.log(windowWidth);
             navigation: false,  // Hide next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
-        // Client Carousel
         $('.client-carousel').owlCarousel({
             autoPlay: 2500,
             stopOnHover: true,
@@ -280,8 +215,6 @@ console.log(windowWidth);
             navigation: false,  // hide next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
-        // Content Slider
         $('.content-carousel').owlCarousel({
             autoPlay: true,
             autoHeight: true,
@@ -293,8 +226,6 @@ console.log(windowWidth);
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             responsive: true
         });
-
-        // Item-5 Carousel
         $('.item5-carousel').owlCarousel({
             autoPlay: 2500,
             stopOnHover: true,
@@ -307,8 +238,6 @@ console.log(windowWidth);
             navigation: true,  // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
-        // Item-4 Carousel
         $('.item4-carousel').owlCarousel({
             autoPlay: 2500,
             stopOnHover: true,
@@ -321,8 +250,6 @@ console.log(windowWidth);
             navigation: true,  // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
-        // Item-3 Carousel
         $('.item3-carousel').owlCarousel({
             autoPlay: false,
             stopOnHover: true,
@@ -335,8 +262,6 @@ console.log(windowWidth);
             navigation: true,  // Show next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-
-        // Item-1 Carousel
         $('.item1-carousel').owlCarousel({
             autoPlay: false,
             autoHeight: true,
@@ -350,12 +275,6 @@ console.log(windowWidth);
         });
 
     };
-
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SLIDER-HERO FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
 
     function sliderHero() {
 
@@ -371,13 +290,6 @@ console.log(windowWidth);
             navigationText: false,
             autoPlay: false,
             autoHeight: false,
-
-            //responsive: true,
-            //itemsDesktop: [3000, 1],
-            //itemsDesktopSmall: [1440, 1],
-            //itemsTablet: [1024, 1],
-            //itemsTabletSmall: [600, 1],
-            //itemsMobile: [360, 1],
 
             beforeMove: beforeMove,
             afterMove: afterMove,
@@ -416,17 +328,7 @@ console.log(windowWidth);
 
     };
 
-
-
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // PLUGIN MEDIA FUNCTIONS  ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
     function pluginElement() {
-
-        // Media Player Elements
         videoElement();
         function videoElement() {
             $('.video').mediaelementplayer({
@@ -454,24 +356,13 @@ console.log(windowWidth);
                 pauseOtherPlayers: false,
             });
         };
-
-        // Responsive Media Elements
         $(".video, .audio, .post-media, .post-media iframe").fitVids();
 
 
 
     };
 
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // CONTAINER GRID & MESONRY FUNCTIONS (Portfolio, blog, etc)   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
     function containerGridMasonry() {
-
-        // Gria Element
-
-        // ISOTOPE MASONRY ELEMENT  ||--------------
         var $container = $('.container-masonry');
         $container.imagesLoaded(function () {
             $container.isotope({
@@ -483,14 +374,10 @@ console.log(windowWidth);
                 },
             });
         });
-
-        // bind filter button click
         $('.container-filter').on('click', '.categories', function () {
             var filterValue = $(this).attr('data-filter');
             $container.isotope({ filter: filterValue });
         });
-
-        // ISOTOPE GRID ELEMENT  ||--------------
         var $container2 = $('.container-grid');
         $container2.imagesLoaded(function () {
             $container2.isotope({
@@ -498,14 +385,10 @@ console.log(windowWidth);
                 layoutMode: 'fitRows'
             });
         });
-
-        // bind filter categories click
         $('.container-filter').on('click', '.categories', function () {
             var filterValue = $(this).attr('data-filter');
             $container2.isotope({ filter: filterValue });
         });
-
-        // change active class on categories
         $('.categories-filter').each(function (i, buttonGroup) {
             var $buttonGroup = $(buttonGroup);
             $buttonGroup.on('click', '.categories', function () {
@@ -514,22 +397,13 @@ console.log(windowWidth);
             });
 
         });
-
-
-        // Masonry Element
         var container = $('.masonry');
         container.masonry({
-            // columnWidth: 0,
             itemSelector: '.nf-item'
         });
 
     };
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SCROLL CALLBACK FUNCTION  ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
     function scrollCallbackEle() {
-        //scroll Callback Element
         $('.load-ele-fade').viewportChecker({
             classToAdd: 'visible animated fadeIn',
             offset: 100,
@@ -538,8 +412,6 @@ console.log(windowWidth);
         });
 
         $(function () {
-
-            //scroll Animate Element
             var wow = new WOW({
                 boxClass: 'wow',
                 animateClass: 'animated',
@@ -550,13 +422,6 @@ console.log(windowWidth);
             wow.init();
         });
     };
-
-
-    // ----------------------------------------------------------------
-    // Parallax Function element
-    // ----------------------------------------------------------------
-
-    // Parallax Function element
     $('.parallax').each(function () {
         var $el = $(this);
         $(window).scroll(function () {
@@ -601,8 +466,6 @@ console.log(windowWidth);
     } else {
         parallaxPositionProperty = "transform"
     }
-
-    // Parallax Stellar Plugin element
     $(window).stellar({
         responsive: true,
         positionProperty: parallaxPositionProperty,
@@ -610,16 +473,8 @@ console.log(windowWidth);
 
     });
 
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SHORTCODE ELEMENTS  ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
     shortcodeElements();
     function shortcodeElements() {
-
-
-        // Search Overlay Menu
         $('.search-overlay-menu-btn').on('click', function (eventSearch) {
             $('.search-overlay-menu').addClass('open');
             $('.search-overlay-menu > form > input[type="search"]').focus();
@@ -633,10 +488,6 @@ console.log(windowWidth);
                 $(this).removeClass('open');
             }
         });
-
-
-
-        // Portfolio Lightbox Popup Elements
         lightbox();
         function lightbox() {
             $(".cbox-gallary1").colorbox({
@@ -653,8 +504,6 @@ console.log(windowWidth);
                 innerHeight: 390
             });
         };
-
-        // Skills Progressbar Elements
         skillsProgressBar();
         function skillsProgressBar() {
             $('.skillbar').each(function () {
@@ -663,11 +512,7 @@ console.log(windowWidth);
                 }, 2000);
             });
         };
-
-        // Tooltip
         $(".tipped").tipper();
-
-        //Counter
         $('.counter').each(function () {
             var $this = $(this),
                 countTo = $this.attr('data-count');
@@ -682,15 +527,11 @@ console.log(windowWidth);
                 },
                 complete: function () {
                     $this.text(this.countNum);
-                    //alert('finished');
                 }
             });
         });
 
     };
-
-
-    // Accordion Function Elements
     accordion();
     function accordion() {
 
@@ -706,17 +547,11 @@ console.log(windowWidth);
         $(".accordion-content").addClass("defualt-hidden");
 
     };
-
-    // Jquery UI Elements
     jqueryUi();
     function jqueryUi() {
-
-        // Tab Function
         $(function () {
             $(".tabs").tabs();
         });
-
-        // Price Filter Slider
         $(function () {
             $("#range-slider").slider({
                 range: true,

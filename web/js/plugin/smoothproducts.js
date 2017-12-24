@@ -1,11 +1,3 @@
-/*
- * Smoothproducts
- * http://kthornbloom.com/smoothproducts.php
- *
- * Copyright 2013, Kevin Thornbloom
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
 
 (function ($) {
     $.fn.extend({
@@ -13,8 +5,6 @@
 
 
             var slideTiming = 300
-
-            // Add some markup & set some CSS
             $('.sp-wrap').append('<div class="sp-large"></div><div class="sp-thumbs sp-tb-active"></div>');
             $('.sp-wrap').each(function () {
                 $('a', this).appendTo($('.sp-thumbs', this));
@@ -23,13 +13,9 @@
                     display: 'inline-block'
                 });
             });
-
-            // Prevent clicking while things are happening
             $(document.body).on('click', '.sp-thumbs', function (event) {
                 event.preventDefault();
             });
-
-            // Clicking a thumbnail
             $(document.body).on('click', '.sp-tb-active a', function (event) {
                 $(this).parent().find('.sp-current').removeClass();
                 $(this).parent().parent().find('.sp-thumbs').removeClass('sp-tb-active');
@@ -65,30 +51,19 @@
                 });
                 event.preventDefault();
             });
-
-            //  Zoom In
             $(document.body).on('mouseover', '.sp-large a', function (event) {
                 var largeUrl = $(this).attr('href');
                 $(this).parent().parent().find('.sp-large').append('<div class="sp-zoom"><img src="' + largeUrl + '"/></div>');
                 $(this).parent().parent().find('.sp-zoom').fadeIn();
                 $(this).parent().parent().find(".sp-zoom").draggable();
-                //$(this).parent().parent().prepend('<div class="sp-full-screen"><a href="#">↕</a></div>');
                 event.preventDefault();
             });
-
-
-            // Click To Lightbox Popup Show
             var lightBoxUrl = $('.sp-thumbs a:first').attr('href');
             $('.sp-full-screen a').attr('href', lightBoxUrl)
             $(".sp-thumbs a").click(function () {
                 var bg = $(this).attr('href');
                 $('.sp-full-screen a').attr('href', bg)
             });
-
-
-
-
-            // Panning zoomed PC
 
             $('.sp-large').mousemove(function (e) {
                 var viewWidth = $(this).width(),
@@ -108,10 +83,7 @@
                 });
 
             }).mouseout(function () {
-                // Pause Panning
             });
-
-            // Panning zoomed Mobile - inspired by http://popdevelop.com/2010/08/touching-the-web/
 
             $.fn.draggable = function () {
                 var offset = null;
@@ -144,8 +116,6 @@
                 this.bind("touchstart", start);
                 this.bind("touchmove", moveMe);
             };
-
-            // Zoom Out
             $(document.body).on('mouseleave', '.sp-zoom', function (event) {
                 $(this).fadeOut(function () {
                     $(this).remove();

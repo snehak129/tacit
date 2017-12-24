@@ -3,10 +3,6 @@
     "use strict";
 
     $("#contact").validate();
-    
-    /* =================================
-    ===  CONTACT FORM               ====
-    =================================== */
     $("#contact").submit(function (e) {
         e.preventDefault();
         var name = $("#form-name").val();

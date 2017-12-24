@@ -1,56 +1,11 @@
-﻿@import url("./plugin/flexslider.css");
+@charset "UTF-8";
+/*@import url("web/mazel/css/plugin/flexslider.css");
 @import url("./plugin/owl.carousel.css");
 @import url("./plugin/mediaelementplayer.css");
 @import url("./plugin/colorbox.css");
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-
-/* 
-* BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
-  - Spacer Style
-      
-* HEADER 
-  - Header Style
-  - Logo Style
-  - Navigation Menu Style
-  - Right Side Menu Button (Search, Cart, Bar, etc)
-
-* INTRO
-  - intro
-
-* FOOTER
-
-* ELEMENTS
-  - Team Box
-  - Skills Bar
-  - Accordion Tab
-  - Counter
-  - Service Box
-  - Pricing
-  - Testimonials
-  - Client Logo
-  - Icon
-  - Table
-  
-* GLOBAL STYLES
-  - Push Menu Style ( Right Sidebar Menu )
-  - Search Overlay Menu
-  - Contents (Body, Container, Section, etc)
-  - Contants (Portfolio, Blog, Shop etc)
-  - Parallax
-  - Slider
-  - Preloader
-  - Additional
 */
-
-
-/*-------------------------------------------------------------------------------------------*/
-/* BASIC STYLE    ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 
 ::-moz-selection {
     background-color: #e6ae49;
@@ -61,9 +16,6 @@
     background-color: #e6ae49;
     color: #FFF;
 }
-
-
-/*  General Style   ||-----------*/
 
 body, html {
     height: 100%;
@@ -183,7 +135,6 @@ p {
     font-weight: 400;
     margin: 0px 0 10px 0;
     color: #888;
-    /*letter-spacing: 1px;*/
 }
 
     p.lead, .lead {
@@ -237,9 +188,6 @@ p {
     .gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .gray-bg .container-icon {
         color: #323232;
     }
-
-
-/*Headings Style   ||-----------*/
 
 .separator {
     height: 1px;
@@ -339,8 +287,6 @@ h6 {
 h1.large {
     font-size: 50px;
 }
-
-/*Button Style   ||-----------*/
 .btn:focus {
     outline: none;
 }
@@ -419,7 +365,6 @@ button {
 
     .btn-black:hover {
         color: #fff;
-        /*background: #e6ae49;*/
         background: rgba(50,50,50,0.85);
     }
 
@@ -436,8 +381,6 @@ button {
 
     .btn-color-b:hover {
         color: #fff;
-        /*color: #e6ae49;
-        background: #fff;*/
         background: rgba(230,174,73,0.85);
     }
 
@@ -448,8 +391,6 @@ button {
 }
 
     .btn-white:hover {
-        /*color: #fff;
-        background: #e6ae49;*/
         background: rgba(255,255,255,0.85);
         color: #323232;
     }
@@ -528,8 +469,6 @@ button {
     min-height: 1px;
     display: inline-block;
 }
-
-/*Form Style   ||-----------*/
 
 button {
     outline: none;
@@ -635,8 +574,6 @@ form label.error {
 .pull-right {
     float:right;
 }
-
-/* Spacer Style   ||-----------*/
 
 .spacer-15 {
     width: 100%;
@@ -1090,16 +1027,6 @@ form label.error {
         float: right !important;
     }
 }
-
-
-
-/*==========================================================================================================*/
-/* HEADER     ||---------------------------- */
-/*==========================================================================================================*/
-
-/*------------------------------------------------------------------*/
-/* Header Style */
-/*------------------------------------------------------------------*/
 .header {
     position: absolute;
     text-align: center;
@@ -1142,7 +1069,6 @@ form label.error {
 .header-fixed .logo a {
     width: 115px;
     margin-top: 23px;
-    /*margin-bottom: 15px;*/
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1153,8 +1079,6 @@ form label.error {
     padding-top: 26px;
     padding-bottom: 26px;
 }
-
-/*header Logo style*/
 .header.header-prepare .logo a img.logo-light,
 .header .logo a img.logo-dark {
     opacity: 0;
@@ -1177,8 +1101,6 @@ form label.error {
 }
 
 @media all and (min-width: 1025px) {
-
-    /*header nav style*/
     .header.header-prepare .nav-menu ul.nav-menu-inner > li > a {
         color: #323232;
     }
@@ -1221,11 +1143,6 @@ form label.error {
         -webkit-transition: all 0.3s ease 0s;
     }
 }
-
-
-/*------------------------------------------------------------------*/
-/* Logo Style */
-/*------------------------------------------------------------------*/
 .logo {
     float: left;
     text-align: left;
@@ -1236,7 +1153,6 @@ form label.error {
         width: 132px;
         display: block;
         margin-top: 34px;
-        /*margin-bottom: 28px;*/
         transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
         -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
         -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1254,12 +1170,6 @@ form label.error {
             -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
             -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
         }
-
-
-
-/*------------------------------------------------------------------*/
-/* Navigation Menu Style */
-/*------------------------------------------------------------------*/
 .nav-menu {
     position: static;
     float: right;
@@ -1332,8 +1242,6 @@ form label.error {
 .header.header-prepare .nav-menu ul.nav-menu-inner li.current a {
     color: #e6ae49;
 }
-
-/* Mobile bar icon */
 .nav-mobile.nav-bar-icon {
     display: none;
 }
@@ -1462,8 +1370,6 @@ header.header-prepare .nav-bar-icon > span::after {
         -o-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
     }
-
-/* Dropdown-menu */
 .nav-menu > ul li {
     position: relative;
 }
@@ -1536,9 +1442,6 @@ header.header-prepare .nav-bar-icon > span::after {
         padding: 15px 12px;
         border-top: 1px solid #444;
     }
-
-
-    /* Dropdown */
     .sub-dropdown.dropdown, .sub-dropdown {
         top: 100%;
         position: relative;
@@ -1571,12 +1474,6 @@ header.header-prepare .nav-bar-icon > span::after {
         color: rgba(255,255,255,0.60);
     }
 }
-
-
-
-/*------------------------------------------------------------------*/
-/* Right Side Menu Button (Search, Cart, Bar, etc) */
-/*------------------------------------------------------------------*/
 
 .side-menu-btn {
     float: right;
@@ -1638,8 +1535,6 @@ header.header-dark .side-menu-btn ul li a,
 header.header-dark.header-prepare .side-menu-btn ul li a {
     color: #fff;
 }
-
-/* Cart Dropdown ------- */
 .cart {
     position: static !important;
 }
@@ -1777,7 +1672,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         }
 
             .cart-dropdown .cart-checkout-btn a.checkout:hover {
-                /*color: #e6ae49;*/
                 color: #fff;
             }
 
@@ -1792,8 +1686,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         padding-top: 20px;
     }
 }
-
-/*Section Scroll Menu Icon Fix*/
 .side-menu-btn-fix a {
     font-size: 17px;
     position: fixed;
@@ -1816,16 +1708,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     .side-menu-btn-fix a:hover {
         background: #e6ae49 none repeat scroll 0 0;
     }
-
-
-
-/*==========================================================================================================*/
-/* INTRO     ||---------------------------- */
-/*==========================================================================================================*/
-
-/*------------------------------------------------------------------*/
-/* Intro */
-/*------------------------------------------------------------------*/
 
 #intro {
     position: relative;
@@ -1919,7 +1801,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     margin-bottom: 40px;
     font-weight: 400;
     line-height: 1.1;
-    /*letter-spacing: -2px;*/
 }
 
 .intro-title-sm {
@@ -1946,10 +1827,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         font-size: 54px;
         margin-top: 30px;
     }
-
-/*#intro .bg-image, #intro.bg-image, #inner-intro .bg-image, #inner-intro.bg-image {
-    background-attachment: fixed;
-}*/
 .bg-image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -1958,7 +1835,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     overflow: hidden;
     position: relative;
     width: 100%;
-    /*background-attachment: fixed;*/
 }
 
 .bg-fixed {
@@ -1989,21 +1865,13 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 }
 
-/*------------------------------------------------------------------*/
-/* Slider */
-/*------------------------------------------------------------------*/
-
 .sc-logo {
-    /*margin-top: 0px;
-    margin-bottom:0;*/
     text-align: center;
 }
 
 .sc-title {
     font-weight: 800;
     text-align: center;
-    /*margin-top: 0px;
-    margin-bottom:0;*/
 }
 
 .sc-paragraph-lead {
@@ -2011,17 +1879,10 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     font-style: italic;
     font-size: 20px;
     text-align: center;
-    /*margin-top: 0px;
-    margin-bottom:0;*/
 }
 
 .sc-button {
 }
-
-
-/*==============================================================================================*/
-/* FOOTER         ||---------------------------- */
-/*==============================================================================================*/
 
 .footer {
     background-color: #f7f7f7;
@@ -2103,13 +1964,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         text-align: center;
     }
 }
-/*================================================================================================*/
-/* ELEMENTS          ||---------------------------- */
-/*================================================================================================*/
-
-/*-------------------------------------------------------------------------------------------*/
-/*  Team Box         ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .team-item {
 }
 
@@ -2174,10 +2028,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     .team-item-info h5 {
         margin-bottom: 0px;
     }
-
-/*-------------------------------------------------------------------------------------------*/
-/*  Skills Bar      ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .skillbar {
     position: relative;
     display: block;
@@ -2221,11 +2071,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     float: right;
     display: inline-block;
 }
-
-
-/*-------------------------------------------------------------------------------------------*/
-/*  Accordion Tab    ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .accordion-section {
     border-top: 1px solid #f1f1f1;
     border-left: 1px solid #f1f1f1;
@@ -2245,7 +2090,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 }
 
     .accordion-title.active {
-        /*background: #fafafa;*/
         color: #e6ae49;
     }
 
@@ -2270,18 +2114,11 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .accordion-content {
     padding: 0 20px 10px;
 }
-
-/*-------------------------------------------------------------------------------------------*/
-/*  Counter          ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .counter {
     font-size: 50px;
     margin-bottom: 20px;
     display: inline-table;
 }
-/*-------------------------------------------------------------------------------------------*/
-/*  Service Box      ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .features-box-left, .features-box-right {
     position: relative;
     display: inline-block;
@@ -2367,9 +2204,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         right: auto;
     }
 }
-/*-------------------------------------------------------------------------------------------*/
-/*  Pricing       ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 
 .Pricing-box {
     border: 1px solid #f1f1f1;
@@ -2427,11 +2261,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             padding: 6px;
         }
 
-
-/*-------------------------------------------------------------------------------------------*/
-/*  Testimonials     ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
-
 .container-icon {
     font-size: 25px;
     margin-bottom: 15px;
@@ -2451,10 +2280,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     .quote-author span {
         font-weight: 400;
     }
-
-/*-------------------------------------------------------------------------------------------*/
-/* Client Logo       ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .client-logo {
     height: 80px;
     text-align: center;
@@ -2464,10 +2289,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         height: 100%;
         width: auto;
     }
-
-/*-------------------------------------------------------------------------------------------*/
-/* Icon          ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 .page-icon-top {
     font-size: 50px;
     line-height: 50px;
@@ -2479,10 +2300,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .white .page-icon-top, .white .page-icon-left, .white .features-icon-left, .white .features-icon-right {
     color: #fff;
 }
-
-/*-------------------------------------------------------------------------------------------*/
-/* Table          ||---------------------------- */
-/*-------------------------------------------------------------------------------------------*/
 
 
 .table.table-border {
@@ -2521,15 +2338,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .table.checkout small {
     display: block;
 }
-
-
-/*================================================================================================*/
-/* GLOBAL STYLES       ||---------------------------- */
-/*================================================================================================*/
-/*-------------------------------------------------------------------------------------------*/
-/* Push Menu Style (Right Sidebar Menu) --------------- */
-/*-------------------------------------------------------------------------------------------*/
-/* Sidebar Menu */
 .side-menu {
     background: #323232 !important;
     z-index: 2005 !important;
@@ -2545,7 +2353,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         right: 30px;
         top: 30px;
         display: inline-block;
-        /*background: url("../img/close-white.png") no-repeat center center;*/
         color: #fff;
         font-size: 18px;
         line-height: 0;
@@ -2553,7 +2360,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
         .side-menu .menu-close:hover {
-            /*background: url("../img/close-color.png");*/
             color: #e6ae49;
         }
 
@@ -2583,15 +2389,10 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     }
 
     .side-menu input[type="text"], .side-menu input[type="email"], .side-menu input[type="tel"], .side-menu input[type="number"], .side-menu input[type="password"], .side-menu input[type="radio"], .side-menu input[type="checkbox"], .side-menu textarea, .side-menu select {
-        /*border: 1px solid #1d1d1d;
-        background: #1d1d1d;
-        color: #fff;*/
         border: none;
     }
 
         .side-menu input[type="text"]:focus, .side-menu input[type="email"]:focus, .side-menu input[type="tel"]:focus, .side-menu input[type="number"]:focus, .side-menu input[type="radio"]:focus, .side-menu input[type="checkbox"]:focus, .side-menu input[type="password"]:focus, .side-menu textarea:focus, .side-menu select:focus {
-            /*border-color: #e6ae49;
-            color: #fff;*/
         }
 
     .side-menu .sign-in {
@@ -2631,11 +2432,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             .side-menu .social li a {
                 font-size: 16px;
             }
-
-
-/* --------------------------------------------------------------------------------------- */
-/* Search Overlay Menu -------------- */
-/* --------------------------------------------------------------------------------------- */
 .search-overlay-menu {
     position: fixed;
     top: 0px;
@@ -2729,11 +2525,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
             color: #e6ae49;
             cursor: pointer;
         }
-
-
-/* --------------------------------------------------------------------------------------- */
-/* Contents (Body, Container, Section, etc) -------------- */
-/* --------------------------------------------------------------------------------------- */
 .wrapper {
     position: relative;
     width: 100%;
@@ -2880,8 +2671,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .cont-h-100per {
     height: 100%;
 }
-
-/*backround images*/
 .bg-img {
     background-position: top center;
     background-repeat: no-repeat;
@@ -3053,25 +2842,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         max-width: 720px;
         text-align: center;
     }
-
-
-    /*.inner-intro .container .title h2 {
-            float: none;
-        }
-
-        .inner-intro .container .title p {
-            float: none;
-            margin-top: 0px;
-        }
-        .inner-intro .container .title .separator {
-            margin-left:auto;
-            margin-right:auto;
-        }*/
 }
-
-/* ===================================================================================================== */
-/* Contants (Portfolio, Blog, Shop, etc) -------------------  */
-/* ===================================================================================================== */
 .col.container-grid {
     padding-left:0;
     padding-right:0;
@@ -3086,14 +2857,11 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 }
 
 .container.nf-container2 {
-    /*padding-left: 25px;
-    padding-right: 25px;*/
 }
 
 .nf-row1 {
     margin-left: -15px;
     margin-right: -15px;
-    /*overflow: hidden;*/
 }
 
 .nf-col-padding {
@@ -3102,8 +2870,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 }
 
 .nf-row2 {
-    /*margin-left: -25px;
-    margin-right: -25px;*/
 }
 
     .nf-row1:before, .nf-row1:after, .nf-row2:before, .nf-row2:after {
@@ -3265,9 +3031,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         width: 100%;
     }
 }
-/* ----------------------------------------------------------------------*/
-/* Sidebar Widget   ---------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 
 .sidebar-widget {
     margin-bottom: 50px;
@@ -3396,9 +3159,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
         .sidebar-widget .widget-post .widget-post-info p {
             margin: 0px;
         }
-/* ----------------------------------------------------------------------*/
-/* Pagination Navigation   --------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 .pagination-nav {
     width: 100%;
     display: block;
@@ -3430,10 +3190,6 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
                 background: #323232;
                 color: #fff;
             }
-
-/* ----------------------------------------------------------------------*/
-/* Portfolio   --------------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 .container-filter {
     margin-top: 0;
     margin-right: 0;
@@ -3604,7 +3360,6 @@ ul.project-detail-block, .project-detail-block ul {
 
         .item-nav .item-prev:hover .prev-btn, .item-nav .item-next:hover .next-btn {
             background: #f7f7f7;
-            /*color: #fff;*/
         }
 
     .item-nav .item-prev {
@@ -3663,13 +3418,6 @@ ul.project-detail-block, .project-detail-block ul {
         .item-nav .item-all-view h5, .item-nav .item-all-view h6 {
             padding-top: 8px;
         }
-
-/* ----------------------------------------------------------------------*/
-/* Blog   --------------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
-/*.blog-post {
-    position: relative;
-}*/
 .blog-post {
     display: inline-block;
     width: 100%;
@@ -3871,9 +3619,6 @@ ul.project-detail-block, .project-detail-block ul {
 .post-comment-star label {
     margin-right: 6px;
 }
-/* ----------------------------------------------------------------------*/
-/* Shop   --------------------------------------------------------- */
-/* ----------------------------------------------------------------------*/
 .shop-item {
     position: relative;
     overflow: hidden;
@@ -3929,8 +3674,6 @@ ul.project-detail-block, .project-detail-block ul {
     display: inline-table;
     width: 100%;
 }
-
-/* Shop Detail*/
 .shop-detail-item {
     position: relative;
 }
@@ -3952,22 +3695,9 @@ ul.project-detail-block, .project-detail-block ul {
 .shop-Cart-totalprice {
     font-size: 18px;
 }
-
-/* =============================================================================================================================*/
-/* Parallax ------------------- */
-/* =============================================================================================================================*/
 .parallax {
     position: relative;
 }
-
-
-/* ============================================================================================================================*/
-/* Slider ---------------------*/
-/* ============================================================================================================================*/
-
-/* -------------------------------------*/
-/* Full Screen slider---------*/
-/* -------------------------------------*/
 .hero {
     overflow: hidden;
     position: relative;
@@ -4019,8 +3749,6 @@ ul.project-detail-block, .project-detail-block ul {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
-/* Full Width Slider */
 .fullwidth-slider {
     position: relative;
     overflow: hidden;
@@ -4031,9 +3759,6 @@ ul.project-detail-block, .project-detail-block ul {
         position: relative;
         width: 100%;
     }
-
-
-/* Fullscreen Slider Next Prev Arrow*/
 
 
 .fullscreen-carousel .flex-direction-nav a {
@@ -4091,8 +3816,6 @@ ul.project-detail-block, .project-detail-block ul {
     }
 
 @media (max-width: 991px) {
-
-    /* Fullscreen Slider */
     .fullscreen-carousel .slides li img {
         width: 100%;
         height: 100%;
@@ -4109,8 +3832,6 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 @media (max-width: 767px) {
-
-    /* Fullscreen Slider */
     .fullscreen-carousel .caption-hero h1 {
         font-size: 20px;
         margin: 0;
@@ -4135,7 +3856,6 @@ ul.project-detail-block, .project-detail-block ul {
     }
 
     .full-intro .hero {
-        /*padding-top: 64px;*/
     }
 
     .hero {
@@ -4149,10 +3869,6 @@ ul.project-detail-block, .project-detail-block ul {
         padding-right: 15px;
     }
 }
-
-/* -------------------------------------*/
-/* Carousel-Theme (Slider Elements - Bullets, Pagination, etc..) ---------*/
-/* -------------------------------------*/
 .owl-buttons {
     position: static;
 }
@@ -4216,7 +3932,6 @@ ul.project-detail-block, .project-detail-block ul {
         .fullwidth-slider .owl-controls .owl-buttons .owl-next:hover,
         .nf-carousel-theme .owl-controls .owl-buttons .owl-prev:hover,
         .nf-carousel-theme .owl-controls .owl-buttons .owl-next:hover {
-            /*background: #fff;*/
             color: #e6ae49;
         }
 
@@ -4251,11 +3966,6 @@ ul.project-detail-block, .project-detail-block ul {
         margin-left: 0;
         opacity: 1;
     }
-
-
-/* -------------------------------------*/
-/* Singel Item slider (Images & Contant Slider) ---------*/
-/* -------------------------------------*/
 .content-carousel .owl-controls .owl-pagination,
 .image-slider .owl-controls .owl-pagination,
 .fullwidth-slider .owl-controls .owl-pagination,
@@ -4298,10 +4008,6 @@ ul.project-detail-block, .project-detail-block ul {
     opacity: 0;
 }
 
-/*===========================================================================================*/
-/* Preloader ------------------------- */
-/*===========================================================================================*/
-
 #preloader {
     position: fixed;
     top: 0;
@@ -4324,20 +4030,11 @@ ul.project-detail-block, .project-detail-block ul {
     }
 
         #preloader .loader .loader-img {
-            background: url("../img/loading.GIF");
+            background:  url("../mazel/img/loading.GIF"), url("../img/loading.GIF");
             width: 60px;
             height: 60px;
             display: block;
         }
-
-
-/*===========================================================================================*/
-/* Additional */
-/*===========================================================================================*/
-
-/* ----------------------------------*/
-/* Scroll Down Animated Arrow */
-/* ----------------------------------*/
 .intro-scroll-down {
     position: absolute;
     z-index: 1;
@@ -4450,10 +4147,6 @@ ul.project-detail-block, .project-detail-block ul {
         top: 29%;
     }
 }
-
-/* ----------------------------------*/
-/* Scroll Top Arrow */
-/* ----------------------------------*/
 .scroll-top {
     width: 40px;
     height: 40px;
