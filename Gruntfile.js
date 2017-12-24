@@ -6,6 +6,10 @@ module.exports = function(grunt) {
     clean: {
       build: {
         src: ['dist/*']
+      },
+
+      postBuild: {
+        src: ['.tmp/']
       }
     },
 
@@ -289,6 +293,6 @@ module.exports = function(grunt) {
   // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
   //grunt.registerTask('default', [ 'clean:build', 'copy:html', 'useminPrepare', 'comments', 'concat', 'cssmin', 'uglify', 'usemin', 'clean:postBuild']);
   // grunt.registerTask('default', [ 'clean:build', 'copy:html', 'useminPrepare', 'comments', 'concat', 'uglify','usemin', 'clean:postBuild']);
-  grunt.registerTask('default', ['clean:build', 'copy', 'useminPrepare', 'comments', 'ngtemplates', 'concat', 'cssmin', 'uglify', 'filerev', 'usemin']);
+  grunt.registerTask('default', ['clean:build', 'copy', 'useminPrepare', 'comments', 'ngtemplates', 'concat', 'cssmin', 'uglify', 'filerev', 'usemin', 'clean:postBuild']);
   grunt.registerTask('serve',['default'])
 };
