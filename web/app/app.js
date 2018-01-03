@@ -76,7 +76,6 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 
 	//Redirect to works tab on refresh of detail tab
 	$transitions.onStart({to: 'detail'}, function(trans) {
-debugger;
 		if(trans.params().index === null){
 				trans.abort();
 		}
