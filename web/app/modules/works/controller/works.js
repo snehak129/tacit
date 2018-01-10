@@ -1,7 +1,7 @@
 (function() {
 	angular.module('tacit').controller('WorksController', ['$scope', 'AjaxService', 'Common', function($scope, AjaxService, Common) {
 
-
+		//$scope.works = {};
 		console.log('inside WorksController');
 
 		$scope.clicked = function(cat) {
@@ -20,7 +20,8 @@
 
 		var getWorks = function() {
 			AjaxService.post(Common.url.getWorks, function(result) {
-				$scope.projects = result.projects;	
+				$scope.projects = result.projects;
+				$scope.works = result;
 				//$scope.$parent.projects = angular.copy($scope.projects);
 			});
 		}

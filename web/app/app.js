@@ -59,10 +59,10 @@ app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function
 		controller: 'DetailController'
 	})
 
-	.state('practices', {
-		url: '/practices',
-		templateUrl: 'app/modules/practices/view/practices.html',
-		controller: 'PracticesController'
+	.state('contact', {
+		url: '/contact',
+		templateUrl: 'app/modules/contact/view/contact.html',
+		controller: 'ContactController'
 	});
 }]);
 

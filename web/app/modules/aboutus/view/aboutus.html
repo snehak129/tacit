@@ -1,11 +1,11 @@
 
  <!-- Intro Section -->
- <div flexslider>
-        <section class="inner-intro bg-image overlay-light parallax parallax-background1" data-background-img="mazel/img/full/02.jpg" >
+ 
+        <section flexslider ng-if="pageContent.header.image" class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url({{pageContent.header.image}})'}">
             <div class="container">
                 <div class="row title">
-                    <h2 class="h2" ng-bind="pageContent.header.title"></h2>  
-                      <p ng-bind="pageContent.header.desc"></p>          
+                    <h2 class="h2" ng-bind="::pageContent.header.title"></h2>  
+                      <p ng-bind="::pageContent.header.desc"></p>          
                 </div>
             </div>
         </section>
@@ -16,13 +16,13 @@
         <section class="ptb ptb-sm-80">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h3>We Creative digital Studio</h3>
-                        <p class="lead">Nullam dictum felis eu pede mollis pretium leo eget bibendum sodales augue velit cursus. tellus eget condimentum rhoncus sem quam semper libero.</p>
+                    <div  class="col-md-6">
+                        <h3 ng-show="pageContent.content.title" ng-bind="pageContent.content.title"></h3>
+                        <p  ng-bind="pageContent.content.desc.para1"></p>
                     </div>
                     <div class="col-md-6">
-                        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-                        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus.</p>
+                        <p ng-bind="pageContent.content.desc.para2"></p>
+                        <p ng-bind="pageContent.content.desc.para3"></p>
                     </div>
                 </div>
 
@@ -34,29 +34,48 @@
             <div class="container">
                 <!--Team Carousel -->
                 <div class="row">
-                    <div class="owl-carousel team-carousel nf-carousel-theme">
+                    <div class="owl-carousel team-carousel nf-carousel-theme" owl-carousel>
 
-                        <div class="item">
+                        <div   owl-carousel-item="" options="team-carousel" class="item" ng-repeat="member in pageContent.content.team" >
                             <div class="team-item nf-col-padding">
                                 <div class="team-item-img">
-                                    <img src="img/team/people-1.jpg" alt="" />
+                                    <img ng-src="{{member.img}}" alt="" />
                                     <div class="team-item-detail">
                                         <div class="team-item-detail-inner light-color">
-                                            <h5>Mitchell KAPPOS</h5>
-                                            <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
+                                            <h5 ng-bind="member.name"></h5>
+                                            <p  ng-bind="member.desc"></p>
                                             <ul class="social">
-                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                                <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                                <li  ng-repeat="(key, link) in member.socialLinks"><a href="link" target="_blank"><i class="fa {{link.class}}"></i></a></li>
+                                                <!-- <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li> -->
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="team-item-info">
-                                    <h5>Mitchell KAPPOS</h5>
-                                    <p class="">Designer</p>
+                                    <h5 ng-bind="member.name"></h5>
+                                    <p class="" ng-bind="member.desc"></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="item">
+                            <div class="team-item nf-col-padding">
+                                <div class="team-item-img">
+                                    <img ng-src="{{pageContent.content.team[0].img}}" alt="" />
+                                    <div class="team-item-detail">
+                                        <div class="team-item-detail-inner light-color">
+                                            <h5 ng-bind="pageContent.content.team[0].name"></h5>
+                                            <p ng-bind="pageContent.content.team[0].desc"></p>
+                                            <ul class="social">
+                                               <li  ng-repeat="links in pageContent.content.team[0].socialLinks"><a href="links.link" target="_blank"><i class="fa {{links.class}}"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-item-info">
+                                    <h5 ng-bind="pageContent.content.team[0].name"></h5>
+                                    <p class="" ng-bind="pageContent.content.team[0].designation"></p>
                                 </div>
                             </div>
                         </div>
@@ -64,29 +83,25 @@
                         <div class="item">
                             <div class="team-item nf-col-padding">
                                 <div class="team-item-img">
-                                    <img src="img/team/people-2.jpg" alt="" />
+                                    <img ng-src="{{pageContent.content.team[1].img}}" alt="" />
                                     <div class="team-item-detail">
                                         <div class="team-item-detail-inner light-color">
-                                            <h5>Leonardo da Vinci</h5>
-                                            <p>Similique sunt culpa qui officia deserunt mollitia animi dolorum fuga.</p>
+                                            <h5 ng-bind="pageContent.content.team[1].name"></h5>
+                                            <p ng-bind="pageContent.content.team[1].desc"></p>
                                             <ul class="social">
-                                                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="https://www.dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                                                <li><a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                               <li  ng-repeat="links in pageContent.content.team[1].socialLinks"><a href="links.link" target="_blank"><i class="fa {{links.class}}"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="team-item-info">
-                                    <h5>Leonardo da Vinci</h5>
-                                    <p class="">Artist</p>
+                                    <h5  ng-bind="pageContent.content.team[1].name"></h5>
+                                    <p class="" ng-bind="pageContent.content.team[1].designation"></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="item">
+                        <!-- <div class="item">
                             <div class="team-item nf-col-padding">
                                 <div class="team-item-img">
                                     <img src="img/team/people-3.jpg" alt="" />
@@ -134,7 +149,7 @@
                                     <p class="">Photographer</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -144,17 +159,19 @@
         <!-- End Team -->
 
         <!-- Testimonials -->
-        <section id="testimonial" class="overlay-dark80 dark-bg ptb ptb-sm-80" style="background-image: url('mazel/img/full/25.jpg');" data-stellar-background-ratio="0.4">
+
+        
+          <section  ng-if="pageContent.content.quotes" id="testimonial" class="pb pb-sm-80">
             <div class="container">
-                <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
-                    <div class="item">
-                        <div class="testimonial text-center dark-color">
+                <div class="owl-carousel testimonial-carousel nf-carousel-theme" owl-carousel>
+                    <div  owl-carousel-item="" options="testimonial-carousel" ng-repeat="quote in pageContent.content.quotes" class="item">
+                        <div   class="testimonial text-center dark-color">
                             <div class="container-icon"><i class="fa fa-quote-right"></i></div>
-                            <p class="lead">" I got a dummy for Christmas and started teaching myself. I got books and records and sat in front of the practising. I did my first show in the third grade and just kept going. "</p>
-                            <h6 class="quote-author">Jeff Dunham <span style="font-weight: 400;">( Appel Studio )</span></h6>
+                            <p class="lead" ng-bind="quote.quote"></p>
+                            <h6  class="quote-author" ng-bind="quote.author"> <!-- <span style="font-weight: 400;">( Appel Studio )</span> --></h6>
                         </div>
                     </div>
-                    <div class="item">
+                   <!--  <div class="item">
                         <div class="testimonial text-center dark-color">
                             <div class="container-icon"><i class="fa fa-quote-right"></i></div>
                             <p class="lead">" It's true, you can never eat a pet you name. And anyway, I did my first show in the third grade it would be like a ventriloquist eating his dummy. "</p>
@@ -167,16 +184,29 @@
                             <p class="lead">" We're not leaving here without Buster, man. Leave no crash-test dummy behind! "</p>
                             <h6 class="quote-author">Adam Savage <span style="font-weight: 400;">( Artist )</span></h6>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <!-- End Testimonials -->
 
         <!-- Service -->
-        <section class="ptb ptb-sm-80">
+        <section flexslider class="ptb ptb-sm-80">
             <div class="wow fadeIn container text-center">
-                <h3>Our Services</h3>
+                <h3>What We Do Best</h3>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div ng-repeat="(key, value) in pageContent.content.service" class="col-md-4">
+                        <div class="page-icon-top"><i class="{{value.class}}"></i></div>
+                        <h5 ng-bind="value.title"></h5>
+                        <p ng-bind="value.desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <!--  <section class="ptb ptb-sm-80">
+            <div class="wow fadeIn container text-center">
+                <h3>What We Do</h3>
                 <div class="spacer-60"></div>
                 <div class="row">
                     <div class="col-md-4">
@@ -196,23 +226,23 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Service -->
 
         <hr />
 
         <!-- Client Logos Section -->
-        <section id="client-logos" class="wow fadeIn ptb ptb-sm-80">
+        <!-- <section id="client-logos" class="wow fadeIn ptb ptb-sm-80">
             <div class="container">
                 <div class="owl-carousel client-carousel nf-carousel-theme ">
                     <div class="item">
                         <div class="client-logo">
-                            <img src="img/logos/01.png" alt="" />
+                            <img src="mazel/img/logos/01.png" alt="" />
                         </div>
                     </div>
                     <div class="item">
                         <div class="client-logo">
-                            <img src="img/logos/02.png" alt="" />
+                            <img src="mazel/img/logos/02.png" alt="" />
                         </div>
                     </div>
                     <div class="item">
@@ -257,11 +287,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Client Logos Section -->
 
         <!-- Statement Section -->
-        <section class="dark-bg  ptb-60" id="statement">
+        <!-- <section class="dark-bg  ptb-60" id="statement">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
@@ -270,6 +300,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </section> -->
+
         <!-- End Statement Section -->

@@ -1,23 +1,44 @@
 {
   "title": {
-    "part1": "We are desgin lab",
-    "part2": "We love",
-    "part3": "designing all that is Indian"
+    "part1": "We are tacit.",
+    "part2": "A design lab",
+    "part3": "from the city of bangalore"
   },
   "slider": [
     {
-      "header": "WELCOME TO TACIT",
+      "header": "IMMERSE",
       "content": "We carry a passion for inclusive design",
-      "type": "light-slide",
-      "img": "mazel/img/project/1-LV.png",
+      "type": "dark-slide",
+      "img": "mazel/img/homepage/1-immerse.png",
       "index": 0
     },
     {
-      "header": "WELCOME TO TACIT2",
+      "header": "CREATE",
       "content": "We carry a passion for inclusive design2",
-      "type": "light-slide",
-      "img": "mazel/img/project/Header-mv.png",
+      "type": "dark-slide",
+      "img": "mazel/img/homepage/2-create.png",
       "index": 1
+    },
+     {
+      "header": "HUMANIZE",
+      "content": "We carry a passion for inclusive design",
+      "type": "dark-slide",
+      "img": "mazel/img/homepage/3-humanize.png",
+      "index": 2
+    },
+     {
+      "header": "ENABLE",
+      "content": "We carry a passion for inclusive design",
+      "type": "dark-slide",
+      "img": "mazel/img/homepage/4-enable.png",
+      "index": 3
+    },
+     {
+      "header": "REFINE",
+      "content": "We carry a passion for inclusive design",
+      "type": "dark-slide",
+      "img": "mazel/img/homepage/5-refine.png",
+      "index": 4
     }
   ]
 }

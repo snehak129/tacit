@@ -114,81 +114,53 @@
 
         <hr />
 
-        <section class="ptb ptb-sm-80">
-            <div class="container text-center">
-                <h4>Related Project</h4>
-                <div class="row">
-                    <div class="col-lg-4 spacing-grid">
-                        <div class="item-box">
-                            <a>
-                                <img alt="1" src="img/portfolio/1.jpg" class="item-container">
-                                <div class="item-mask">
-                                    <div class="item-caption">
-                                        <h5 class="white">Consequat massa quis</h5>
-                                        <p class="white">Branding, Design, Coffee</p>
-                                    </div>
+    <section ng-if="details.relatedProjects.length > 0" class="ptb ptb-sm-80">
+        <div class="container text-center">
+            <h4>Related Project</h4> 
+            <div  class="row">
+                <div  ng-repeat="proj in details.relatedProjects" class="col-lg-4 spacing-grid" 
+                ui-sref="detail({project:proj, index: proj.index})">
+                    <div class="item-box">
+                        <a>
+                            <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
+                            <div class="item-mask">
+                                <div class="item-caption">
+                                    <h5 class="white" ng-bind="proj.header"></h5>
+                                    <p class="white" ng-bind="proj.headerTag"></p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="col-lg-4 spacing-grid">
-                        <div class="item-box">
-                            <a>
-                                <img alt="1" src="img/portfolio/3.jpg" class="item-container">
-                                <div class="item-mask">
-                                    <div class="item-caption">
-                                        <h5 class="white">Consequat massa quis</h5>
-                                        <p class="white">Branding, Design, Coffee</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 spacing-grid">
-                        <div class="item-box">
-                            <a>
-                                <img alt="1" src="img/portfolio/5.jpg" class="item-container">
-                                <div class="item-mask">
-                                    <div class="item-caption">
-                                        <h5 class="white">Consequat massa quis</h5>
-                                        <p class="white">Branding, Design, Coffee</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         <!-- End Work Detail Section -->
 
         <!-- Work Next Prev Bar -->
-        <section class="mb-60">
-            <div class="container">
-                <div class="item-nav">
-                    <a class="item-prev" ui-sref="detail({project:projects, index: prevIndex})">
-                        <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
-                        <div class="item-prev-text xs-hidden">
-                            <h6>Prev Project</h6>
-                        </div>
-                    </a>            
+    <section class="mb-60">
+        <div class="container">
+            <div class="item-nav">
+                <a class="item-prev" ui-sref="detail({project:projects, index: prevIndex})">
+                    <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
+                    <div class="item-prev-text xs-hidden">
+                        <h6>Prev Project</h6>
+                    </div>
+                </a>            
 
-                    <a class="item-all-view">
-                        <h6 ui-sref="works">All Work</h6>
-                    </a>
+                <a class="item-all-view">
+                    <h6 ui-sref="works">All Work</h6>
+                </a>
 
-                    <a class="item-next" ui-sref="detail({project:projects, index: nextIndex})">
-                        <div class="next-btn"><i class="fa fa-angle-right"></i></div>
-                        <div class="item-next-text xs-hidden">
-                            <h6>Next Project</h6>
-                        </div>
-                    </a>
-                </div>
+                <a class="item-next" ui-sref="detail({project:projects, index: nextIndex})">
+                    <div class="next-btn"><i class="fa fa-angle-right"></i></div>
+                    <div class="item-next-text xs-hidden">
+                        <h6>Next Project</h6>
+                    </div>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
         <!-- End Work Next Prev Bar -->
 
         <!-- End CONTENT ------------------------------------------------------------------------------>

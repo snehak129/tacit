@@ -44,6 +44,7 @@
                 // ---------------------------------------------------------------------------------------------------------------------------->
 
                 function scroll() {
+                 
 
                     // //Click Event to Scroll to Top
                     $(window).scroll(function() {
@@ -63,7 +64,7 @@
                     });
 
                     // Scroll Down Elements
-                    $('.scroll-down[href^="#"], .scroll-to-target[href^="#"]').on('click', function(e) {
+                    /*$('.scroll-down[href^="#"], .scroll-to-target[href^="#"]').on('click', function(e) {
                         e.preventDefault();
 
                         var target = this.hash;
@@ -74,7 +75,7 @@
                         }, 900, 'swing', function() {
                             window.location.hash = target;
                         });
-                    });
+                    });*/
 
                 };
 
@@ -167,7 +168,7 @@
 
                         var color = $('.fullscreen-carousel').find('li.flex-active-slide').attr('data-slide');
                         if (color == 'dark-slide') {
-                            $('#header').addClass('header').removeClass('header-light');
+                            $('#header').addClass('header-dark').removeClass('header-light');
                             $('#header').removeClass('header-default');
                         }
                         if (color == 'light-slide') {
@@ -185,6 +186,7 @@
                     fullScreenCarousel();
 
                     function fullScreenCarousel() {
+
                         var windowWidth = $(window).width();
                         var windowHeight = $(window).height();
 
@@ -245,15 +247,15 @@
                         pagination: true, // Show pagination buttons
                         navigation: false, // Hide next and prev buttons
                         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                        //  responsive: true
+                          responsive: true
                     });
 
                     // Team Carousel
                     $('.team-carousel').owlCarousel({
                         autoPlay: false,
                         stopOnHover: true,
-                        items: 3,
-                        itemsDesktop: [1170, 3],
+                        items: 2,
+                        itemsDesktop: [1170, 2],
                         itemsDesktopSmall: [1024, 2],
                         itemsTabletSmall: [768, 1],
                         itemsMobile: [480, 1],
@@ -746,11 +748,10 @@
                 $timeout(function() {
 
                     // fullScreenCarousel();
-                    fullScreenSlider();
+                   // fullScreenSlider();
                     stickHeader();
                     int_introHeight();
                     scroll();
-                    pluginElement();
                     sliderHero();
 
                     containerGridMasonry();
@@ -766,12 +767,10 @@
                             $(this).css("background-image", "url(" + $(this).data("background-img") + ")");
                         }
                     });
-
-
-                }, 1);
+                }, 0);
 
                 $timeout(function() {
-                    sliderAll();
+                   // sliderAll();
                 }, 2)
 
 

@@ -11,3 +11,30 @@
     border-color: #ddd;
 }
 
+.logo-white-custom{
+    /*display: block;*/
+    color:#fff;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 1px;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    font-family: "Raleway",sans-serif;
+}
+
+.team-item-img .team-item-detail{
+	max-width: 330px;
+}
+
+.team-item .nf-col-padding{
+	max-width:330px;
+}
+
+.team-item-info{
+	max-width:330px;
+}

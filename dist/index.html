@@ -27,11 +27,11 @@
 
 </head>
 
-<body flexslider ng-controller="MainController">
+<body ng-controller="MainController">
 <div>
    
          <!-- Preloader -->
-    <section  id="preloader">
+    <section flexslider id="preloader">
         <div class="loader" id="loader">
             <div class="loader-img"></div>
         </div>
@@ -61,9 +61,9 @@
         
 
       <!--   <ul>
-        	<li ng-repeat="item in pageContent.pushMenuRight.items track by $index">
-        		<a ui-sref="aboutus" ng-bind="item" ng-click="navigate(item)"></a>
-        	</li>
+            <li ng-repeat="item in pageContent.pushMenuRight.items track by $index">
+                <a ui-sref="aboutus" ng-bind="item" ng-click="navigate(item)"></a>
+            </li>
         </ul> -->
 
    
@@ -94,8 +94,8 @@
 
                 <!-- Logo -->
                 <div class="logo">
-                    <a href="index.html" style="font-weight: bold;font-size: large;">
-                        {{::pageContent.copyright.company}}
+                   <a href="index.html" class="logo-white-custom">
+                     {{::pageContent.copyright.company}}    
                        <!--  <img class="logo-light" src="mazel/img/logo-white.png" alt="Mazel" />
                         <img class="logo-dark" src="mazel/img/logo-black.png" alt="Mazel" /> -->
                     </a>
@@ -139,7 +139,7 @@
                             <a ui-sref="works" class="menu-has-sub" ng-bind="pageContent.navMenu.works"></a>
                        
                         <li>
-                            <a ui-sref="practices" class="menu-has-sub" ng-bind="pageContent.navMenu.practices"> </a>
+                            <a ui-sref="contact" class="menu-has-sub" ng-bind="pageContent.navMenu.contact"> </a>
                            
                         </li>
                        
@@ -160,7 +160,7 @@
 
         
 
-<div flexslider ui-view></div>
+<div ui-view></div>
 
 
 <!-- End Testimonials -->
@@ -252,8 +252,6 @@
             <i class="fa fa-angle-double-up"></i>
         </a>
         <!-- End Scroll Top -->
-        
-
        
    </div> 
     <!-- Site Wraper End -->
@@ -264,8 +262,11 @@
 <script src="scripts/libs.893a9c47.js"></script>
 
     <!-- Application related files -->
-    <script src="scripts/tacit.03718081.js"></script>
+    <script src="scripts/tacit.faebd270.js"></script>
 
 
+
+<!-- <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
 </body>
 </html>

@@ -1,12 +1,12 @@
 {
-  "headerImage": "",
+  "headerImage": "mazel/img/headers/works.png",
   "projects": [{
     "index": 1,
     "name": "LetsVenture",
     "image": "1-LV.png",
     "header": "LETSVENTURE",
     "headerTag": "Angel Investing made smart and easy",
-    "categories": "product  ux strategy",
+    "categories": "product ux strategy",
     "details": {
       "title": "WITH LETSVENTURE, INVESTORS CONNECT TO MAKE INFORMED INVESTMENT DECISIONS IN INDIAN STARTUPS",
       "desc": "We worked with LetsVenture to solve key painpoints of early stage funding of Startups.Angel funding is tedious process. It is hard for investors to view high value Startups and  also for Startups to ﬁnd Investors who believe in their idea. Process is slow, difﬁcult to track, not smart with paperwork, hard to schedule interactions and get the best value of the time you spend.",
@@ -105,6 +105,50 @@
       "workQuote": [{
         "quote": "\"Moonwalkr is a cutting edge product, its lighter and gives a happy safe feeling while playing \"",
         "author": "Customer"
+      }]
+    }
+  }, {
+    "index": 4,
+    "name": "aksharavalli",
+    "image": "1-akshravalli.png",
+    "header": "Aksharavalli",
+    "headerTag": "Angel Investing made smart and easy",
+    "categories": "product ux strategy",
+    "details": {
+      "title": "WITH LETSVENTURE, INVESTORS CONNECT TO MAKE INFORMED INVESTMENT DECISIONS IN INDIAN STARTUPS",
+      "desc": "We worked with LetsVenture to solve key painpoints of early stage funding of Startups.Angel funding is tedious process. It is hard for investors to view high value Startups and  also for Startups to ﬁnd Investors who believe in their idea. Process is slow, difﬁcult to track, not smart with paperwork, hard to schedule interactions and get the best value of the time you spend.",
+      "headerImage": "Header-LV.png",
+      "columns": [{
+        "header": "SMART PLATFORM FOR INVESTORS",
+        "content": "We studied the existing process by talking to stakeholders of the system. We learnt a great deal about investing styles, startup needs, constraints of transactions and problems of scaling of the business. We mapped and organised a connected system design to accomodate these needs. We focused on making it simple, easy and interesting to participate meaningfully in a funding process. We hoped to design as little as possible but to ignite the right relationships with users."
+      }, {
+        "header": "DESIGNING BEHAVIOURS",
+        "content": "We designed mobile and web applications. Investors found it new, easy to ﬁnd great information about startups and investment opportunities on their ﬁngertips. They responded by liking, commiting, sharing, searching and chatting to founders on the go with a simple tap.  This generated qualitative realtime data that fueled the machine to ﬁne tune better information by learning from behaviour. Funding now happens faster, personalised, connected and with no paperwork."
+      }, {
+        "header": "SHAPING ECOSYSTEM",
+        "content": " Within a year LetsVenture raised over $43M, funding over 110 Startups and enrolling over 2300 active investors. LetsVenture has democratized investing which was earlier in a hands of a few business families. Today, LetsVenture is India's largest Angel investing network."
+      }],
+      "images": ["2-LV.png", "3-LV.png", "4-LV.png", "5-LV.png", "6-LV.png"],
+      "categories": "Product, UX, Strategy",
+      "released": "SEP 2015",
+      "client": "LETSVENTURE",
+      "impact": "\\$43M RAISED TO FUND OVER 100 STARTUPS",
+      "workQuote": [{
+        "quote": "\"The design has made things simpler and smarter for investing. With a swipe I can see tailored startups, chat with founders, decide to commit and follow up realtimein a funding process. Design is elegant and works beautifully. Proud to show it to rest of the world\"",
+        "author": " Prime Investor"
+      }],
+      "roles": [{
+        "image": "ion ion-ios-compose-outline",
+        "header": "Strategy",
+        "desc": "Framework creation and vision planning based on learnings from data and business. To create a series of effective usecases for the product."
+      }, {
+        "image": "ion ion-ios-color-filter-outline",
+        "header": "Product Design",
+        "desc": "Visualizing mobile and web appilications. Delivering product design specs for Android/IOS/Web. Planning product roadmap and reviews with dev teams"
+      }, {
+        "image": "ion ion-ios-color-wand-outline",
+        "header": "UX Improvements",
+        "desc": "End to end UI/UX of the Product. Testing with investors, learning from data to improvise and introduce flows to maximize engagement"
       }]
     }
   }]

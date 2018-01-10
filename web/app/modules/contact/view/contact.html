@@ -1,0 +1,99 @@
+<section flexslider ng-if="contact.header.image" class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url({{contact.header.image}})'}">
+	<div class="container">
+		<div class="row title">
+			<h2 class="h2" ng-bind="::contact.header.title"></h2>
+			<p ng-bind="::contact.header.desc"></p>
+		</div>
+	</div>
+</section>
+<section class="ptb ptb-sm-80">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 offset-md-2 text-center">
+				<h3 ng-bind="::contact.content.header.title"></h3>
+				<p  ng-bind="::contact.content.header.desc" class="lead"></p>
+			</div>
+		</div>
+		<div class="spacer-75"></div>
+		<div class="row">
+			<div class="col-md-5 contact">
+				<div class="contact-box-left mb-45">
+					<div class="contact-icon-left"><i class="ion ion-ios-location"></i></div>
+					<h6 ng-bind="::contact.content.addInfo.title"></h6>
+					<p>
+						{{::contact.content.addInfo.addLine1}}<br />
+						{{::contact.content.addInfo.addLine2}}<br/>
+						{{::contact.content.addInfo.addLine3}}
+					</p>
+					<!-- <a href="mailto:yourname@domain.com"><i class="fa fa-envelope-o left"></i>yourname@domain.com</a><br /> -->
+					<a ng-bind="::contact.content.addInfo.phone"><i class="fa fa-phone left"></i></a>
+				</div>
+				<div class="contact-box-left mb-45">
+					<div class="contact-icon-left"><i class="ion ion-ios-clock"></i></div>
+					<h6 ng-bind="::contact.content.timings.title"></h6>
+					<p>
+						<span ng-bind="::contact.content.timings.weekday"></span>
+						<br />
+						<span ng-bind="::contact.content.timings.weekend"></span>
+					</p>
+				</div>
+				<div class="contact-box-left mb-45">
+					<h6>Follow Us</h6>
+					<ul class="list-none social">
+						<li ng-repeat="link in contact.content.socialLinks track by $index">
+							<a href="link.link" target="_blank">
+							<i class="fa {{link.class}}"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6 offset-md-1">
+				<!-- Contact FORM -->
+				<form class="contact-form" id="gform" method="POST" role="form" 
+				action="https://script.google.com/macros/s/AKfycbxEeAFkVyiL5k4MtQuzpwUSV2smirwqanzc8H4Yi_wfGqf90c8/exec">
+					<!-- IF MAIL SENT SUCCESSFULLY -->
+					<!-- <h6  class="successContent">
+					<i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+					</h6> -->
+					<h6 style="display:none;" id="thankyou_message" class="successContent">
+					<i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
+					</h6>
+					<!-- END IF MAIL SENT SUCCESSFULLY -->
+					<!-- MAIL SENDING UNSUCCESSFULL -->
+					<h6 class="errorContent">
+					<i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>There was a problem validating the form please check!
+					</h6>
+					<!-- END MAIL SENDING UNSUCCESSFULL -->
+					<div class="form-field-wrapper">
+						<input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required>
+					</div>
+					<div class="form-field-wrapper">
+						<input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required>
+					</div>
+					<div class="form-field-wrapper">
+						<input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Subject">
+					</div>
+					<div class="form-field-wrapper">
+						<textarea class="form-full" id="form-message" rows="7" name="form-message" placeholder="Your Message" required></textarea>
+					</div>
+					<button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Send Message</button>
+				</form>
+				<!-- END Contact FORM -->
+				<!-- <div style="display:none;" id="thankyou_message">
+            <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+			</div> -->
+
+
+        </div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact Section -->
+<!-- Map Section -->
+<section class="map">
+	<div id="map"></div>
+</section>
+

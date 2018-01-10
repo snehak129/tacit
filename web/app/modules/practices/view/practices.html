@@ -44,8 +44,26 @@
 
         <!-- Contant Slider Section -->
         <section id="contant" class="wow fadeIn ptb ptb-sm-80">
-            <div class="owl-carousel content-carousel content-slider">
-                <div class="item">
+            <div class="owl-carousel content-carousel content-slider" owl-carousel>
+
+                 <div   owl-carousel-item="" options="content-carousel"  ng-repeat="project in pageContent.content.projects track by $index" class="item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-sm-30">
+                                <img src="img/moc-1.png" alt="" />
+                            </div>
+                            <div class="col-md-5 offset-md-1">
+                                <h3 ng-bind="project.title"></h3>
+                                <div class="spacer-15"></div>
+                                <p ng-bind="project.desc"></p>
+                                <p>porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet</p>
+                                <div class="spacer-15"></div>
+                                <a class="btn btn-md btn-black">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div  class="item">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 mb-sm-30">
@@ -96,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- End Contain Slider Section -->

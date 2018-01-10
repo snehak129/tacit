@@ -36,6 +36,9 @@
 		"projects": [{
 			"title": "Design thinking workshop at Satyam",
 			"desc": "Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet."
+		}, {
+			"title": "Design 2 thinking workshop at Satyam",
+			"desc": "Cras dapibus Vivamus elementum semper nisi Aenean vulputate eleifend tellus Aenean leo ligula, porttitor eu consequat vitae Phasellus viverra nulla ut metus varius laoreet."
 		}]
 
 

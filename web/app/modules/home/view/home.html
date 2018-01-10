@@ -2,11 +2,36 @@
     <!-- Hero Slider Section -->
     <!-- <div class="flexslider fullscreen-carousel hero-slider-1 " > -->
     <!-- <ul class ="slides"> -->
-    <flex-slider flex-slide="s in content.slider track by s.index" animation="slide" class="flexslider fullscreen-carousel hero-slider-1" flexslider>
+
+
+    <flex-slider flex-slide="s in content.slider track by s.index" animation="slide" 
+                        start="start($slider)" before="before($slider)" after="after($slider)" animation-speed ="700" animation-loop="true" slideshow="true" class=" flexslider fullscreen-carousel hero-slider-1" >
     
-    <li data-slide="{{s.type}}">
-        <div class="slide-bg-image overlay-light parallax parallax-section1"  data-background-img="{{s.img}}">
-            <div class="js-Slide-fullscreen-height container">
+    <li  data-slide="{{s.type}}">
+        <div  flexslider class="slide-bg-image overlay-dark dark-bg parallax parallax-section1" ng-style="{'background-image': 'url({{s.img}})'}" >
+            <div class="container ang-slide" ng-style="{'height': '{{windowHeight}}'}">
+                <div class="intro-content">
+                    <div class="intro-content-inner">
+                        <h2 class="h2">{{s.header}}</h2>
+                        <p class="lead">{{s.content}}</p>
+                        <!-- <div>
+                            <a class="btn btn-md btn-black-line">Read More</a><span class="btn-space-10 xs-hidden">
+                        </div> -->
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </li>
+    </flex-slider>
+
+
+
+
+    <!-- <flex-slider flex-slide="s in content.slider track by s.index" animation="slide" class="flexslider fullscreen-carousel hero-slider-1" >
+    
+    <li data-slide="{{s.type}}" header-theme slider="s">
+        <div class="slide-bg-image overlay-light parallax parallax-section1"   ng-style="{'background-image': 'url({{s.img}})'}" >
+            <div class="container" ng-style="{'height': '{{windowHeight}}'}">
                 <div class="intro-content">
                     <div class="intro-content-inner">
                         <h2 class="h2">{{s.header}}</h2>
@@ -14,12 +39,12 @@
                         <div>
                             <a class="btn btn-md btn-black-line">Read More</a><span class="btn-space-10 xs-hidden">
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
     </li>
-    </flex-slider>
+    </flex-slider> -->
     <!-- </div> -->
     <!-- </ul> -->
     <!-- </div> -->

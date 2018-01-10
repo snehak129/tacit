@@ -1,0 +1,35 @@
+{
+  "header": {
+    "image": "mazel/img/headers/contact.png",
+    "title": "Engage",
+    "desc": "We love to work with happy creators"
+  },
+  "content": {
+    "header": {
+      "title": "Get In Touch",
+      "desc": "Every project here begins with listening and shaping a vision together.We are proud to say that our clients turn into close friends."
+    },
+    "addInfo": {
+      "title": "Additional info",
+      "addLine1": "#17,SUMAPRABHA, 1 MAIN, 8 CROSS",
+      "addLine2": "ISRO LAYOUT",
+      "addLine3": "BANGALORE 560078, INDIA",
+      "phone": "+91 9740022929"
+    },
+    "timings": {
+      "title": "BUSINESS HOURS",
+      "weekday": "Mon - Fri: 9am to 6pm",
+      "weekend": "Sat : 9am to 1pm"
+    },
+    "socialLinks": [
+      {
+        "link": "https://www.facebook.com/",
+        "class": "fa-facebook"
+      },
+      {
+        "link": "https://www.twitter.com/",
+        "class": "fa-twitter"
+      }
+    ]
+  }
+}
