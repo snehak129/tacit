@@ -1,6 +1,6 @@
  <!-- Intro Section -->
 
-        <section class="inner-intro bg-image overlay-light parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
+        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
             <div class="container">
                 <div class="row title">
                     <h2 class="h2">{{project.header}}</h2>
@@ -21,6 +21,10 @@
                         <div class="project-detail-block">
                             <p ng-if="project.details.categories">
                                 <strong class="dark-color">Categories:</strong> <span>{{project.details.categories}}</span>
+                            </p>
+
+                            <p ng-if="project.details.created">
+                                <strong class="dark-color">Created :</strong>{{project.details.created}}
                             </p>
 
                             <p ng-if="project.details.released">
@@ -60,7 +64,7 @@
                     </div>
                 </div>
 
-              <div class="row mtb-60 mtb-xs-30">
+              <div ng-if="project.details.workQuote.length > 0" class="row mtb-60 mtb-xs-30">
                     <div class="testimonial text-center dark-color">
                         <div class="container-icon"><i class="fa fa-quote-right"></i></div>
                         <p class="lead"> {{project.details.workQuote[0].quote}}</p>

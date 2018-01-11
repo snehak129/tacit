@@ -14,28 +14,28 @@
     },
     {
       "header": "CREATE",
-      "content": "We carry a passion for inclusive design2",
+      "content": "We explore the essential",
       "type": "dark-slide",
       "img": "mazel/img/homepage/2-create.png",
       "index": 1
     },
      {
       "header": "HUMANIZE",
-      "content": "We carry a passion for inclusive design",
+      "content": "We strengthen relationships",
       "type": "dark-slide",
       "img": "mazel/img/homepage/3-humanize.png",
       "index": 2
     },
      {
       "header": "ENABLE",
-      "content": "We carry a passion for inclusive design",
+      "content": "We help you imagine new",
       "type": "dark-slide",
       "img": "mazel/img/homepage/4-enable.png",
       "index": 3
     },
      {
       "header": "REFINE",
-      "content": "We carry a passion for inclusive design",
+      "content": "We craft like in music",
       "type": "dark-slide",
       "img": "mazel/img/homepage/5-refine.png",
       "index": 4
