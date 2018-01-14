@@ -19,14 +19,20 @@
 		}
 
 		var getWorks = function() {
-			AjaxService.post(Common.url.getWorks, function(result) {
-				// $timeout(function() {
+
+			if (Common.getWorksObj()) {
+				$scope.projects = Common.getWorksObj().projects;
+				$scope.works = Common.getWorksObj();
+			} else {
+				AjaxService.post(Common.url.getWorks, function(result) {
+					// $timeout(function() {
 					$scope.projects = result.projects;
 					$scope.works = result;
 
-				// }, 3000)
+					// }, 3000)
 
-			});
+				});
+			}
 		}
 
 		init();

@@ -40,6 +40,7 @@
 				// $timeout(function() {
 					console.log($scope);
 					$scope.projects = result.projects;
+					Common.setWorksObj(result);
 				//	$scope.$emit('preload', false);
 				//	$(window).resize();
 				// }, 5000);

@@ -1,16 +1,16 @@
 angular.module('tacit').factory('Common', function() {
 
 	// let preloader = false;
-	// let works =  null;
+	 let works =  null;
 	return {
 
-		// getWorksObj : function(){
-		// 	return works;
-		// },
+		getWorksObj : function(){
+			return this.works;
+		},
 
-		// setWorksObj: function(works){
-		// 	this.works = works;
-		// },
+		setWorksObj: function(works){
+			this.works = works;
+		},
 		
 		// getPreloader : function(){
 		// 	return this.preloader;
