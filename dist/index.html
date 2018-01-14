@@ -38,12 +38,6 @@
     </section>
     <!-- End Preloader -->
 
-    <!-- Adding routing here -->
-
-
-   <!--  <div>
-        <div ng-view></div>
-    </div> -->
 
     <!-- Search Overlay Menu -->
     <div class="search-overlay-menu">
@@ -94,8 +88,7 @@
 
                 <!-- Logo -->
                 <div class="logo">
-                   <a href="index.html" class="logo-white-custom">
-                     {{::pageContent.copyright.company}}    
+                   <a href="index.html" class="logo-white-custom" ng-bind="::pageContent.copyright.company">  
                        <!--  <img class="logo-light" src="mazel/img/logo-white.png" alt="Mazel" />
                         <img class="logo-dark" src="mazel/img/logo-black.png" alt="Mazel" /> -->
                     </a>
@@ -171,8 +164,7 @@
                 <div class="row mb-60">
                     <!-- Logo -->
                     <div class="col-md-3 col-sm-3 mb-xs-30">
-                        <a class="footer-logo" href="home.html">
-                            {{::pageContent.copyright.company}}
+                        <a class="footer-logo" href="home.html" ng-bind="::pageContent.copyright.company">
                            <!--  <img src="mazel/img/logo-black.png" /> --></a>
                     </div>
                     <!-- Logo -->
@@ -204,7 +196,7 @@
                 <div class="row footer-info mb-60">
                     <div class="col-md-3 col-sm-12 mb-sm-30">
                         <p class="mb-xs-0" ng-bind="pageContent.footer.quote"></p>
-                        <a class="btn-link-a" href="about-1.html">Read More</a>
+                       <!--  <a class="btn-link-a" href="about-1.html">Read More</a> -->
                     </div>
                     <div class="col-md-3 col-sm-6 mb-sm-30 mb-xs-0">
                         <ul class="link">
@@ -235,7 +227,7 @@
             <hr />
 
             <!-- Copyright Bar -->
-            <section class="copyright ptb-60">
+            <section ng-cloak class="copyright ptb-60">
                 <div class="container">
                     <p class="">
                         {{::pageContent.common.year}} <a><b>{{::pageContent.common.company}}</b></a>. {{::pageContent.common.description}}
@@ -256,13 +248,12 @@
    </div> 
     <!-- Site Wraper End -->
 
-
-    <!-- JS -->
+<!-- JS -->
 
 <script src="scripts/libs.893a9c47.js"></script>
 
     <!-- Application related files -->
-    <script src="scripts/tacit.f20a9d72.js"></script>
+    <script src="scripts/tacit.cb541f49.js"></script>
 
 
 

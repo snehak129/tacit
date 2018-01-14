@@ -32,4 +32,24 @@
 			}
 		};
 	}])
+
+	.directive('repeatDir', ['$timeout', function($timeout) {
+		return {
+			restrict: 'A',
+			link: function(scope, element) {
+				// wait for the last item in the ng-repeat then call call isotope reload
+				if (scope.$last) {
+					$timeout(function() {
+						var $container2 = $('.container-grid');
+						$container2.isotope('reloadItems');
+						var filterValue = $('.container-filter').attr('data-filter');
+						$container2.isotope({
+							filter: filterValue
+						});
+
+					}, 200);
+				}
+			}
+		};
+	}])
 })();

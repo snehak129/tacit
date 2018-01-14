@@ -8,11 +8,11 @@
 
                     // SITE PRELOADER                     ||----------- 
 
-                    $('#loader').fadeOut();
-                    $('#preloader').delay(350).fadeOut('slow');
-                    $('body').delay(350).css({
-                        'overflow': 'visible'
-                    });
+                    // $('#loader').fadeOut();
+                    // $('#preloader').delay(350).fadeOut('slow');
+                    // $('body').delay(350).css({
+                    //     'overflow': 'visible'
+                    // });
 
                     // Portfolio Grid Masonry
                     containerGridMasonry();
@@ -44,7 +44,7 @@
                 // ---------------------------------------------------------------------------------------------------------------------------->
 
                 function scroll() {
-                 
+
 
                     // //Click Event to Scroll to Top
                     $(window).scroll(function() {
@@ -247,7 +247,7 @@
                         pagination: true, // Show pagination buttons
                         navigation: false, // Hide next and prev buttons
                         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                          responsive: true
+                        responsive: true
                     });
 
                     // Team Carousel
@@ -495,13 +495,17 @@
                     // ISOTOPE GRID ELEMENT  ||--------------
                     var $container2 = $('.container-grid');
                     $container2.imagesLoaded(function() {
+                        // debugger;
                         $container2.isotope({
                             itemSelector: '.nf-item',
                             layoutMode: 'fitRows'
                         });
+                      
                     });
 
-                    // bind filter categories click
+
+
+                   // bind filter categories click
                     $('.container-filter').on('click', '.categories', function() {
                         var filterValue = $(this).attr('data-filter');
                         $container2.isotope({
@@ -509,7 +513,7 @@
                         });
                     });
 
-                    // change active class on categories
+                   // change active class on categories
                     $('.categories-filter').each(function(i, buttonGroup) {
                         var $buttonGroup = $(buttonGroup);
                         $buttonGroup.on('click', '.categories', function() {
@@ -748,7 +752,7 @@
                 $timeout(function() {
 
                     // fullScreenCarousel();
-                   // fullScreenSlider();
+                    // fullScreenSlider();
                     stickHeader();
                     int_introHeight();
                     scroll();
@@ -770,7 +774,7 @@
                 }, 0);
 
                 $timeout(function() {
-                   // sliderAll();
+                    // sliderAll();
                 }, 2)
 
 

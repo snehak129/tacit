@@ -1,8 +1,10 @@
 (function() {
 
-	angular.module('tacit').controller('HomeController', ['$rootScope', '$scope', 'AjaxService', 'Common', function($rootScope, $scope, AjaxService, Common) {
+	angular.module('tacit').controller('HomeController', ['$rootScope', '$scope', 'AjaxService', 'Common', '$timeout', function($rootScope, $scope, AjaxService, Common, $timeout) {
 
 		$scope.content = {};
+	//	$scope.content.dataLoad = false;
+
 		console.log('inside HomeController');
 		$scope.windowHeight = $(window).height();
 
@@ -11,9 +13,37 @@
 			getHomeContent();
 			getWorks();
 		}
+
+
+
+		// $scope.$watch('content.dataLoad', function(newValue, oldValue, scope) {
+		// 	if (oldValue !== newValue) {
+		// 		if (newValue === true) {
+		// 			// $timeout(function() {
+		// 			// 	var $container2 = $('.container-grid');
+		// 			// 	$container2.isotope('reloadItems');
+
+		// 			// 	var filterValue = $('.container-filter').attr('data-filter');
+		// 			// 	$container2.isotope({
+		// 			// 		filter: filterValue
+		// 			// 	});
+		// 			// 	//$container2.isotope('reloadItems');
+
+		// 			// }, 200);
+		// 		}
+		// 	}
+		// }, true);
+
+
 		var getWorks = function() {
 			AjaxService.post(Common.url.getWorks, function(result) {
-				$scope.projects = result.projects;
+				// $timeout(function() {
+					console.log($scope);
+					$scope.projects = result.projects;
+				//	$scope.$emit('preload', false);
+				//	$(window).resize();
+				// }, 5000);
+
 			});
 
 		}
@@ -73,9 +103,10 @@
 				easing: 'easeOutQuad',
 				duration: 1200
 			});
-			 headerDarkLight_with_flexslider();
+			headerDarkLight_with_flexslider();
 
-		}
+		};
+
 
 		init();
 	}]);

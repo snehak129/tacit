@@ -1,5 +1,24 @@
 angular.module('tacit').factory('Common', function() {
+
+	// let preloader = false;
+	// let works =  null;
 	return {
+
+		// getWorksObj : function(){
+		// 	return works;
+		// },
+
+		// setWorksObj: function(works){
+		// 	this.works = works;
+		// },
+		
+		// getPreloader : function(){
+		// 	return this.preloader;
+		// },
+
+		// setPreloader:  function(loading){
+		// 	this.preloader = loading;
+		// },
 		categories: [{
 			name: "all",
 			active: "active"
