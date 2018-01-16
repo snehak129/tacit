@@ -2,7 +2,8 @@
   "common": {
     "address": "#17, SUMPRABHA,1 Main, 8 Cross,ISRO LAYOUT, Bangalore, 560078",
     "email": "intacit@gmail.com",
-    "phone": "+91 974002929"
+    "phone": "+91 9740022929",
+    "storiesUrl": "https://medium.com/tacitdesignlove"
   },
   "navMenu": {
     "aboutus": "About Us",
@@ -13,12 +14,12 @@
   "pushMenuRight": {
     "aboutUs": "About Us",
     "works": "Works",
-    "whtweDoBest": "What we do best",
+    "contact": "Contact",
     "blog": "Stories",
     "workwithus": "Work with us"
   },
   "footer": {
-    "quote": "The result is spectacular, it was until i saw Tacit’s process i finally felt like the vision, idea is clearly taking its shape",
+    "quote": "Work with us? Write to <a href=\"mailto:intacit@gmail.com\"> intacit@gmail.com </a> about your interest in working with us with your portfolio and resume.",
     "links": {
       "blog": "Stories",
       "works": "Works",

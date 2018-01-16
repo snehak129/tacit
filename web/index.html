@@ -77,13 +77,12 @@
             </li>
         </ul> -->
 
-   
+        
         <ul>
             <li><a ui-sref="aboutus" ng-bind="pageContent.pushMenuRight.aboutUs"></a></li>
             <li><a ui-sref="works" ng-bind="pageContent.pushMenuRight.works"></a></li>
-            <li><a href="" ng-bind="pageContent.pushMenuRight.whtweDoBest"></a></a></li>
-            <li><a ui-sref="blog" ng-bind="pageContent.pushMenuRight.blog"></a></li>
-            <li><a  ng-bind="pageContent.pushMenuRight.workwithus"></a></li>
+            <li><a ui-sref="contact" ng-bind="pageContent.pushMenuRight.contact"></a></li>
+            <li><a ng-href="" ng-click="main.redirect()" ng-bind="pageContent.pushMenuRight.blog"></a></li>
         </ul>
 
          <div class="side-nav-align col-md-12">
@@ -105,7 +104,7 @@
 
                 <!-- Logo -->
                 <div class="logo">
-                   <a href="index.html" class="logo-white-custom" ng-bind="::pageContent.copyright.company">  
+                   <a href="index.html" class="logo-custom" ng-bind="::pageContent.copyright.company">  
                        <!--  <img class="logo-light" src="mazel/img/logo-white.png" alt="Mazel" />
                         <img class="logo-dark" src="mazel/img/logo-black.png" alt="Mazel" /> -->
                     </a>
@@ -154,8 +153,7 @@
                         </li>
                        
                         <li>
-                            <a ui-sref="blog" class="menu-has-sub" ng-bind="pageContent.navMenu.blog"> </a>
-                           
+                           <a ng-href="" ng-click="main.redirect()" class="menu-has-sub" ng-bind="pageContent.navMenu.blog"></a>
                         </li>
                     </ul>
                 </div>
@@ -181,7 +179,7 @@
                 <div class="row mb-60">
                     <!-- Logo -->
                     <div class="col-md-3 col-sm-3 mb-xs-30">
-                        <a class="footer-logo" href="home.html" ng-bind="::pageContent.copyright.company">
+                        <a class="footer-logo logo-custom footer" href="home.html" ng-bind="::pageContent.copyright.company">
                            <!--  <img src="mazel/img/logo-black.png" /> --></a>
                     </div>
                     <!-- Logo -->
@@ -200,41 +198,42 @@
                     <!-- Social -->
                     <div class="col-md-3 offset-md-2 col-sm-4">
                         <ul class="social">
-                            <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                            <!-- <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li> -->
                             <li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square"></i></a></li>
-                            <li><a target="_blank" href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
+                            <!-- <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li> -->
+                            <li><a target="_blank" href="https://medium.com/"><i class="fa fa-vimeo-square"></i></a></li>
                         </ul>
                     </div>
                     <!-- End Social -->
                 </div>
                 <!--Footer Info -->
                 <div class="row footer-info mb-60">
-                    <div class="col-md-3 col-sm-12 mb-sm-30">
-                        <p class="mb-xs-0" ng-bind="pageContent.footer.quote"></p>
+                    <div class="col-md-3 col-sm-12 mb-sm-30 link-small">
+                        <p class="mb-xs-0" ng-bind-html="pageContent.footer.quote"></p>
                        <!--  <a class="btn-link-a" href="about-1.html">Read More</a> -->
                     </div>
                     <div class="col-md-3 col-sm-6 mb-sm-30 mb-xs-0">
                         <ul class="link">
-                            <li><a ui-sref="blog" ng-bind="pageContent.footer.links.blog"></a></li>
-                            <li><a ui-sref="works" ng-bind="pageContent.footer.links.works"></a></li>
-                            <li><a ui-sref="aboutus" ng-bind="pageContent.footer.links.aboutus"></a></li>
-                            <li><a ui-sref="practice" ng-bind="pageContent.footer.links.practice"></a></li>
-                            <li><a ui-sref="" ng-bind="pageContent.footer.links.careers"></a></li>
+                              <li>
+                                <a ui-sref="aboutus" ng-bind="pageContent.footer.links.aboutus"></a>  </li>
+                               <li><a ui-sref="works" ng-bind="pageContent.footer.links.works"></a>
+                               </li>
+                               
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-sm-30">
                         <ul class="link">
-                            <li><a ui-sref="" ng-bind="pageContent.footer.links.studio"></a></li>
-                            <li><a ui-sref="" ng-bind="pageContent.footer.links.travels"></a></li>
+                             <li><a ui-sref="contact" ng-bind="pageContent.footer.links.contact"></a></li>
+                            <li><a ng-href="" ng-click="main.redirect()" ng-bind="pageContent.footer.links.blog"></a></li>
+                            <!-- <li><a ui-sref="" ng-bind="pageContent.footer.links.studio"></a></li>
+                            <li><a ui-sref="" ng-bind="pageContent.footer.links.travels"></a></li> -->
                         </ul>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <p ng-bind="pageContent.common.address"></p>
                         <ul class="link-small">
                             <li><a href="mailto:{{pageContent.common.email}}" ng-bind="pageContent.common.email"><i class="fa fa-envelope-o left"></i></a></li>
-                            <li><a><i class="fa fa-phone left" ng-bind="pageContent.common.phone"></i></a></li>
+                            <li><a ng-bind="pageContent.common.phone"><i class="fa fa-phone left" ></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -266,6 +265,8 @@
     <!-- Site Wraper End -->
 
 <!-- JS -->
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgBi0vOEWGAUx4S90UKLa9vK0ifBnxJhw"></script>
+
 
 <!-- build:js(web) scripts/libs.js -->
     <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
@@ -289,12 +290,13 @@
     <script src="js/plugin/mediaelement-and-player.min.js"></script>
    
     <script src="js/angular.min.js" type="text/javascript" ></script>
-    <script src="js/angular-ui-router.min.js" type="text/javascript" ></script>
-    
-    
+    <script src="js/angular-ui-router.min.js" type="text/javascript" ></script>    
     <script src="js/angular-flexslider.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    
       <script src="js/theme.js" type="text/javascript"></script>
     <script src="js/navigation.js" type="text/javascript"></script>
+   
     <!-- endbuild -->
 
     <!-- Application related files -->
@@ -314,15 +316,22 @@
     <script src="app/common/directive/themedirective.js" type="text/javascript" ></script>
     <script src="app/common/directive/header.js" type="text/javascript" ></script>
     <script src="app/common/directive/owlCarousel.js" type="text/javascript" ></script>
+    <script src="app/common/directive/mapdirective.js" type="text/javascript" ></script>
    
     <script src="app/modules/detail/controller/detail.js" type="text/javascript"></script>
+
 
     
     <!-- endbuild -->
 
 
 
+
 <!-- <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+
+<!-- <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+//]]></script> -->
 </body>
 </html>

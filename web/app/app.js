@@ -1,6 +1,6 @@
 /* Author: Sneha Kulkarni*/
 
-var app = angular.module('tacit', ['ui.router', 'angular-flexslider']);
+var app = angular.module('tacit', ['ui.router', 'angular-flexslider', 'ngSanitize']);
 
 //Manually Bootstrapping the application
 angular.element(document).ready(function() {
@@ -27,11 +27,11 @@ app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function
 	})
 
 	// ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-	.state('blog', {
-		url: '/blog',
-		templateUrl: 'app/modules/blog/view/blog.html',
-		controller: 'BlogController'
-	})
+	// .state('blog', {
+	// 	url: '/blog',
+	// 	templateUrl: 'app/modules/blog/view/blog.html',
+	// 	controller: 'BlogController'
+	// })
 
 	.state('aboutus', {
 		url: '/aboutus',

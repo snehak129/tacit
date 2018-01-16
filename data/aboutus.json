@@ -2,7 +2,7 @@
 	"header": {
 		"image": "mazel/img/headers/aboutus.png",
 		"title": "studio",
-		"desc": "Good design that is understood without being stated"
+		"desc": "Good design is good business"
 	},
 	"content": {
 		"title": "",
@@ -53,6 +53,8 @@
 		"quotes": [{
 			"quote": "The result is spectacular, it was until I saw Tacits's process I finally felt like the vision, idea clearly taking its shape.",
 			"author": "Major Insurance Technology Specialist"
-		}]
+		}],
+
+		"clientLogos": ["01.png", "02.png"]
 	}
 }

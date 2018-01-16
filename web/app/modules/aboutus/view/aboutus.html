@@ -232,62 +232,21 @@
         <hr />
 
         <!-- Client Logos Section -->
-        <!-- <section id="client-logos" class="wow fadeIn ptb ptb-sm-80">
-            <div class="container">
-                <div class="owl-carousel client-carousel nf-carousel-theme ">
-                    <div class="item">
+        
+        <section id="client-logos" class="ptb ptb-sm-80">
+            <div class="wow fadeIn container text-center">
+                <h3>Our Clients</h3>
+                <div class="spacer-60"></div>
+                <div class="owl-carousel client-carousel nf-carousel-theme" owl-carousel>
+                    <div owl-carousel-item="" options="client-carousel" ng-repeat="img in pageContent.content.clientLogos" class="item">
                         <div class="client-logo">
-                            <img src="mazel/img/logos/01.png" alt="" />
+                            <img ng-src="mazel/img/logos/{{img}}" alt="" />
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="mazel/img/logos/02.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/03.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/04.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/05.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/06.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/08.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/01.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/02.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="client-logo">
-                            <img src="img/logos/03.png" alt="" />
-                        </div>
-                    </div>
+                    </div>         
                 </div>
             </div>
-        </section> -->
+            </div>       
+        </section>
         <!-- End Client Logos Section -->
 
         <!-- Statement Section -->

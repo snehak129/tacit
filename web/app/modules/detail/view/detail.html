@@ -51,9 +51,9 @@
                 </div>
 
 
-                <div class="row">
+                <div ng-if="project.details.images.length > 0" class="row">
                     <div class="col-md-12">
-                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{project.image}}" alt="1">
+                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{project.details.images[0]}}" alt="1">
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
 
 
 
-                <div ng-repeat="img in project.details.images track by $index" class="row mb-60 mb-xs-30">
+                <div ng-repeat="img in project.details.images| limitTo:project.details.images.length:1 " class="row mb-60 mb-xs-30">
                     <div class="col-md-12">
                         <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{img}}" alt="1">
                     </div>

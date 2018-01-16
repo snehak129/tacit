@@ -1,6 +1,6 @@
 (function() {
 
-	angular.module('tacit').controller('MainController', ['$scope', 'AjaxService', 'Common', function($scope, AjaxService, Common) {
+	angular.module('tacit').controller('MainController', ['$scope', 'AjaxService', 'Common', '$window', function($scope, AjaxService, Common, $window) {
 
 		console.log('inside HomeController');
 
@@ -11,7 +11,7 @@
 				$scope.pageContent = result;
 			});
 
-		}
+		};
 
 		// const setPreloadEvent = function() {
 		// 	$scope.$on('preload', function(target, value) {
@@ -29,14 +29,16 @@
 
 
 		function init() {
-		//	$scope.main.preloader = true;
-		//	$scope.main.dataLoad = false;
-		//	setPreloadEvent();
-		//	Common.setPreloader(true);
+			//	$scope.main.preloader = true;
+			//	$scope.main.dataLoad = false;
+			//	setPreloadEvent();
+			//	Common.setPreloader(true);
 			getPageContent();
 		}
 
-
+		$scope.main.redirect = function() {
+			$window.open($scope.pageContent.common.storiesUrl, '_blank');
+		};
 
 		init();
 	}]);

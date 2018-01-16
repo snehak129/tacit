@@ -1,6 +1,7 @@
 (function() {
 	angular.module('tacit').controller('ContactController', ['$scope', 'Common', 'AjaxService', function($scope, Common, AjaxService) {
 		$scope.contact = {};
+		$scope.contact.coordinates = Common.mapCoordinates;
 		const getContact = function() {
 			AjaxService.post(Common.url.getContact, function(result) {
 				$scope.contact = result;
