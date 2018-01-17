@@ -58,10 +58,10 @@
 
     <!-- Search Overlay Menu -->
     <div class="search-overlay-menu">
-        <span class="search-overlay-close"><i class="ion ion-ios-close-empty"></i></span>
-        <form role="search" id="searchform" action="/search" method="get">
-            <input value="" name="q" type="search" placeholder="Search..." />
-            <button type="submit"><i class="ion ion-ios-search"></i></button>
+        
+        <form role="search" id="searchform">
+            <input value="" name="q" ng-model="searchValue" type="search" placeholder="Search..." />
+            <button ng-click="onsearch(searchValue)"><i class="ion ion-ios-search"></i></button>
         </form>
     </div>
     <!-- End Search Overlay Menu -->

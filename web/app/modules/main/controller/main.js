@@ -1,10 +1,10 @@
 (function() {
 
-	angular.module('tacit').controller('MainController', ['$scope', 'AjaxService', 'Common', '$window', function($scope, AjaxService, Common, $window) {
+	angular.module('tacit').controller('MainController', ['$scope', 'AjaxService', 'Common', '$window', '$state', function($scope, AjaxService, Common, $window, $state) {
 
 		console.log('inside HomeController');
-
 		$scope.main = {};
+		//let transitions = $transitions;
 
 		var getPageContent = function() {
 			AjaxService.post(Common.url.getHeaders, function(result) {
@@ -39,6 +39,12 @@
 		$scope.main.redirect = function() {
 			$window.open($scope.pageContent.common.storiesUrl, '_blank');
 		};
+
+		$scope.onsearch = function(searchValue) {
+
+			$state.go('blog', { 'searchValue': searchValue});
+			$('.search-overlay-menu').removeClass('open');
+		}
 
 		init();
 	}]);

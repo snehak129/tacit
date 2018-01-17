@@ -46,3 +46,109 @@
 .logo-custom.footer {
     color:#323232;
 }
+
+.full-width {
+    width: 100%;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.search.active {
+    color: #e6ae49;
+}
+
+
+.search-overlay-menu-custom {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  /* background-color: rgba(35, 35, 35, 0.9);*/ 
+    -webkit-transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    -moz-transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    -ms-transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    -o-transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2200;
+    text-align: center;
+}
+
+    .search-overlay-menu-custom.open {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        -moz-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        -ms-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        -o-transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+        transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    }
+
+    .search-overlay-menu-custom form {
+      /*  height: 120px;*/
+        position: relative;
+       /* top: 50%;*/
+        left: 0;
+       /* margin: -60px auto 0;*/
+        width: 60%;
+        left: 20%;
+        transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+    }
+
+    .search-overlay-menu-custom.open form {
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+    }
+
+    .search-overlay-menu-custom input[type="search"] {
+        height: 100%;
+        width: 100%;
+       /* color: #fff;*/
+        background: transparent;
+        border-top: 0px solid transparent;
+        border-bottom: 2px solid #909090 !important;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+        font-size: 60px;
+        font-weight: 300;
+        outline: none;
+        padding: 10px;
+    }
+
+    .search-overlay-menu-custom form button {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: medium none;
+        font-size: 3rem;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        color: #c6c6c6;
+    }
+
+    .search-overlay-menu-custom .search-overlay-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: 1;
+        font-size: 40px;
+        color: #fff;
+    }
+
+        .search-overlay-menu-custom .search-overlay-close:hover {
+            color: #e6ae49;
+            cursor: pointer;
+        }

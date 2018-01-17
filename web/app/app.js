@@ -27,11 +27,14 @@ app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function
 	})
 
 	// ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-	// .state('blog', {
-	// 	url: '/blog',
-	// 	templateUrl: 'app/modules/blog/view/blog.html',
-	// 	controller: 'BlogController'
-	// })
+	.state('blog', {
+		url: '/blog',
+		params: {
+			searchValue: null
+		},
+		templateUrl: 'app/modules/blog/view/blog.html',
+		controller: 'BlogController'
+	})
 
 	.state('aboutus', {
 		url: '/aboutus',
@@ -81,6 +84,13 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 		}
 		else if (trans.params().projects === null) {
 			return trans.router.stateService.target('works');
+		}
+	});
+
+
+	$transitions.onStart({to: 'blog'}, function(trans) {
+		 if (trans.params().searchValue === null) {
+			return trans.router.stateService.target('home');
 		}
 	});
 	//$trace.enable('TRANSITION');
