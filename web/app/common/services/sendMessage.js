@@ -69,8 +69,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
   */
 
-  if( !validEmail(data['form-email']) ) {   // if email is not valid show error
-    document.getElementById('form-email').style.display = 'block';
+  if( !validEmail(data['email']) ) {   // if email is not valid show error
+    document.getElementById('email').style.display = 'block';
     return false;
   } else {
     var url = event.target.action;  //
