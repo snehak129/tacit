@@ -27,12 +27,12 @@ app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function
 	})
 
 	// ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-	.state('blog', {
-		url: '/blog',
+	.state('search', {
+		url: '/search',
 		params: {
 			searchValue: null
 		},
-		templateUrl: 'app/modules/blog/view/blog.html',
+		templateUrl: 'app/modules/search/view/search.html',
 		controller: 'BlogController'
 	})
 
@@ -88,7 +88,7 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 	});
 
 
-	$transitions.onStart({to: 'blog'}, function(trans) {
+	$transitions.onStart({to: 'search'}, function(trans) {
 		 if (trans.params().searchValue === null) {
 			return trans.router.stateService.target('home');
 		}

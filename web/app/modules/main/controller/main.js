@@ -42,7 +42,7 @@
 
 		$scope.onsearch = function(searchValue) {
 
-			$state.go('blog', { 'searchValue': searchValue});
+			$state.go('search', { 'searchValue': searchValue});
 			$('.search-overlay-menu').removeClass('open');
 		}
 

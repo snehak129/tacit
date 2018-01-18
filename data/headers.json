@@ -9,19 +9,19 @@
     "aboutus": "About Us",
     "works": "Works",
     "contact": "Contact",
-    "blog": "Stories"
+    "stories": "Stories"
   },
   "pushMenuRight": {
     "aboutUs": "About Us",
     "works": "Works",
     "contact": "Contact",
-    "blog": "Stories",
+    "stories": "Stories",
     "workwithus": "Work with us"
   },
   "footer": {
     "quote": "Work with us? Write to <a href=\"mailto:intacit@gmail.com\"> intacit@gmail.com </a> about your interest in working with us with your portfolio and resume.",
     "links": {
-      "blog": "Stories",
+      "stories": "Stories",
       "works": "Works",
       "aboutus": "About Us",
       "contact": "Contact",
