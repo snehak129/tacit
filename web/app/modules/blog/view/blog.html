@@ -1,151 +1,150 @@
-    <!-- CONTENT--------------------------------------------------------------------------------->
-    <!-- Intro Section -->
-    <section  class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="mazel/img/full/20.jpg">
-        <div class="container">
-            <div class="row title">
-                <h2 class="h2">Search</h2>
-                <!-- <div class="page-breadcrumb">
-                    <a>Home</a>/<a>Blog</a>/<span>1 Columns</span>
-                </div> -->
-            </div>
+<!-- CONTENT--------------------------------------------------------------------------------->
+<!-- Intro Section -->
+<section  class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" data-background-img="mazel/img/full/20.jpg">
+    <div class="container">
+        <div class="row title">
+            <h2 class="h2">Search</h2>
+            <!-- <div class="page-breadcrumb">
+                <a>Home</a>/<a>Blog</a>/<span>1 Columns</span>
+            </div> -->
         </div>
-    </section>
-    <!-- End Intro Section -->
-
-
-    <!-- Blog Post Section -->
-    <section  class="ptb ptb-sm-80">
-        <div class="container">
-            <div class="sidebar-widget">
-                <h5>Search</h5>
-                <form ng-submit="submit(searchValue)">
-                    <div class="widget-search">
-                        <input class="form-full input-lg" type="text" ng-model="searchValue" value="" placeholder="Search Here" name="search" id="wid-search">
-                        <input type="submit"  value="" name="email" id="wid-s-sub">
-                    </div>
-                </form>
-            </div>
-            <div ng-if="items.length == 0">
-                No results.
-            </div>
-            <div ng-if="items.length > 0" class="row">
-                <!-- Post Item -->
-                <div class="col-lg-8 col-md-8">
-                    <div class="row">
-                        <div class="col-md-12 blog-post-hr">
-                            <div ng-repeat="proj in items track by $index">
-                                <div class="blog-post mb-30" >
-                                    <!--   <div   class="post-media">
-                                        <div  class="owl-carousel item1-carousel nf-carousel-theme">
-                                            <div  ng-repeat="img in proj.images track by $index" class="item" ng-class="{active:!$index}">
-                                                <img src="mazel/img/project/{{proj.name}}/{{img}}" alt="" />
-                                            </div>
-                                            
+    </div>
+</section>
+<!-- End Intro Section -->
+<!-- Blog Post Section -->
+<section  class="ptb ptb-sm-80">
+    <div class="container">
+        <div class="sidebar-widget">
+            <h5>Search</h5>
+            <form ng-submit="submit(searchValue)">
+                <div class="widget-search">
+                    <input class="form-full input-lg" type="text" ng-model="searchValue" value="" placeholder="Search Here" name="search" id="wid-search">
+                    <input type="submit"  value="" name="email" id="wid-s-sub">
+                </div>
+            </form>
+        </div>
+        <div ng-if="items.length == 0">
+            No results.
+        </div>
+        <div ng-if="items.length > 0" class="row">
+            <!-- Post Item -->
+            <div class="col-lg-8 col-md-8">
+                <div class="row">
+                    <div class="col-md-12 blog-post-hr">
+                        <div ng-repeat="proj in items track by $index">
+                            <div class="blog-post mb-30" >
+                                <!--   <div   class="post-media">
+                                    <div  class="owl-carousel item1-carousel nf-carousel-theme">
+                                        <div  ng-repeat="img in proj.images track by $index" class="item" ng-class="{active:!$index}">
+                                            <img src="mazel/img/project/{{proj.name}}/{{img}}" alt="" />
                                         </div>
-                                    </div> -->
-                                    
-                                    <div class="post-media">
+                                        
+                                    </div>
+                                </div> -->
+                                
+                                <div class="post-media">
+                                    <a ui-sref="detail({projects:blog.projects, index: proj.index})">
                                         <img  class="full-width" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" alt="" />
-                                    </div>
-                                    <div class="post-meta"><span ng-bind="proj.headerTag"></span></div>
-                                    <div class="post-header">
-                                        <h4><a href="blog-single-slider-post.html" ng-bind="proj.header"></a></h4>
-                                    </div>
-                                    <div class="post-entry">
-                                        <p ng-bind="proj.desc"></p>
-                                    </div>
-                                    <div class="post-tag pull-left"><span><a ng-bind="proj.details.categories"></a></div>
-                                    <div class="post-more-link pull-right"><a ui-sref="detail({projects:blog.projects, index: proj.index})">Read More<i class="fa fa-long-arrow-right right"></i></a></div>
+                                    </a>
                                 </div>
-                                
-                                <hr ng-if="!$last"    />
-                                
+                                <div class="post-meta"><span ng-bind="proj.headerTag"></span></div>
+                                <div class="post-header">
+                                    <h4><a href="blog-single-slider-post.html" ng-bind="proj.header"></a></h4>
+                                </div>
+                                <div class="post-entry">
+                                    <p ng-bind="proj.desc"></p>
+                                </div>
+                                <div class="post-tag pull-left"><span><a ng-bind="proj.details.categories"></a></div>
+                                <div class="post-more-link pull-right"><a ui-sref="detail({projects:blog.projects, index: proj.index})">Read More<i class="fa fa-long-arrow-right right"></i></a></div>
                             </div>
-                            <div class="pagination-nav mt-60 mtb-xs-30">
-                                <ul ng-if="pager.pages.length">
-                                    <!--  <li ng-class="{disabled:pager.currentPage === 1}">
-                                        <a ng-click="setPage(1)">First</a>
-                                    </li> -->
-                                    <li ng-class="{disabled:pager.currentPage === 1}">
-                                        <a ng-click="setPage(pager.currentPage - 1)"><i class="fa fa-angle-left"></i></a>
-                                    </li>
-                                    <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
-                                        <a ng-click="setPage(page)">{{page}}</a>
-                                    </li>
-                                    <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                                        <a ng-click="setPage(pager.currentPage + 1)"><i class="fa fa-angle-right"></i></a>
-                                    </li>
-                                    <!-- <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
-                                        <a ng-click="setPage(pager.totalPages)">Last</a>
-                                    </li> -->
-                                </ul>
-                            </div>
+                            
+                            <hr ng-if="!$last"    />
+                            
+                        </div>
+                        <div class="pagination-nav mt-60 mtb-xs-30">
+                            <ul ng-if="pager.pages.length">
+                                <!--  <li ng-class="{disabled:pager.currentPage === 1}">
+                                    <a ng-click="setPage(1)">First</a>
+                                </li> -->
+                                <li ng-class="{disabled:pager.currentPage === 1}">
+                                    <a ng-click="setPage(pager.currentPage - 1)"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                                <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                                    <a ng-click="setPage(page)">{{page}}</a>
+                                </li>
+                                <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                                    <a ng-click="setPage(pager.currentPage + 1)"><i class="fa fa-angle-right"></i></a>
+                                </li>
+                                <!-- <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                                    <a ng-click="setPage(pager.totalPages)">Last</a>
+                                </li> -->
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- End Post Item -->
-                <!-- Sidebar -->
-                <div class="col-lg-4 col-md-4 mt-sm-60">
-                    
-                    <div class="sidebar-widget">
-                        <h5>Categories</h5>
-                        <hr>
-                        <ul  ng-show="catArr.length > 0">
-
-                            <li ng-repeat="cat in catArr">
-                                <a ng-click="filterCatProjects(cat)"  class="search  capitalize {{cat.active}}">{{cat.name}}</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="sidebar-widget">
-                        <h5>Recent Post</h5>
-                        <hr>
-                        <ul class="widget-post">
-                            <li>
-                                <a class="widget-post-media">
-                                    <img src="img/portfolio/21.jpg">
-                                </a>
-                                <div class="widget-post-info">
-                                    <h6><a>veritatis et quasi</a></h6>
-                                    <div class="post-meta"><span>March 16, 2015</span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="widget-post-media">
-                                    <img src="img/portfolio/32.jpg">
-                                </a>
-                                <div class="widget-post-info">
-                                    <h6><a>Sed fringilla mauris</a></h6>
-                                    <div class="post-meta"><span>March 09, 2015</span></div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="widget-post-media">
-                                    <img src="img/portfolio/31.jpg">
-                                </a>
-                                <div class="widget-post-info">
-                                    <h6><a>harum quidem rerum</a></h6>
-                                    <div class="post-meta"><span>March 04, 2015</span></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> -->
-                    <div class="sidebar-widget">
-                        <h5>popular Tags</h5>
-                        <hr>
-                        <ul class="widget-tag">
-                            <li><a>Art</a></li>
-                            <li><a>Business</a></li>
-                            <li><a>Design</a></li>
-                            <li><a>Graphic</a></li>
-                            <li><a>fashion</a></li>
-                            <li><a>Model</a></li>
-                            <li><a>Photography</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Sidebar -->
             </div>
+            <!-- End Post Item -->
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-md-4 mt-sm-60">
+                
+                <div class="sidebar-widget">
+                    <h5>Categories</h5>
+                    <hr>
+                    <ul  ng-show="catArr.length > 0">
+                        <li ng-repeat="cat in catArr">
+                            <a ng-click="filterCatProjects(cat)"  class="search  capitalize {{cat.active}}">{{cat.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="sidebar-widget">
+                    <h5>Recent Post</h5>
+                    <hr>
+                    <ul class="widget-post">
+                        <li>
+                            <a class="widget-post-media">
+                                <img src="img/portfolio/21.jpg">
+                            </a>
+                            <div class="widget-post-info">
+                                <h6><a>veritatis et quasi</a></h6>
+                                <div class="post-meta"><span>March 16, 2015</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="widget-post-media">
+                                <img src="img/portfolio/32.jpg">
+                            </a>
+                            <div class="widget-post-info">
+                                <h6><a>Sed fringilla mauris</a></h6>
+                                <div class="post-meta"><span>March 09, 2015</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="widget-post-media">
+                                <img src="img/portfolio/31.jpg">
+                            </a>
+                            <div class="widget-post-info">
+                                <h6><a>harum quidem rerum</a></h6>
+                                <div class="post-meta"><span>March 04, 2015</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="sidebar-widget">
+                    <h5>popular Tags</h5>
+                    <hr>
+                    <ul class="widget-tag">
+                        <li><a>Art</a></li>
+                        <li><a>Business</a></li>
+                        <li><a>Design</a></li>
+                        <li><a>Graphic</a></li>
+                        <li><a>fashion</a></li>
+                        <li><a>Model</a></li>
+                        <li><a>Photography</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Sidebar -->
         </div>
-    </section>
-    <!-- End Blog Post Section -->
+    </div>
+</section>
+<!-- End Blog Post Section -->
