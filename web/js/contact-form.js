@@ -1,9 +1,11 @@
 (function ($) {
+debugger;
 
     "use strict";
 
-    $("#contact").validate();
-    $("#contact").submit(function (e) {
+    $("#gform").validate();
+    $("#gform").submit(function (e) {
+        debugger;
         e.preventDefault();
         var name = $("#form-name").val();
         var email = $("#form-email").val();

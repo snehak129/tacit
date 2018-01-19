@@ -17,6 +17,8 @@ angular.module('tacit').factory('Common', function() {
 					lng: 77.581122
 				},
 
+				sendMessageUrl: "https://script.google.com/macros/s/AKfycbwRXqKx-3Ncqa7eKTdpIr0E5fnBBTAAtscscWOuXjRPdWh2xD8/exec",
+
 				// getPreloader : function(){
 				// 	return this.preloader;
 				// },

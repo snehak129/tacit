@@ -58,6 +58,11 @@
     color: #e6ae49;
 }
 
+.form-btn-disable{
+    background: buttonface;
+    pointer-events: none;
+}
+
 
 .search-overlay-menu-custom {
     position: relative;

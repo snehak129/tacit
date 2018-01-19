@@ -6,6 +6,7 @@
 		</div>
 	</div>
 </section>
+disable:: 		{{contact.disableSubmit}}
 <section class="ptb ptb-sm-80">
 	<div class="container">
 		<div class="row">
@@ -49,13 +50,12 @@
 			</div>
 			<div class="col-md-6 offset-md-1">
 				<!-- Contact FORM -->
-				<form class="contact-form" id="gform" method="POST" role="form" 
-				action="https://script.google.com/macros/s/AKfycbwRXqKx-3Ncqa7eKTdpIr0E5fnBBTAAtscscWOuXjRPdWh2xD8/exec">
+				<form class="contact-form" id="gform" method="POST" role="form" ng-submit="triggerFormSubmit()">
 					<!-- IF MAIL SENT SUCCESSFULLY -->
 					<!-- <h6  class="successContent">
 					<i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
 					</h6> -->
-					<h6 style="display:none;" id="thankyou_message" class="successContent">
+					<h6  ng-if="contact.showSuccess" class="successContent">
 					<i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully.
 					</h6>
 					<!-- END IF MAIL SENT SUCCESSFULLY -->
@@ -76,7 +76,7 @@
 					<div class="form-field-wrapper">
 						<textarea class="form-full" id="message" rows="7" name="message" placeholder="Your Message" required></textarea>
 					</div>
-					<button class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Send Message</button>
+					<button   class="btn btn-md btn-black form-full" type="submit" id="form-submit" name="submit">Send Message</button>
 				</form>
 				<!-- END Contact FORM -->
 				<!-- <div style="display:none;" id="thankyou_message">
