@@ -9,35 +9,35 @@
       "header": "IMMERSE",
       "content": "We carry a passion for inclusive design",
       "type": "dark-slide",
-      "img": "mazel/img/homepage/1-immerse.png",
+      "img": "mazel/img/homepage/1-immerse.jpg",
       "index": 0
     },
     {
       "header": "CREATE",
       "content": "We explore the essential",
       "type": "dark-slide",
-      "img": "mazel/img/homepage/2-create.png",
+      "img": "mazel/img/homepage/2-create.jpg",
       "index": 1
     },
      {
       "header": "HUMANIZE",
       "content": "We strengthen relationships",
       "type": "dark-slide",
-      "img": "mazel/img/homepage/3-humanize.png",
+      "img": "mazel/img/homepage/3-humanize.jpg",
       "index": 2
     },
      {
       "header": "ENABLE",
       "content": "We help you imagine new",
       "type": "dark-slide",
-      "img": "mazel/img/homepage/4-enable.png",
+      "img": "mazel/img/homepage/4-enable.jpg",
       "index": 3
     },
      {
       "header": "REFINE",
       "content": "We craft like in music",
       "type": "dark-slide",
-      "img": "mazel/img/homepage/5-refine.png",
+      "img": "mazel/img/homepage/5-refine.jpg",
       "index": 4
     }
   ]

@@ -10,7 +10,15 @@
 		function init() {
 			$scope.pager = {};
 			getBlog();
+			getSearch();
 		}
+
+		const getSearch = function(){
+			AjaxService.post(Common.url.getSearch, function(result) {
+				$scope.search = result;
+				
+			});
+		};
 
 		let filterCat = function(actualList) {
 

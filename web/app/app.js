@@ -10,9 +10,10 @@ angular.element(document).ready(function() {
 
 
 // This sets up ui router 
-app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', function($compileProvider, $stateProvider, $urlRouterProvider) {
+app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', '$locationProvider', function($compileProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
 
 	$urlRouterProvider.otherwise('/');
+	$locationProvider.hashPrefix('');
 
 	$stateProvider
 

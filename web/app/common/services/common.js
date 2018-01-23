@@ -57,7 +57,7 @@ angular.module('tacit').factory('Common', function() {
 					getHomeContent: '../data/home.json',
 					getAboutUs: '../data/aboutus.json',
 					getContact: '../data/contact.json',
-					getBlog: '../data/blog.json'
+					getSearch: '../data/search.json'
 				},
 
 				carouselItems: {
