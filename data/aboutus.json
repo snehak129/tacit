@@ -5,9 +5,9 @@
 		"desc": "Good design is good business"
 	},
 	"content": {
-		"title": "",
+		"title": "We are a design studio",
 		"desc": {
-			"para1": "We are an orthodox design studio offering inclusive design solutions.We founded Tacit to engage with ideas that shape naturally yet understood or implied without being stated. We work with diverse forms like visual, textual, objects, digital, material tactile and spaces.We give expression to our observations of society, situations, behaviours, relationships with real world that lead us to the discovery of new possibilities.",
+			"para1": "We work with diverse forms like visual, textual, objects, digital, material tactile and spaces. We give expression to our observations of society, situations, behaviours, relationships with real world that lead us to the discovery of new possibilities.",
 			
 			"para2": "We are not a design service company. You get the best from us when you involve us early in shaping your vision, daring to explore and experiment. Our local insights, skillful design approach, experience in handling complexity infuse life in the way you think of your idea and business. We're happy to work with any kind of organization on any type of project."
 		},
@@ -55,6 +55,6 @@
 			"author": "Major Insurance Technology Specialist"
 		}],
 
-		"clientLogos": ["01.png", "02.png"]
+		"clientLogos": ["Graymatters.png","letsventure.png", "mahindraecole.png", "moonwalkr.png", "smartowner.png","inube.png", "vliv.png", "designcircle.png", "designerpublications.png"	]
 	}
 }

@@ -97,6 +97,12 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 	//$trace.enable('TRANSITION');
 }]);
 
+app.filter('filterPrefix', function () {
+  return function (item) {
+      return item.replace(/(^\w+:|^)\/\//, '');
+  };
+});
+
 
 
 

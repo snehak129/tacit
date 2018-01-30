@@ -427,6 +427,84 @@
       "workQuote": [],
       "roles": []
     }
-  }]
+  },{
+    "index": 16,
+    "name": "VijayaFoods",
+    "image": "T-vf.jpg",
+    "header": "VIJAYA FOODS",
+    "headerTag": "Identity & Packaging design for a health food brand",
+    "categories": "identity packaging",
+    "details": {
+      "title": "REVIVING TRADITIONAL HEALTH RECIPES",
+      "desc": "Vijaya foods makes chemical free hand pounded products from Millets. These traditional recipes have ingredients  based on climate, geography, body type and age. They are natural, organic and sustainable. The packaging had to preserve the recipe, freshness, indicate preparation and reduce costs overall. We used 'recycled' paper. The rough brown of paper created a dark background. The name 'Vijaya' meaning 'win' is placed on overlapping circles to be noticed. The symbol depicted 'V' and leaves. We proposed a photographic visual to show the millet type for people to know the base ingredient.",
+      "headerImage": "Header-vf.png",
+      "columns": [],
+      "images": ["1-vf.png", "2-vf.png", "3-vf.png"],
+      "categories": "Identity, Packaging",
+      "released": "DEC 2016",
+      "created" : "",
+      "client": "VIJAYA FOODS",
+      "link": "http://www.vijayafoods.in",
+      "workQuote": []
+    }
+
+  },{
+    "index": 17,
+    "name": "Saakruti",
+    "image": "T-saakruti.jpg",
+    "header": "SAAKRUTI",
+    "headerTag": "Identity design for an Architecture magazine",
+    "categories": "identity",
+    "details": {
+      "title": "SYMBOL FOR A VERNACULAR MAGAZINE ON ARCHITECTURE",
+      "desc": "There is an increased interest in Vernacular and sustainable architectural solutions in towns compared to cities. This local interest is due to increased buying power and education. \"SAAKRUTI\" is the first magazine in Kannada language about architecture that fills this gap. In south India, letterforms were originally written on soft leaves. Hence have rounded forms. We used segments of circles to resolve the rounded form. We wanted to make it look like a 'written script' to make it more relatable. Also the purpose was to express SAAKRUTI meaning \"Good Form\".",
+      "headerImage": "Header-saakruti.jpg",
+      "columns": [],
+      "images": ["1-saakruti.png", "2-saakruti.png", "3-saakruti.png", "4-saakruti.jpg"],
+      "categories": "Identity",
+      "released": "MARCH 2016",
+      "created" : "",
+      "client": "DESIGNER PUBLICATIONS",
+      "link": "http://www.designerpublications.com",
+      "workQuote": []
+    }
+
+  }, {
+    "index": 18,
+    "name": "SmartOwner",
+    "image": "T-SO.jpg",
+    "header": "SMARTOWNER",
+    "headerTag": "Crowdfunding Real Estate in India",
+    "categories": "digital social",
+    "details": {
+      "title": "INVESTING IN INDIAN REAL ESTATE MADE EASY, SAFE AND HASSLE FREE FOR ANYONE",
+      "desc": "'Investing' traditionally has been a domain of wealthy families. However with technology and new business models, today common man has more opportunities and instruments to grow his investments. With SmartOwner  we proposed to make information easily available to take decisions, later follow up to organize paperwork and secure transactions. We designed the interactions to make the investor feel confident, safe and excited with the opportunity and get a sense of ownership making him a Smart Owner.",
+      "headerImage": "Header-SO.png",
+      "columns": [{
+        "header": "CROWD FUNDING",
+        "content": "Today, it is easier to raise small amounts of money with large number of people across locations due to internet applications. Investing in real estate is a tedious task involving land documents, brokers, paper work, legalities that takes away a lot of time. We helped bridge this gap with SmartOwner."
+      }, {
+        "header": "COMMUNICATING VALUE",
+        "content": "We envisioned a communication style that creates awareness as the idea is new. We choose information elements that build confidence for investors to decide and invest by continuous feedback. Testimonial videos, ‘How to’ texts, Samples of projects showing returns engaged investor interests."
+      }, {
+        "header": "FRESH, TRANSPARENT & CLEAR",
+        "content": "User interface was designed to be fresh and clear allowing content and interaction elements to naturally guide the visitor to choose an investment opportunity.   We proposed to improvise all the customer touch-points from phone calls, customer support, mobile site to build a common tone to interact."
+      }],
+      "images": ["1-SO.png", "2-SO.png", "3-SO.png"],
+      "categories": "Digital, Social",
+      "released": "",
+      "created" :"JUN 2014",
+      "client": "SMARTOWNER",
+      "link": "",
+      "impact": "",
+      "workQuote": [{
+        "quote": "I'm a doctor by profession and have no idea how to go through these land deals. SmartOwner has been very reliable and gives me good returns.",
+        "author": "Investor"
+      }],
+      "roles": []
+    }
+  }
+
+]
 
 }

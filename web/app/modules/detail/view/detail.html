@@ -1,170 +1,178 @@
- <!-- Intro Section -->
-
-        <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
-            <div class="container">
-                <div class="row title">
-                    <h2 class="h2">{{project.header}}</h2>
-                    <div class="page-breadcrumb">
-                        {{project.headerTag}}
-                    </div>
+<!-- Intro Section -->
+<section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
+    <div class="container">
+        <div class="row title">
+            <h2 class="h2">{{project.header}}</h2>
+            <div class="page-breadcrumb">
+                {{project.headerTag}}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Intro Section -->
+<!-- Work Detail Section -->
+<section class="pt pt-sm-80">
+    <div class="container">
+        <div class="row mb-60 mb-xs-30">
+            <div class="col-md-4 mb-30">
+                <div class="project-detail-block">
+                    <p>
+                        <span>  <strong class="dark-color">Categories :</strong></span>
+                        <span>{{project.details.categories}}</span>
+                    </p>
+                    <p ng-if="project.details.created">
+                        <span><strong class="dark-color">Created :</strong></span>
+                        <span></span>{{project.details.created}}</span>
+                    </p>
+                    <p ng-if="project.details.released">
+                        <span> <strong class="dark-color">Released :</strong></span>
+                        <span>{{project.details.released}}</span>
+                    </p>
+                    <p ng-if="project.details.client">
+                        <span><strong class="dark-color">Client :</strong></span>
+                        <span>{{project.details.client}}</span>
+                    </p>
+                    <p ng-if="project.details.link">
+                        <span><strong class="dark-color">Link :</strong></span>
+                        <span><a ng-click="details.redirect(project.details.link)" class="detail-link">{{project.details.link | filterPrefix}}</a></span>
+                    </p>
+                    <p ng-if="project.details.impact">
+                        <span><strong class="dark-color">Impact :</strong></span>
+                        <span>{{project.details.impact}}</span>
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- End Intro Section -->
+            <div class="col-md-8">
+                <h4>{{project.details.title}}</h4>
+                <p class="">
+                    {{project.details.desc}}
+                </p>
+            </div>
+        </div>
+        <div ng-if="project.details.images.length > 0" class="row">
+            <div class="col-md-12">
+                <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{project.details.images[0]}}" alt="1">
+            </div>
+        </div>
+        <div class="row mtb-60 mtb-xs-30">
+            <div ng-repeat="p in project.details.columns track by $index" class="col-md-4 mb-30">
+                <h5>{{p.header}}</h5>
+                <p>{{p.content}}</p>
+            </div>
+        </div>
+        <div ng-if="project.details.workQuote.length > 0" class="row mtb-60 mtb-xs-30">
+            <div class="testimonial text-center dark-color">
+                <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                <p class="lead"> {{project.details.workQuote[0].quote}}</p>
+                <h6 class="quote-author">{{project.details.workQuote[0].author}}</h6>
+            </div>
+        </div>
         
-        <!-- Work Detail Section -->
-        <section class="pt pt-sm-80">
-            <div class="container">
-
-                <div class="row mb-60 mb-xs-30">
-                    <div class="col-md-4 mb-30">
-                        <div class="project-detail-block">
-                            <p ng-if="project.details.categories">
-                                <strong class="dark-color">Categories:</strong> <span>{{project.details.categories}}</span>
-                            </p>
-
-                            <p ng-if="project.details.created">
-                                <strong class="dark-color">Created :</strong>{{project.details.created}}
-                            </p>
-
-                            <p ng-if="project.details.released">
-                                <strong class="dark-color">Released :</strong>{{project.details.released}}
-                            </p>
-                            <p ng-if="project.details.client">
-                                <strong class="dark-color">Client :</strong><a>{{project.details.client}}</a>
-                            </p>
-                            <p ng-if="project.details.link">
-                                <strong class="dark-color">Link :</strong>{{project.details.link}}
-                            </p>
-                            <p ng-if="project.details.impact">
-                                <strong class="dark-color">Impact :</strong>{{project.details.impact}}
-                            </p>
+        <!-- End Testimonials -->
+        <div ng-repeat="img in project.details.images| limitTo:project.details.images.length:1 " class="row mb-60 mb-xs-30">
+            <div class="col-md-12">
+                <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{img}}" alt="1">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="ptb ptb-sm-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h3 class="">architecto beatae vitae</h3>
+                <p class="mt-15">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+                <br />
+                <a class="btn btn-lg btn-black">Download now</a>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<section ng-if="project.details.roles.length > 0" class="ptb ptb-sm-80">
+    <div class="wow fadeIn container text-center">
+        <h3>Our Role</h3>
+        <div class="spacer-60"></div>
+        <div class="row">
+            <div ng-repeat="role in project.details.roles" class="col-md-4">
+                <div class="page-icon-top"><i class="{{role.image}}"></i></div>
+                <h5 ng-bind="role.header"></h5>
+                <p ng-bind="role.desc"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<hr />
+<section ng-if="details.relatedProjects.length > 0" class="ptb ptb-sm-80">
+    <div class="container">
+        <h4 class="text-center">Related Project</h4>
+        <div class="spacer-30"></div>
+        <div class="row">
+            <div   class="owl-carousel item3-carousel nf-carousel-theme o-flow-hidden"  owl-carousel>
+                <div class="item" ng-repeat="proj in details.relatedProjects" ui-sref="detail({project:proj, index: proj.index})" owl-carousel-item="" options="item3-carousel">
+                    <div class="nf-col-padding">
+                        <div class="item-box">
+                            <a>
+                                <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
+                                <div class="item-mask">
+                                    <div class="item-caption">
+                                        <h5 class="white" ng-bind="proj.header"></h5>
+                                        <p class="white" ng-bind="proj.headerTag"></p>
+                                    </div>
+                                </div>
+                            </a>
+                            
                         </div>
                     </div>
-
-                    <div class="col-md-8">
-                        <h4>{{project.details.title}}</h4>
-                        <p class="">
-                            {{project.details.desc}}
-                        </p>
-                    </div>
                 </div>
-
-
-                <div ng-if="project.details.images.length > 0" class="row">
-                    <div class="col-md-12">
-                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{project.details.images[0]}}" alt="1">
-                    </div>
-                </div>
-
-                <div class="row mtb-60 mtb-xs-30">
-                    <div ng-repeat="p in project.details.columns track by $index" class="col-md-4 mb-30">
-                        <h5>{{p.header}}</h5>
-                        <p>{{p.content}}</p>
-                    </div>
-                </div>
-
-              <div ng-if="project.details.workQuote.length > 0" class="row mtb-60 mtb-xs-30">
-                    <div class="testimonial text-center dark-color">
-                        <div class="container-icon"><i class="fa fa-quote-right"></i></div>
-                        <p class="lead"> {{project.details.workQuote[0].quote}}</p>
-                        <h6 class="quote-author">{{project.details.workQuote[0].author}}</h6>
-                    </div>
-             </div>
-                           
-<!-- End Testimonials -->
-
-
-
-                <div ng-repeat="img in project.details.images| limitTo:project.details.images.length:1 " class="row mb-60 mb-xs-30">
-                    <div class="col-md-12">
-                        <img class="item-container" ng-src="mazel/img/project/{{project.name}}/{{img}}" alt="1">
-                    </div>
-               </div>
+                
             </div>
-        </section>
-
-       
-
-        <!-- <section class="ptb ptb-sm-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <h3 class="">architecto beatae vitae</h3>
-                        <p class="mt-15">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-                        <br />
-                        <a class="btn btn-lg btn-black">Download now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
- -->
-
-
-    <section ng-if="project.details.roles.length > 0" class="ptb ptb-sm-80">
-            <div class="wow fadeIn container text-center">
-                <h3>Our Role</h3>
-                <div class="spacer-60"></div>
-                <div class="row">
-                    <div ng-repeat="role in project.details.roles" class="col-md-4">
-                        <div class="page-icon-top"><i class="{{role.image}}"></i></div>
-                        <h5 ng-bind="role.header"></h5>
-                        <p ng-bind="role.desc"></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-
-        <hr />
-
-    <section ng-if="details.relatedProjects.length > 0" class="ptb ptb-sm-80">
-        <div class="container text-center">
-            <h4>Related Project</h4> 
-            <div  class="row">
-                <div  ng-repeat="proj in details.relatedProjects" class="col-lg-4 spacing-grid" 
+        </div>
+    </div>
+</section>
+<!-- <section ng-if="details.relatedProjects.length > 0" class="ptb ptb-sm-80">
+    <div class="container text-center">
+        <h4>Related Project</h4>
+        <div  class="row">
+            <div  ng-repeat="proj in details.relatedProjects" class="col-lg-4 spacing-grid"
                 ui-sref="detail({project:proj, index: proj.index})">
-                    <div class="item-box">
-                        <a>
-                            <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
-                            <div class="item-mask">
-                                <div class="item-caption">
-                                    <h5 class="white" ng-bind="proj.header"></h5>
-                                    <p class="white" ng-bind="proj.headerTag"></p>
-                                </div>
+                <div class="item-box">
+                    <a>
+                        <img alt="1" ng-src="mazel/img/project/{{proj.name}}/{{proj.image}}" class="item-container">
+                        <div class="item-mask">
+                            <div class="item-caption">
+                                <h5 class="white" ng-bind="proj.header"></h5>
+                                <p class="white" ng-bind="proj.headerTag"></p>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-        <!-- End Work Detail Section -->
-
-        <!-- Work Next Prev Bar -->
-    <section class="mb-60">
-        <div class="container">
-            <div class="item-nav">
-                <a class="item-prev" ui-sref="detail({project:projects, index: prevIndex})">
-                    <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
-                    <div class="item-prev-text xs-hidden">
-                        <h6>Prev Project</h6>
-                    </div>
-                </a>            
-
-                <a class="item-all-view">
-                    <h6 ui-sref="works">All Work</h6>
-                </a>
-
-                <a class="item-next" ui-sref="detail({project:projects, index: nextIndex})">
-                    <div class="next-btn"><i class="fa fa-angle-right"></i></div>
-                    <div class="item-next-text xs-hidden">
-                        <h6>Next Project</h6>
-                    </div>
-                </a>
-            </div>
+    </div>
+</section> -->
+<!-- End Work Detail Section -->
+<!-- Work Next Prev Bar -->
+<section class="mb-60">
+    <div class="container">
+        <div class="item-nav">
+            <a class="item-prev" ui-sref="detail({project:projects, index: prevIndex})">
+                <div class="prev-btn"><i class="fa fa-angle-left"></i></div>
+                <div class="item-prev-text xs-hidden">
+                    <h6>Prev Project</h6>
+                </div>
+            </a>
+            <a class="item-all-view">
+                <h6 ui-sref="works">All Work</h6>
+            </a>
+            <a class="item-next" ui-sref="detail({project:projects, index: nextIndex})">
+                <div class="next-btn"><i class="fa fa-angle-right"></i></div>
+                <div class="item-next-text xs-hidden">
+                    <h6>Next Project</h6>
+                </div>
+            </a>
         </div>
-    </section>
-        <!-- End Work Next Prev Bar -->
-
-        <!-- End CONTENT ------------------------------------------------------------------------------>
+    </div>
+</section>
+<!-- End Work Next Prev Bar -->
+<!-- End CONTENT ------------------------------------------------------------------------------>

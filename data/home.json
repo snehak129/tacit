@@ -6,38 +6,40 @@
   },
   "slider": [
     {
-      "header": "IMMERSE",
-      "content": "We carry a passion for inclusive design",
-      "type": "dark-slide",
-      "img": "mazel/img/homepage/1-immerse.jpg",
-      "index": 0
-    },
-    {
       "header": "CREATE",
-      "content": "We explore the essential",
+      "content": "We are a design acceleration partner",
       "type": "dark-slide",
       "img": "mazel/img/homepage/2-create.jpg",
-      "index": 1
+      "index": 0
     },
+  
      {
       "header": "HUMANIZE",
-      "content": "We strengthen relationships",
+      "content": "We carry a passion for inclusive design",
       "type": "dark-slide",
       "img": "mazel/img/homepage/3-humanize.jpg",
-      "index": 2
+      "index": 1
     },
      {
       "header": "ENABLE",
       "content": "We help you imagine new",
       "type": "dark-slide",
       "img": "mazel/img/homepage/4-enable.jpg",
-      "index": 3
+      "index": 2
     },
      {
       "header": "REFINE",
-      "content": "We craft like in music",
+      "content": "We craft details that touch people",
       "type": "dark-slide",
       "img": "mazel/img/homepage/5-refine.jpg",
+      "index": 3
+    },
+    {
+      "header": "MAKE",
+      "content": "Join our team of free spirits, futurists, geeks, story tellers and realists",
+      "type": "dark-slide",
+      "button" : "true",
+      "img": "mazel/img/homepage/1-immerse.jpg",
       "index": 4
     }
   ]

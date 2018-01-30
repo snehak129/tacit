@@ -1,5 +1,5 @@
 (function() {
-	angular.module('tacit').controller('DetailController', ['$scope', '$stateParams', function($scope, $stateParams) {
+	angular.module('tacit').controller('DetailController', ['$scope', '$stateParams', '$window', function($scope, $stateParams, $window) {
 
 		console.log('inside Works Detail Controller');
 		$scope.details = {};
@@ -130,6 +130,10 @@
 			saveIndexes();
 			console.log($scope.project);
 		}
+
+		$scope.details.redirect = function(url) {
+			$window.open(url, '_blank');
+		};
 
 		init();
 	}])

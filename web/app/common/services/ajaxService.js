@@ -1,4 +1,5 @@
 angular.module('tacit').factory('AjaxService', ['$http', function($http) {
+  console.log('inside service');
   return {
     post: function(url, callback) {
       //return the promise directly.

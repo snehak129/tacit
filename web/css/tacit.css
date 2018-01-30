@@ -2,6 +2,7 @@
 	top: 50%;
 	padding-right: 5px;
 	padding-left: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .pagination-nav ul>.disabled >a, .pagination-nav ul>.disabled >a:focus, .pagination-nav ul>.disabled >a:hover, .pagination-nav ul>.disabled>span, .pagination-nav ul>.disabled >span:focus, .pagination-nav ul>.disabled>span:hover{
@@ -157,3 +158,16 @@
             color: #e6ae49;
             cursor: pointer;
         }
+
+        .custom-spacing{
+            letter-spacing: 0.80px;
+        }
+
+.project-detail-block p {
+    display: flex;
+}
+
+.detail-link {
+    text-transform: lowercase;
+    word-break: break-all;
+}

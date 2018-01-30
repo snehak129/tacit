@@ -89,7 +89,7 @@
             <p ng-bind="pageContent.common.address"></p>
             <ul class="link-small">
                 <li><a href="mailto:{{pageContent.common.email}}" ng-bind="pageContent.common.email"><i class="fa fa-envelope-o left"></i></a></li>
-                <li><a><i class="fa fa-phone left" ng-bind="pageContent.common.phone"></i></a></li>
+                <li><a ng-bind="pageContent.common.phone"><i class="fa fa-phone left" ></i></a></li>
             </ul>
           </div>
     </section>
@@ -187,10 +187,10 @@
                     <!-- Newsletter -->
                     <div class="col-md-4 col-sm-5 mb-xs-30">
                         <div class="newsletter">
-                            <form>
+                            <!-- <form>
                                 <input type="email" class="newsletter-input input-md newsletter-input mb-0" placeholder="Enter Your Email">
                                 <button class="newsletter-btn btn btn-xs btn-white" type="submit" value=""><i class="fa fa-angle-right mr-0"></i></button>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <!-- End Newsletter -->
@@ -305,7 +305,7 @@
 
     <script src="app/app.js" type="text/javascript"></script>
     <script src="app/common/services/sendMessage.js" type="text/javascript"></script>
-    <script src="app/common/services/ajaxService.js" type="text/javascript"></script>
+    
     <script src="app/common/services/common.js" type="text/javascript"></script>
     <script src="app/common/services/pagination.js" type="text/javascript"></script>
     <script src="app/modules/main/controller/main.js" type="text/javascript"></script>
@@ -318,6 +318,7 @@
     <script src="app/common/directive/header.js" type="text/javascript" ></script>
     <script src="app/common/directive/owlCarousel.js" type="text/javascript" ></script>
     <script src="app/common/directive/mapdirective.js" type="text/javascript" ></script>
+    <script src="app/common/services/ajaxService.js" type="text/javascript"></script>
    
     <script src="app/modules/detail/controller/detail.js" type="text/javascript"></script>
 

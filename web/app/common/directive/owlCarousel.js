@@ -47,7 +47,7 @@
 							filter: filterValue
 						});
 
-					}, 200);
+					}, 300);
 				}
 			}
 		};
