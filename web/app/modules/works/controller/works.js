@@ -25,7 +25,7 @@
 				$scope.works = Common.getWorksObj();
 			} else {
 				AjaxService.post(Common.url.getWorks, function(result) {
-					// $timeout(function() {
+					 //$timeout(function() {
 					$scope.projects = result.projects;
 					$scope.works = result;
 

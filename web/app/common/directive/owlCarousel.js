@@ -37,8 +37,21 @@
 		return {
 			restrict: 'A',
 			link: function(scope, element) {
+
+
 				// wait for the last item in the ng-repeat then call call isotope reload
 				if (scope.$last) {
+
+					var $container2 = $('.container-grid');
+
+					$container2.imagesLoaded(function() {
+						console.log("all images loaded!!");
+						$container2.isotope({
+							itemSelector: '.nf-item',
+							layoutMode: 'fitRows'
+						});
+
+					});
 					$timeout(function() {
 						var $container2 = $('.container-grid');
 						$container2.isotope('reloadItems');

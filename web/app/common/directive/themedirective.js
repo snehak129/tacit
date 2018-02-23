@@ -494,14 +494,14 @@
 
                     // ISOTOPE GRID ELEMENT  ||--------------
                     var $container2 = $('.container-grid');
-                    $container2.imagesLoaded(function() {
-                        // debugger;
-                        $container2.isotope({
-                            itemSelector: '.nf-item',
-                            layoutMode: 'fitRows'
-                        });
+                    // $container2.imagesLoaded(function() {
+                    //     // debugger;
+                    //     $container2.isotope({
+                    //         itemSelector: '.nf-item',
+                    //         layoutMode: 'fitRows'
+                    //     });
                       
-                    });
+                    // });
 
 
 

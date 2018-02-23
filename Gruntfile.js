@@ -2,6 +2,9 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    block:{
+      dest: "/dist/"
+    },
 
     clean: {
       build: {
@@ -64,6 +67,11 @@ module.exports = function(grunt) {
       js: ['dist/scripts/{,*/}*.js'],
       css: ['dist/css/{,*/}*.css'],
       options: {
+         blockReplacements: {
+            base: function (block) {
+                return ['<base href="', block.dest, '">'].join('');
+            }
+        },
         assetsDirs: [
           'dist'
         ]
