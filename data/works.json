@@ -505,6 +505,72 @@
       }],
       "roles": []
     }
+  },{
+    "index": 19,
+    "name": "BSS",
+    "image": "T-BSS.jpg",
+    "header": "Bangalore Stiener School",
+    "headerTag": "Planning and Design of a school based on waldorf Education",
+    "categories": "space",
+    "details": {
+      "title": "AN ECO-SENSITIVE WALDORF SCHOOL",
+      "desc": "We designed a school campus where children learnt in close association with nature. What if children played whole dayunder the trees, learnt with direct contact with soil, climate, insects, plants and animals? This simple idea lead to Bangalore Steiner School is located in the heart of Neem plantation. School follows a Waldorf philosophy (link). We planned a cost effective, sustainable design using custom made tents installed on rammed earth plinths. We reused materials from existing buildings. This enabled us to install in a record time of 45 days under a budget far lower than the usual. Open plan enables teachers and students to explore details with their own imagination and creativity. Read story of the making of the school here (link).",
+      "headerImage": "Header-BSS.jpg",
+      "columns": [],
+      "images": ["1-BSS.jpg", "2-BSS.jpg", "3-BSS.jpg", "4-BSS.jpg", "5-BSS.jpg", "6-BSS.jpg"],
+      "categories": "Space",
+      "released": "",
+      "created" :"APR 2017",
+      "client": "B.S.S",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+    }
+  },{
+    "index": 20,
+    "name": "Imagica",
+    "image": "T-BSS.jpg",
+    "header": "Imagica",
+    "headerTag": "Art from discrete things",
+    "categories": "digital",
+    "details": {
+      "title": "PLAY WITH DISCRETE PICTURES",
+      "desc": "What happens when you mix individually separate, unconnected pictures? It becomes a storytelling possibility. We have been inventing myths to explore our own identities. Unconnected objects opens new interpretations. New meanings reverberate. Children do this naturally. They create stories of objects they are familiar with or sometimes out of completely new. IMAGICA enables us to pick, scale, move, add video to a set of randomly selected pictures. It automatically creates Haikus learnt by machine to enhance meanings that we would never have anticipated. IMAGICA invites us to a creative zone of meaning making using pictures.",
+      "headerImage": "Header-imagica.jpg",
+      "columns": [],
+      "images": ["1-imagica.jpg", "2-imagica.jpg", "3-imagica.jpg", "4-imagica.jpg", "5-imagica.jpg"],
+      "categories": "Digital",
+      "released": "",
+      "created" :"SEP 2017",
+      "client": "Self Initiated",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+    }
+  },{
+    "index": 21,
+    "name": "aksharavalli",
+    "image": "T-aksharavalli.jpg",
+    "header": "Aksharavalli",
+    "headerTag": "kannada alphabet cards",
+    "categories": "product",
+    "details": {
+      "title": "Kannada Alphabet Cards",
+      "desc": "Words and Pictures in the Kannada textbooks were not intriguing for a child and standardized with any connection to the life of the child. With Aksharavalli, We tried to find words and Images that would address this need and introduce words that come from the child’s context and culture. The alphabets were in an unstylized rounded hand written style. The Packaging and the product is designed to be easily manufactured by self help groups with very less resources.",
+      "headerImage": "Header-aksharavalli.png",
+      "columns": [],
+      "images": ["1-aksharavalli.jpg", "2-aksharavalli.png", "3-aksharavalli.png"],
+      "categories": "Product",
+      "released": "",
+      "created" :"MAY 2014",
+      "client": "Self Initiated with DesignCircle",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+    }
   }
 
 ]
