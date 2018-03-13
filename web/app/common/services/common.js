@@ -50,6 +50,9 @@ angular.module('tacit').factory('Common', function() {
 		}, {
 			name: "book",
 			active: ""
+		},{
+			name: "space",
+			active: ""
 		}],
 		url: {
 			getWorks: '../data/works.json',

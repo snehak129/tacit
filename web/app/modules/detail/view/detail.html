@@ -1,4 +1,4 @@
-<!-- Intro Section -->
+ <!--Intro Section -->
 <section class="inner-intro dark-bg bg-image overlay-dark parallax parallax-background1" ng-style="{'background-image':'url(mazel/img/project/{{project.name}}/{{project.details.headerImage}})'}">
     <div class="container">
         <div class="row title">
@@ -44,8 +44,7 @@
             </div>
             <div class="col-md-8">
                 <h4>{{project.details.title}}</h4>
-                <p class="">
-                    {{project.details.desc}}
+                <p ng-bind-html="project.details.desc" class="">
                 </p>
             </div>
         </div>
@@ -175,4 +174,4 @@
     </div>
 </section>
 <!-- End Work Next Prev Bar -->
-<!-- End CONTENT ------------------------------------------------------------------------------>
+<!-- End CONTENT ----------------------------------------------------------------------------
