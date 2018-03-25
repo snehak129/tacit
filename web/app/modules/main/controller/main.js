@@ -13,6 +13,17 @@
 
 		};
 
+		$scope.hideMenu = function(e) {
+			console.log(e);
+			if (e.target.className === "menu-class") {
+				$menuSidebar = $('.pushmenu-right');
+				$menusidebarNav = $('#menu-sidebar-list-icon');
+				$menusidebarNav.removeClass('active');
+				$('.pushmenu-push').removeClass('pushmenu-push-toleft');
+				$menuSidebar.removeClass('pushmenu-open');
+			}
+		}
+
 		// const setPreloadEvent = function() {
 		// 	$scope.$on('preload', function(target, value) {
 		// 		console.log(value);
@@ -42,7 +53,9 @@
 
 		$scope.onsearch = function(searchValue) {
 
-			$state.go('search', { 'searchValue': searchValue});
+			$state.go('search', {
+				'searchValue': searchValue
+			});
 			$('.search-overlay-menu').removeClass('open');
 		}
 

@@ -9,9 +9,11 @@ angular.element(document).ready(function() {
 });
 
 
+
+
 // This sets up ui router 
 app.config(['$compileProvider', '$stateProvider', '$urlRouterProvider', '$locationProvider', function($compileProvider, $stateProvider, $urlRouterProvider, $locationProvider) {
-
+	$compileProvider.debugInfoEnabled(false);
 	$urlRouterProvider.otherwise('/');
 	$locationProvider.hashPrefix('');
 
@@ -98,7 +100,7 @@ app.run(['$rootScope', '$anchorScroll', '$trace', '$transitions', function($root
 				trans.abort();
 		}
 		else if (trans.params().projects === null) {
-			return trans.router.stateService.target('works');
+			return trans.router.stateService.target('home');
 		}
 	});
 

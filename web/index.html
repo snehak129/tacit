@@ -4,12 +4,28 @@
 <head>
     <meta charset="utf-8" />
 
-    <title>Tacit</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="nileforest">
+    <title>Tacit Design Studio</title>
+    <meta name="keywords" content="Design studio India, Product Design, Social Design, Packaging design, Book Design, Digital Design, School Design, Steiner School Bangalore, Waldorf Education, Visual Design, LetsVenture Design, Best Design Studio, User Interface design" />
+    <meta name="author" content="Kiran Kulkarni"/>
+    <meta name="description" content="We are a design studio. We work with diverse forms like visual, textual, objects, digital, material tactile and spaces. We give expression to our observations of society, situations, behaviours, relationships with real world that lead us to the discovery of new possibilities." />
+
+    <meta property="url" content="http://tacit.in" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "url": "http://www.tacit.in",
+          "name": "Tacit Design Studio",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91 9740022929",
+            "contactType": "Design Expert"
+          }
+        }
+        </script>
 
     <!-- Favicone Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="mazel/img/favicon.ico">
@@ -43,7 +59,7 @@
     <!-- endbuild -->
 
      <!-- build:base /tacit/dist/ -->
-    <base href="/tacit/web/">
+    <base href="/web/">
      <!-- endbuild -->
 </head>
 
@@ -81,11 +97,11 @@
         </ul> -->
 
         
-        <ul>
-            <li><a ui-sref="aboutus" ng-bind="pageContent.pushMenuRight.aboutUs"></a></li>
-            <li><a ui-sref="works" ng-bind="pageContent.pushMenuRight.works"></a></li>
-            <li><a ui-sref="contact" ng-bind="pageContent.pushMenuRight.contact"></a></li>
-            <li><a ng-href="" ng-click="main.redirect()" ng-bind="pageContent.pushMenuRight.stories"></a></li>
+        <ul ng-click="hideMenu($event)">
+            <li ><a ui-sref="aboutus" class="menu-class" ng-bind="pageContent.pushMenuRight.aboutUs"></a></li>
+            <li><a ui-sref="works" class="menu-class" ng-bind="pageContent.pushMenuRight.works"></a></li>
+            <li><a ui-sref="contact" class="menu-class" ng-bind="pageContent.pushMenuRight.contact"></a></li>
+            <li><a ng-href="" class="menu-class" ng-click="main.redirect()" ng-bind="pageContent.pushMenuRight.stories"></a></li>
         </ul>
 
          <div class="side-nav-align col-md-12">
@@ -134,9 +150,9 @@
                 <!-- End Rightside Menu -->
 
                 <!-- Mobile Navbar Icon -->
-                <div class="nav-mobile nav-bar-icon">
+               <!--  <div class="nav-mobile nav-bar-icon">
                     <span></span>
-                </div>
+                </div> -->
                 <!-- End Mobile Navbar Icon -->
 
                 <!-- Navbar Navigation -->
