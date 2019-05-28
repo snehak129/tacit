@@ -35,6 +35,18 @@
 				"class": "fa-twitter"
 			}],
 			"designation": "Co-Founder, Advisor"
+		},{
+			"img": "mazel/img/team/shruthi.jpg",
+			"name": "Shruthi. K. Narayan",
+			"desc": "Chief Content & Video, TISS - Mumbai, ZEE,  Asianet & Clearwaters Media",
+			"socialLinks": [{
+				"link": "https://www.facebook.com/",
+				"class": "fa-facebook"
+			}, {
+				"link": "https://www.twitter.com/",
+				"class": "fa-twitter"
+			}],
+			"designation": "Chief Content & Video"
 		}],
 		"service": [{
 			"title": "Research",
