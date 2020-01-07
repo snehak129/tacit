@@ -571,8 +571,177 @@
       "workQuote": [],
       "roles": []
     }
+  },{
+    "index": 22,
+    "name": "BenneMangoes",
+    "image": "T-benne.png",
+    "header": "Benne Mangoes",
+    "headerTag": "Packaging design for handcrafted organic farm delicacies",
+    "categories": "identity packaging strategy",
+    "details": {
+      "title": "REJUVENATING NATIVE DELICACIES",
+      "desc": "Every year, founder invites families to pick mangoes during its ripening season in his organic farm and gives away the mangoes to those who helped in picking. We found this interesting and requested the families to create a native delicacy from their share. Every family created their own traditional recipe. We collected and designed a packaging of this community exercise leading to multiple product ideas. Mangoes ripen during the season of \"Shravana\", calling the parrots, fresh leaves cover the farm making it rich with green color. We created imagery to express this season and taste. Belgian glass bottles would help store the delicacies over longer periods also showing the color of the spices it contains.",
+      "headerImage": "Header-benne.jpg",
+      "columns": [],
+      "images": ["1-benne.jpg", "2-benne.jpg", "3-benne.jpg", "4-benne.jpg", "5-benne.jpg", "6-benne.jpg"],
+      "categories": "Identity, Packaging, Strategy",
+      "released": "",
+      "created" :"JUNE 2019",
+      "client": "Benson",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 23,
+    "name": "GrayMatters",
+    "image": "T-GM.png",
+    "header": "Gray Matters",
+    "headerTag": "Affordable workbooks for assessing ‘Critical Thinking’",
+    "categories": "strategy book",
+    "details": {
+      "title": "DESIGN OF AFFORDABLE WORKBOOKS TO ASSESS ‘CRITICAL THINKING’",
+      "desc": "‘Critical Thinking’ means making clear, reasoned judgements often involving critique. GrayMatters is set out to provide child-centric assessment with its innovative monitoring process of child's learning. We proposed a series of workbooks calling ‘Kriya’ meaning ‘doing’. The cover page is a collection of graphics and images that intends to provoke child's imagination, curiosity leading him to open, engage with fascinating questions challenging his creativity.",
+      "headerImage": "Header-GM.png",
+      "columns": [{
+        "header": "NOT GOING DIGITAL",
+        "content": "We collaborated with a research agency to investigate the contexts of providing ideas to GrayMatters. We found that digital adoption was weak and fragmented with school students whose parents have lower incomes. But they all knew the power of books. We decided not to go digital and design a workbook."
+      }, {
+        "header": "WHAT IS A WORKBOOK ?",
+        "content": "Workbook is a repository of human knowledge in linguistic, illustrative form that challenge thinking to illuminate a perspective. It has seen many improvements since its inception. Today we can tailor the challenges to an individual child’s interest in learning.This makes it a personal learning experience."
+      }, {
+        "header": "HELPING TO IMAGINE",
+        "content": "The design is a natural response of the collection of challenges that are created to evoke child's imagination. We used imagery and organizing principles to express this. We helped in guiding research, creating a system design, strategy and the design of workbooks."
+      }],
+      "images": ["1-GM.png", "2-GM.png", "3-GM.png", "4-GM.png"],
+      "categories": "Strategy, Book",
+      "released": "",
+      "created" :"MAR 2018",
+      "client": "Gray Matters",
+      "link": " https://www.graymatters.in/",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 24,
+    "name": "Liliyum",
+    "image": "T-liliyum.jpg",
+    "header": "Liliyum Patisserie",
+    "headerTag": "Identity & Packaging design for a French style Patisserie and Cafe",
+    "categories": "identity design packaging",
+    "details": {
+      "title": "PACKAGING A  SOULFUL TASTE EXPERIENCE",
+      "desc": "Liliyum name is a wordplay of lily flower family “Lilium” which was close to the hearts of the two founders as they connected with the flower and the various cooking experiences they had in childhood and “Yum” - an expression for pleasure at eating. We attempted to make these connections with the flowers and food. Identity and packaging design is a solution that embodies the finesse and delicate taste that they were trying to achieve in their creations. A typographic approach to make a unique and signature style that could be replicated in chocolate and other edible/etchable forms to reinforce the brand Identity and stand out elegantly. In packaging, we avoided new forms and keep it simple and cost effective using brown craft paper boxes sturdy enough to hold the weight of the cakes reflecting simple and pure ingredients Liliyum uses.",
+      "headerImage": "Header-liliyum.jpg",
+      "columns": [],
+      "images": ["1-liliyum.jpg", "2-liliyum.jpg", "3-liliyum.jpg", "4-liliyum.jpg", "5-liliyum.jpg", "6-liliyum.jpg"],
+      "categories": "Identity, Design, Packaging",
+      "released": "",
+      "created" :"DEC 2018",
+      "client": "Liliyum",
+      "link": "https://www.facebook.com/liliyum.patisserie.cafe/",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 25,
+    "name": "Maayamaya",
+    "image": "T-maaya.jpg",
+    "header": "Maayamaya",
+    "headerTag": "Curating and exhibiting lifetime works of a mystic artist",
+    "categories": "packaging design",
+    "details": {
+      "title": "AN ARTISTS WORK REVISITED",
+      "desc": "Maayamaya is an exhibition of selected works of MaNaNi who specialises in Klecksographie art. MaNaNi is among the few in the world who has explored this form over 60 years. The art form by itself is a simple inkblot but repetitive improvisation over a long period of time tends to show us deep mystical qualities of blots. Artistes relentless exploration and its evolution is a visual treat and an introspective experience. We curated and designed the exhibition for art form be experienced, enjoyed and understood, irrespective of age or exposure to art. We created a timeline showing the evolution of Artistes journey of sixty years of meditative creation.",
+      "headerImage": "Header-maaya.jpg",
+      "columns": [],
+      "images": ["1-maaya.jpg", "2-maaya.jpg", "3-maaya.jpg", "4-maaya.jpg", "5-maaya.jpg", "6-maaya.jpg"],
+      "categories": "Packaging, Design",
+      "released": "NOV 2019",
+      "created" :"",
+      "client": "Ma.Na.Ni",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 26,
+    "name": "MCL",
+    "image": "T-mcl.jpg",
+    "header": "MUSIC COGNITION LAB",
+    "headerTag": "Symbol design for India’s first Music cognition lab at Nimhans",
+    "categories": "identity design",
+    "details": {
+      "title": "REPRESENTING FAITH AND COGNITION",
+      "desc": "The research focus of MCL is music cognition and neuromusicology from basic science to clinical application. They investigate musically trained, untrained people of various clinical conditions and run clinical research examining the effects of music based intervention on functioning like cognition, language, emotion and overall functionality in various neurological and psychiatric conditions using neurocognitive evaluation, EEG/ERP, fMRI methods.We looked into Indian traditional ‘Yantra’ symbols to that depict Goddess Saraswati - Goddess of cognition, wisdom and music. The symbol is a weblike network, just like the neurons that connect to make us aware. The symbol represents the spirit of the lab that is to examine the emotional effects of music on our minds and on clinical conditions such as Parkinson’s disease, Schizophrenia and effect of music during spinal surgery on levels of anxiety and pain as well as its effect of anaesthetic drug dosage, level of cortisol.",
+      "headerImage": "Header-mcl.jpg",
+      "columns": [],
+      "images": ["1-mcl.jpg", "2-mcl.jpg", "3-mcl.jpg" ],
+      "categories": "Identity, Design",
+      "released": "",
+      "created" :"JUNE 2019",
+      "client": "Nimhans",
+      "link": "http://nimhans.ac.in/neurobiology-research-centre-nrc/music-cognition-laboratory-nrc/",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 27,
+    "name": "SpringBoard",
+    "image": "T-sb.jpg",
+    "header": "SpringBoard",
+    "headerTag": "Communication Strategy for an online learning Platform",
+    "categories": "digital strategy",
+    "details": {
+      "title": "LEARNING PROGRAM SIMPLIFIED",
+      "desc": "Springboard is an online learning experience platform based in the US who planned to launch their Data Science program in India. They worked with Industry mentors to guide prospective students to have a focussed approach to build their dream career.Online mentor led learning & career tracks are new in the Indian market and Springboard ran regular 1-1 webcasts with Industry mentors and prospective students. It was hard to bring out information focusing on the qualities of mentor-led learning to a larger audience to have more informed enrollment into the program. We worked to chalk out a focused communication strategy & tone with Visual, Verbal and video communication. The material were launched on various social media platforms that helped Springboard increase their enrollment & conversions into the program and also was successful in educating the viewers the nature of program.",
+      "headerImage": "Header-sb.jpg",
+      "columns": [],
+      "images": ["1-sb.jpg", "2-sb.jpg", "3-sb.jpg" ],
+      "categories": "Digital, Strategy",
+      "released": "",
+      "created" :"JUNE 2019",
+      "client": "Springboard",
+      "link": "https://in.springboard.com/",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
+  },{
+    "index": 28,
+    "name": "WeMe",
+    "image": "T-weme.jpg",
+    "header": "We/Me Exhibition",
+    "headerTag": "A platform for wildlife photographers",
+    "categories": "design",
+    "details": {
+      "title": "CONNECTING WITH WILDLIFE BY PHOTOGRAPHY",
+      "desc": "WE/ME is conceptualised along with wildlife photographer - Hari Somashekar, as a platform for photographers to interact and collectively reflect their Wildlife Experiences. Through pictures WE/ME brings incredible diversity of the wildlife around us and inspire us to be connected, sensitive and mindful to our relationship with wildlife. We curated and designed the exhibition that was held at Chitrakala Parishat. It is a collective of three photographers - Hari Somashekar, Vijaykumar Pattadakall & Avinash Kamath,  presenting 60 beautiful captures of 6 wildlife habitats of our country. The exhibition was for 3 days. We saw a footfall of over 4000 adults and children engaging with photographers who interacted & narrated their experiences fueling conversation and sensitizing enthusiasts on nature, wildlife and photography.",
+      "headerImage": "Header-weme.png",
+      "columns": [],
+      "images": ["1-weme.jpg", "2-weme.jpg", "3-weme.png", "4-weme.png", "5-weme.png" ],
+      "categories": "Design",
+      "released": "",
+      "created" :"JULY 2019",
+      "client": "Hari Somashekar",
+      "link": "",
+      "impact": "",
+      "workQuote": [],
+      "roles": []
+      
+    }
   }
-
 ]
 
 }
